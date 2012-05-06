@@ -1,6 +1,7 @@
 WaypointManager::Application.routes.draw do
   resources :waypoints
   resource :importer, only: [:new, :create]
+  resource :exporter, only: [:show]
 
   root :to => 'waypoints#index'
 

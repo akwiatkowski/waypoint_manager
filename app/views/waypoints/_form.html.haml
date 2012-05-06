@@ -18,5 +18,8 @@
   .field
     = f.label :name
     = f.text_field :name
+  .field
+    = f.label :name
+    = f.select :sym, Waypoint::SYMBOLS.keys
   .actions
     = f.submit 'Save'
