@@ -2,6 +2,7 @@
 
 %table
   %tr
+    %th Type
     %th Name
     %th Time
 
@@ -16,6 +17,7 @@
 
   - @waypoints.each do |waypoint|
     %tr
+      %td= image_tag "garmin/#{waypoint.img_symbol}"
       %td= waypoint.name
       %td= waypoint.created_at.to_s(:db)
 
