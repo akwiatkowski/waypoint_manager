@@ -1,0 +1,7 @@
+%h1 Import waypoints from path
+
+= form_tag importer_path do
+  = text_field_tag :path, params[:path] || 'path to GPX files'
+  = submit_tag
+
+= link_to 'Back', waypoints_path

@@ -1,5 +1,8 @@
 WaypointManager::Application.routes.draw do
   resources :waypoints
+  resource :importer, only: [:new, :create]
+
+  root :to => 'waypoints#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

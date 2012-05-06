@@ -13,6 +13,10 @@ gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
 
+# geo utils
+gem 'geokit'
+gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

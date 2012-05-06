@@ -11,15 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506090003) do
+ActiveRecord::Schema.define(:version => 20120506101416) do
 
   create_table "waypoints", :force => true do |t|
     t.float    "lat"
     t.float    "lon"
     t.integer  "elevation"
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.datetime "imported_at"
+    t.string   "sym"
   end
 
 end
