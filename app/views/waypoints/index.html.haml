@@ -1,11 +1,14 @@
 %h1 Listing waypoints
 
-%table{border: 1}
+%table
   %tr
+    %th Name
+    %th Time
+
+    %th Elevation
     %th Lat
     %th Lon
-    %th Elevation
-    %th Name
+
     %th
     %th
     %th
@@ -13,10 +16,13 @@
 
   - @waypoints.each do |waypoint|
     %tr
+      %td= waypoint.name
+      %td= waypoint.created_at.to_s(:db)
+
+      %td= waypoint.elevation
       %td= waypoint.lat
       %td= waypoint.lon
-      %td= waypoint.elevation
-      %td= waypoint.name
+
       %td= link_to 'Show', waypoint
       %td= link_to 'Google map', waypoint.google_maps_path, target: '_blank'
       %td= link_to 'Edit', edit_waypoint_path(waypoint)
