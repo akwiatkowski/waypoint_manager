@@ -1,0 +1,27 @@
+%h1 Listing waypoints
+
+%table{border: 1}
+  %tr
+    %th Lat
+    %th Lon
+    %th Elevation
+    %th Name
+    %th
+    %th
+    %th
+    %th
+
+  - @waypoints.each do |waypoint|
+    %tr
+      %td= waypoint.lat
+      %td= waypoint.lon
+      %td= waypoint.elevation
+      %td= waypoint.name
+      %td= link_to 'Show', waypoint
+      %td= link_to 'Google map', waypoint.google_maps_path, target: '_blank'
+      %td= link_to 'Edit', edit_waypoint_path(waypoint)
+      %td= link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Waypoint', new_waypoint_path

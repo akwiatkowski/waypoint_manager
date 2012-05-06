@@ -6,10 +6,13 @@ gem 'therubyracer'
 gem 'sqlite3'
 gem 'jquery-rails'
 gem 'haml'
+gem 'haml-rails'
 gem 'nifty-generators', :group => :development
 gem 'mocha'
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'responders'
 
-# 
 
 # Gems used only for assets and not required
 # in production environments by default.

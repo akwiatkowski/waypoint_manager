@@ -1,4 +1,6 @@
 WaypointManager::Application.routes.draw do
+  resources :waypoints
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

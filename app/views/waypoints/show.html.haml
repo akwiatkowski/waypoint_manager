@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Lat:
+  = @waypoint.lat
+%p
+  %b Lon:
+  = @waypoint.lon
+%p
+  %b Elevation:
+  = @waypoint.elevation
+%p
+  %b Name:
+  = @waypoint.name
+%p
+  %b Google maps:
+  = link_to "map", @waypoint.google_maps_path
+
+= link_to 'Edit', edit_waypoint_path(@waypoint)
+\|
+= link_to 'Back', waypoints_path
