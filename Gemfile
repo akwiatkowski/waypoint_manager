@@ -7,8 +7,9 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'haml'
 gem 'nifty-generators', :group => :development
+gem 'mocha'
 
-# Waypoint lat:double lon:double elevation:integer name:string
+# 
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,3 +38,5 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem "mocha", :group => :test
