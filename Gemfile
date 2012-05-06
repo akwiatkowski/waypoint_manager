@@ -13,6 +13,7 @@ gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
 gem 'kaminari'
+gem 'simple_form'
 
 # geo utils
 gem 'geokit'

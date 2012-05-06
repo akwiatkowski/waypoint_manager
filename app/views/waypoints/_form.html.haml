@@ -1,25 +1,44 @@
-= form_for @waypoint do |f|
-  -if @waypoint.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@waypoint.errors.count, "error")} prohibited this waypoint from being saved:"
-      %ul
-        - @waypoint.errors.full_messages.each do |msg|
-          %li= msg
+= simple_form_for @waypoint do |f|
+  = f.input :lat
+  = f.input :lon
+  = f.input :elevation
+  = f.input :name
+  = f.input :sym, as: :select, collection: Waypoint::SYMBOLS.keys, include_blank: false
+  = f.input :area_id, as: :select, collection:  Area.all
 
-  .field
-    = f.label :lat
-    = f.text_field :lat
-  .field
-    = f.label :lon
-    = f.text_field :lon
-  .field
-    = f.label :elevation
-    = f.number_field :elevation
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :name
-    = f.select :sym, Waypoint::SYMBOLS.keys
-  .actions
-    = f.submit 'Save'
+  = f.button :submit
+
+%p
+  %b Google maps:
+  = link_to "map", @waypoint.google_maps_path
+
+
+- if false
+  = form_for @waypoint do |f|
+    -if @waypoint.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@waypoint.errors.count, "error")} prohibited this waypoint from being saved:"
+        %ul
+          - @waypoint.errors.full_messages.each do |msg|
+            %li= msg
+
+    .field
+      = f.label :lat
+      = f.text_field :lat
+    .field
+      = f.label :lon
+      = f.text_field :lon
+    .field
+      = f.label :elevation
+      = f.number_field :elevation
+    .field
+      = f.label :name
+      = f.text_field :name
+    .field
+      = f.label :sym
+      = f.select :sym, Waypoint::SYMBOLS.keys
+    .field
+      = f.label :area
+      = f.select :area, Area.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }
+    .actions
+      = f.submit 'Save'

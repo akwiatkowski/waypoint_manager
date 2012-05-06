@@ -6,5 +6,7 @@ class CreateAreas < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_column :waypoints, :area_id, :integer
   end
 end

@@ -1,5 +1,6 @@
 class Waypoint < ActiveRecord::Base
-  attr_accessible :elevation, :lat, :lon, :name, :sym
+  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id
+  belongs_to :area
 
   #scope :page, lambda { |_page| page(_page) }
 

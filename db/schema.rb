@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506101416) do
+ActiveRecord::Schema.define(:version => 20120506185406) do
+
+  create_table "areas", :force => true do |t|
+    t.string   "name"
+    t.integer  "area_type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "waypoints", :force => true do |t|
     t.float    "lat"
@@ -22,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20120506101416) do
     t.datetime "updated_at",  :null => false
     t.datetime "imported_at"
     t.string   "sym"
+    t.integer  "area_id"
   end
 
 end

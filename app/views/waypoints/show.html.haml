@@ -13,6 +13,12 @@
   %b Name:
   = @waypoint.name
 %p
+  %b Symbol:
+  = @waypoint.sym
+%p
+  %b Area:
+  = @waypoint.area.name unless @waypoint.area.nil?
+%p
   %b Google maps:
   = link_to "map", @waypoint.google_maps_path
 

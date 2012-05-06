@@ -9,6 +9,7 @@
   %tr
     %th Type
     %th Name
+    %th Area
     %th Time
 
     %th Elevation
@@ -24,6 +25,10 @@
     %tr
       %td= image_tag "garmin/#{waypoint.img_symbol}"
       %td= waypoint.name
+      - unless waypoint.area.nil?
+        %td= waypoint.area.name
+      - else
+        %td
       %td= waypoint.created_at.to_s(:db)
 
       %td= waypoint.elevation
