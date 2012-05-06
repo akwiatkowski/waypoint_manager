@@ -1,4 +1,6 @@
 WaypointManager::Application.routes.draw do
+  resources :areas
+
   resources :waypoints
   resource :importer, only: [:new, :create]
   resource :exporter, only: [:show]

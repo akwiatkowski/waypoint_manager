@@ -1,6 +1,8 @@
 class Waypoint < ActiveRecord::Base
   attr_accessible :elevation, :lat, :lon, :name, :sym
 
+  #scope :page, lambda { |_page| page(_page) }
+
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {
     "Flag, Blue" => "blue-flag1.gif",

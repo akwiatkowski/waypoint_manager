@@ -13,7 +13,8 @@
   %body
     #container
       #menu
-        = link_to "Waypoints", waypoints_path
+        = link_to "Areas", areas_path
+        = link_to "Waypoints", waypoints_path(page: 1)
         = link_to "Importer", new_importer_path
         = link_to "Export to GPX", exporter_path
 

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @area.name
+%p
+  %b Area type:
+  = @area.area_type
+
+= link_to 'Edit', edit_area_path(@area)
+\|
+= link_to 'Back', areas_path

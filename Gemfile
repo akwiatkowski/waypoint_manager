@@ -12,6 +12,7 @@ gem 'mocha'
 gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
+gem 'kaminari'
 
 # geo utils
 gem 'geokit'

@@ -1,0 +1,21 @@
+%h1 Listing areas
+
+%table
+  %tr
+    %th Name
+    %th Area type
+    %th
+    %th
+    %th
+
+  - @areas.each do |area|
+    %tr
+      %td= area.name
+      %td= area.area_type
+      %td= link_to 'Show', area
+      %td= link_to 'Edit', edit_area_path(area)
+      %td= link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Area', new_area_path
