@@ -2,6 +2,7 @@ class Waypoint < ActiveRecord::Base
   attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private
   belongs_to :area
 
+  scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   #scope :page, lambda { |_page| page(_page) }
 
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table

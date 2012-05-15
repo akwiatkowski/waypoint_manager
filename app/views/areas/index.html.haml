@@ -1,9 +1,13 @@
 %h1 Listing areas
 
+= paginate @areas
+%br
+
 %table
   %tr
     %th Name
     %th Area type
+    %th Waypoints
     %th
     %th
     %th
@@ -12,10 +16,12 @@
     %tr
       %td= area.name
       %td= area.area_type
+      %td= link_to 'Waypoints', area_waypoints_path(area)
       %td= link_to 'Show', area
       %td= link_to 'Edit', edit_area_path(area)
       %td= link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
 
+= paginate @areas
 %br
 
 = link_to 'New Area', new_area_path

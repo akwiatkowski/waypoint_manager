@@ -1,9 +1,7 @@
 %h1 Listing waypoints
 
-- begin
-  = paginate @waypoints
-  %br
-- rescue
+= paginate @waypoints
+%br
 
 %table
   %tr
@@ -46,11 +44,7 @@
       %td= link_to 'Edit', edit_waypoint_path(waypoint)
       %td= link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
 
-- begin
-  = paginate @waypoints
-  %br
-- rescue
-
+= paginate @waypoints
 %br
 
 = link_to 'New Waypoint', new_waypoint_path
