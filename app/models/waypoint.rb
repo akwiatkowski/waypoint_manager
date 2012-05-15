@@ -5,6 +5,8 @@ class Waypoint < ActiveRecord::Base
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   #scope :page, lambda { |_page| page(_page) }
 
+  default_scope lambda { order(:created_at).joins(:area) }
+
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {
     "Flag, Blue" => "blue-flag1.gif",
