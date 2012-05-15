@@ -5,8 +5,8 @@
 
 %table
   %tr
-    %th Name
     %th Area type
+    %th Name
     %th Waypoints
     %th
     %th
@@ -14,8 +14,8 @@
 
   - @areas.each do |area|
     %tr
+      %td= image_tag "garmin/#{area.img_symbol}"
       %td= area.name
-      %td= area.area_type
       %td= link_to 'Waypoints', area_waypoints_path(area)
       %td= link_to 'Show', area
       %td= link_to 'Edit', edit_area_path(area)

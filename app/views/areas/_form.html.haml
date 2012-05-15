@@ -11,6 +11,6 @@
     = f.text_field :name
   .field
     = f.label :area_type
-    = f.number_field :area_type
+    = f.select :area_type, Area::TYPES.keys
   .actions
     = f.submit 'Save'
