@@ -12,9 +12,9 @@
     %th Area
     %th Time
 
-    %th Elevation
-    %th Lat
-    %th Lon
+    %th El.
+    %th Lat / Lon
+    %th Private
 
     %th
     %th
@@ -32,8 +32,14 @@
       %td= waypoint.created_at.to_s(:db)
 
       %td= waypoint.elevation
-      %td= waypoint.lat
-      %td= waypoint.lon
+      %td
+        = waypoint.lat
+        = waypoint.lon
+
+      %td
+        = form_for waypoint do |f|
+          = f.hidden_field :private, value: (! waypoint.private)
+          = f.submit waypoint.private ? "Enable" : "Disable"
 
       %td= link_to 'Show', waypoint
       %td= link_to 'Google map', waypoint.google_maps_path, target: '_blank'
