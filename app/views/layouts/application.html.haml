@@ -14,9 +14,17 @@
     #container
       #menu
         = link_to "Areas", areas_path
+        |
         = link_to "Waypoints", waypoints_path(page: 1)
+        |
         = link_to "Importer", new_importer_path
-        = link_to "Export to GPX", exporter_path
+        |
+        Export to GPX:
+        = link_to "all", exporter_path
+        ,
+        = link_to "private", exporter_path(private: true)
+        ,
+        = link_to "public", exporter_path(private: false)
 
       %hr
 

@@ -1,7 +1,12 @@
 class GpxExporter
 
-  def self.export
-    pois = Waypoint.order("created_at ASC").all
+  def self.export(_private = nil)
+    pois = Waypoint.order("created_at ASC")
+    unless _private.nil?
+      puts _private.inspect
+      pois = pois.where(private: _private)
+    end
+    pois = pois.all
 
     g = GarminUtils::WaypointListGenerator.new
     pois.each do |poi|
