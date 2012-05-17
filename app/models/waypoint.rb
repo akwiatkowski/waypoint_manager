@@ -3,9 +3,10 @@ class Waypoint < ActiveRecord::Base
   belongs_to :area
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
-  #scope :page, lambda { |_page| page(_page) }
+  scope :private, lambda { |v| where(private: true) }
+  scope :public, lambda { |v| where(private: false) }
 
-  default_scope lambda { order(:created_at).joins(:area) }
+  default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
 
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {

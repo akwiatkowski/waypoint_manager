@@ -1,0 +1,16 @@
+<%=
+  g = GarminUtils::WaypointListGenerator.new
+  collection.each do |poi|
+    g.add(
+      poi.lat,
+      poi.lon,
+      poi.name,
+      poi.attributes[:cmt] || '',
+      poi.created_at,
+      poi.elevation,
+      poi.sym
+    )
+  end
+
+  raw g.to_xml
+%>

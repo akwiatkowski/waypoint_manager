@@ -18,13 +18,19 @@
         = link_to "Waypoints", waypoints_path(page: 1)
         |
         = link_to "Importer", new_importer_path
-        |
-        Export to GPX:
-        = link_to "all", exporter_path
-        ,
-        = link_to "private", exporter_path(private: true)
-        ,
-        = link_to "public", exporter_path(private: false)
+        - if controller_name == "waypoints"
+          - unless params[:public]
+            |
+            = link_to "Public", public: :true
+          - unless params[:private]
+            |
+            = link_to "Private", private: :true
+          - unless params[:public].nil? and params[:private].nil?
+            |
+            = link_to "All", public: nil, private: nil
+
+          |
+          = link_to "Export to GPX", format: :gpx
 
       %hr
 
