@@ -6,7 +6,9 @@ class Waypoint < ActiveRecord::Base
   scope :private, lambda { |v| where(private: true) }
   scope :public, lambda { |v| where(private: false) }
 
-  default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
+  # http://stackoverflow.com/questions/639171/what-is-causing-this-activerecordreadonlyrecord-error
+  #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
+  default_scope lambda { order(:created_at).includes(:area) }
 
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {
