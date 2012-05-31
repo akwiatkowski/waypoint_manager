@@ -47,7 +47,7 @@ class Waypoint < ActiveRecord::Base
   }
 
   def google_maps_path(map_zoom = 15)
-    "http://maps.google.com/maps?q=#{lat},#{lon}&z=#{map_zoom}"
+    "http://maps.google.com/maps?q=#{lat},#{lon}&z=#{map_zoom}&t=p"
   end
 
   def alt

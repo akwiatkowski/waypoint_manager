@@ -20,7 +20,7 @@
   = @waypoint.area.name unless @waypoint.area.nil?
 %p
   %b Google maps:
-  = link_to "map", @waypoint.google_maps_path
+  = link_to "map", @waypoint.google_maps_path, target: '_blank'
 
 = link_to 'Edit', edit_waypoint_path(@waypoint)
 \|
