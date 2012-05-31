@@ -59,4 +59,22 @@ class Waypoint < ActiveRecord::Base
     SYMBOLS[sym] || ''
   end
 
+  # http://stackoverflow.com/questions/1317178/parsing-latitude-and-longitude-with-ruby
+  def dms_coords=(dms_pair)
+    c = dms_pair.scan(/(-?\d+\.*\d*)\D*/).flatten
+
+    lat = self.class.dms_to_degrees(*c[0..2].map { |x| x.to_f })
+    lon = self.class.dms_to_degrees(*c[3..5].map { |x| x.to_f })
+  end
+
+  def self.dms_to_degrees(d, m, s)
+    degrees = d
+    fractional = m / 60 + s / 3600
+    if d > 0
+      degrees + fractional
+    else
+      degrees - fractional
+    end
+  end
+
 end
