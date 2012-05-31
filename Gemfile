@@ -17,6 +17,7 @@ gem 'simple_form'
 
 # geo utils
 gem 'geokit'
+gem 'geokit-rails3'
 gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
 
 
@@ -53,4 +54,12 @@ gem 'heroku'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "mocha", :group => :test
+gem 'rspec-rails', '>= 2.6.1.beta1', :group => [:development, :test]
+
+group :test do
+  gem "mocha"
+  gem 'factory_girl' #, ">= 1.1.beta1"
+  gem 'capybara', ">= 0.4.1.2"
+  gem 'database_cleaner', '>= 0.6.7'
+  gem 'spork'
+end

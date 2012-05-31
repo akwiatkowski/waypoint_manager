@@ -10,6 +10,11 @@ class Waypoint < ActiveRecord::Base
   #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
   default_scope lambda { order(:created_at).includes(:area) }
 
+  acts_as_mappable :default_units => :kms,
+                   :default_formula => :sphere,
+                   :lat_column_name => :lat,
+                   :lng_column_name => :lon
+
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {
     "Flag, Blue" => "blue-flag1.gif",
