@@ -1,6 +1,7 @@
 class Waypoint < ActiveRecord::Base
   attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords
   belongs_to :area
+  has_many :route_elements
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   scope :private, lambda { |v| where(private: true) }
@@ -81,6 +82,12 @@ class Waypoint < ActiveRecord::Base
     else
       degrees - fractional
     end
+  end
+
+  def distance_to(_waypoint)
+    self_geo = Geokit::LatLng.new(self.lat, self.lon)
+    other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
+    (self_geo.distance_to(other_geo) * 1000.0).ceil
   end
 
 end

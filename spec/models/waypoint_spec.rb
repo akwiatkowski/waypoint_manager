@@ -1,10 +1,12 @@
 # encoding: utf-8
 
+require 'spec_helper'
+
 describe Waypoint, :type => :model do
   context 'creating' do
     it "should create from factory" do
       m = FactoryGirl.create(:waypoint)
-      m.valid?.should
+      m.should be_valid
     end
 
     it "should create from factory and use other coords format" do

@@ -1,5 +1,8 @@
 WaypointManager::Application.routes.draw do
-  resources :routes
+
+  resources :routes do
+    resources :route_elements
+  end
 
   resources :areas do
     resources :waypoints

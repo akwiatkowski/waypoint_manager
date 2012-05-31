@@ -15,9 +15,12 @@
 %p
   %b Symbol:
   = @waypoint.sym
-%p
-  %b Area:
-  = @waypoint.area.name unless @waypoint.area.nil?
+- unless @waypoint.area.nil?
+  %p
+    %b
+      Area:
+      = link_to area_waypoints_path(@waypoint.area) do
+        = @waypoint.area.name
 %p
   %b Google maps:
   = link_to "map", @waypoint.google_maps_path, target: '_blank'

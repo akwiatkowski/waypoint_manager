@@ -1,0 +1,17 @@
+%h1 Listing route_elements
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @route_elements.each do |route_element|
+    %tr
+      %td= link_to 'Show', route_element
+      %td= link_to 'Edit', edit_route_element_path(route_element)
+      %td= link_to 'Destroy', route_element, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Route element', new_route_element_path
