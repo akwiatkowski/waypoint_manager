@@ -1,5 +1,5 @@
 class Waypoint < ActiveRecord::Base
-  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private
+  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords
   belongs_to :area
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
@@ -62,9 +62,15 @@ class Waypoint < ActiveRecord::Base
   # http://stackoverflow.com/questions/1317178/parsing-latitude-and-longitude-with-ruby
   def dms_coords=(dms_pair)
     c = dms_pair.scan(/(-?\d+\.*\d*)\D*/).flatten
+    return unless c.size == 6
 
-    lat = self.class.dms_to_degrees(*c[0..2].map { |x| x.to_f })
-    lon = self.class.dms_to_degrees(*c[3..5].map { |x| x.to_f })
+    self.lat = self.class.dms_to_degrees(*c[0..2].map { |x| x.to_f })
+    self.lon = self.class.dms_to_degrees(*c[3..5].map { |x| x.to_f })
+  end
+
+  def dms_coords
+    # TODO someday
+    nil
   end
 
   def self.dms_to_degrees(d, m, s)
