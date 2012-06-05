@@ -16,7 +16,7 @@ gem 'simple_form'
 # geo utils
 gem 'geokit'
 gem 'geokit-rails3'
-gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
+#gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
