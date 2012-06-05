@@ -3,11 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'execjs'
 gem 'therubyracer'
-gem 'sqlite3'
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
-gem 'nifty-generators', :group => :development
 gem 'mocha'
 gem 'inherited_resources'
 gem 'has_scope'
@@ -19,7 +17,6 @@ gem 'simple_form'
 gem 'geokit'
 gem 'geokit-rails3'
 gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,12 +30,30 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :test do
-  gem 'itslog'
+
+group :development do
+  gem 'sqlite3'
+  gem 'nifty-generators'
 end
 
-gem 'heroku'
-gem 'pg'
+group :production do
+  gem 'heroku'
+  gem 'pg'
+end
+
+group :development, :test do
+  gem 'itslog'
+  gem 'rspec-rails', '>= 2.6.1.beta1'
+end
+
+group :test do
+  gem "mocha"
+  gem 'factory_girl' #, ">= 1.1.beta1"
+  gem 'capybara', ">= 0.4.1.2"
+  gem 'database_cleaner', '>= 0.6.7'
+  gem 'spork'
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -54,13 +69,3 @@ gem 'pg'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
-gem 'rspec-rails', '>= 2.6.1.beta1', :group => [:development, :test]
-
-group :test do
-  gem "mocha"
-  gem 'factory_girl' #, ">= 1.1.beta1"
-  gem 'capybara', ">= 0.4.1.2"
-  gem 'database_cleaner', '>= 0.6.7'
-  gem 'spork'
-end
