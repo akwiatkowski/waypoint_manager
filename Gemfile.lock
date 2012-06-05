@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/akwiatkowski/gpx2exif.git
-  revision: cb6a6dd0a2cc324573e6cf92d3f8d6fb61ba09b7
+  revision: 9b2f1661bd2aaaf70a4aef21b971765adaf3a1b2
   specs:
-    gpx2exif (0.0.3)
+    gpx2exif (0.0.4)
       builder
       mini_exiftool
       nokogiri
