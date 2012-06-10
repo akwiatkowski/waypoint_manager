@@ -4,7 +4,9 @@ class CreateRouteElements < ActiveRecord::Migration
       t.integer :waypoint_start_id, null: false
       t.integer :waypoint_finish_id, null: false
 
+      # meters - calculated
       t.integer :distance
+      # meters - calculated
       t.integer :d_elevation
 
       t.references :route

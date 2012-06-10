@@ -1,6 +1,6 @@
 %p#notice= notice
 
 
-= link_to 'Edit', edit_route_element_path(@route_element)
+= link_to 'Edit', edit_route_route_element_path(@route, @route_element)
 \|
-= link_to 'Back', route_elements_path
+= link_to 'Back', route_route_elements_path(@route)

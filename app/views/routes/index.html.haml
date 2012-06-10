@@ -7,11 +7,14 @@
     %th
     %th
     %th
+    %th
 
   - @routes.each do |route|
     %tr
       %td= route.name
       %td= route.url
+      %td= route.url
+      %td= link_to 'Elements', route_route_elements_path(route)
       %td= link_to 'Show', route
       %td= link_to 'Edit', edit_route_path(route)
       %td= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete

@@ -1,7 +1,16 @@
-= simple_form_for(@route_element) do |f|
+= simple_form_for [@route, @route_element] do |f|
   = f.error_notification
 
   .form-inputs
+    = f.input :real_distance
+    = f.input :real_d_elevation
+
+    %br
+    = f.input :waypoint_start_id, as: :select, collection: @route.area.waypoints, include_blank: false
+    %br
+    = f.input :waypoint_finish_id, as: :select, collection: @route.area.waypoints, include_blank: false
+
+
 
   .form-actions
     = f.button :submit

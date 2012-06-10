@@ -3,6 +3,7 @@ WaypointManager::Application.routes.draw do
   resources :routes do
     resources :route_elements
   end
+  #resources :route_elements
 
   resources :areas do
     resources :waypoints

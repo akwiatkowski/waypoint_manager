@@ -5,7 +5,7 @@
   = f.input :elevation
   = f.input :name
   = f.input :sym, as: :select, collection: Waypoint::SYMBOLS.keys, include_blank: false
-  = f.input :area_id, as: :select, collection: Area.all#, :selected => @waypoint.area_id || params[:area_id]
+  = f.input :area_id, as: :select, collection: Area.all
 
   = f.button :submit
 

@@ -2,16 +2,25 @@
 
 %table
   %tr
+    %th Start
+    %th Finish
     %th
     %th
     %th
 
   - @route_elements.each do |route_element|
     %tr
-      %td= link_to 'Show', route_element
-      %td= link_to 'Edit', edit_route_element_path(route_element)
-      %td= link_to 'Destroy', route_element, :confirm => 'Are you sure?', :method => :delete
+      %td
+        = link_to area_waypoint_path(@route.area.id, route_element.start) do
+          = route_element.start.name
+      %td
+        = link_to area_waypoint_path(@route.area, route_element.finish) do
+          = route_element.finish.name
+
+      %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
+      %td= link_to 'Edit', edit_route_route_element_path(route_element.route, route_element)
+      %td= link_to 'Destroy', route_route_element_path(route_element.route, route_element), :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Route element', new_route_element_path
+= link_to 'New Route element', new_route_route_element_path(params[:route_id])
