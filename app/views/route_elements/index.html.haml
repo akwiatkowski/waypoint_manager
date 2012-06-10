@@ -4,6 +4,8 @@
   %tr
     %th Start
     %th Finish
+    %th Distance [m]
+    %th &#916; Elevation [m]
     %th
     %th
     %th
@@ -17,6 +19,24 @@
         = link_to area_waypoint_path(@route.area, route_element.finish) do
           = route_element.finish.name
 
+      %td
+        - if route_element.real_distance
+          = route_element.real_distance
+          (
+          = route_element.distance
+          )
+        - else
+          = route_element.distance
+
+      %td
+        - if route_element.real_d_elevation
+          = route_element.real_d_elevation
+          (
+          = route_element.d_elevation
+          )
+        - else
+          = route_element.d_elevation
+
       %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
       %td= link_to 'Edit', edit_route_route_element_path(route_element.route, route_element)
       %td= link_to 'Destroy', route_route_element_path(route_element.route, route_element), :confirm => 'Are you sure?', :method => :delete
@@ -24,3 +44,4 @@
 %br
 
 = link_to 'New Route element', new_route_route_element_path(params[:route_id])
+= link_to 'Continue route', continue_route_route_elements_path(params[:route_id])

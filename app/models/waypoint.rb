@@ -11,6 +11,18 @@ class Waypoint < ActiveRecord::Base
   #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
   default_scope lambda { order(:created_at).includes(:area) }
 
+  # Temporary distance used in continuing route
+  attr_accessor :tmp_distance
+
+  # Used in continuing route to display distance to next waypoint
+  def collection_label
+    _str = self.name
+    if @tmp_distance
+      _str += " (#{tmp_distance})"
+    end
+    return _str
+  end
+
   acts_as_mappable :default_units => :kms,
                    :default_formula => :sphere,
                    :lat_column_name => :lat,
