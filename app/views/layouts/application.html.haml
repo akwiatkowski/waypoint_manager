@@ -18,7 +18,9 @@
       #menu
         = link_to "Areas", areas_path
         |
-        = link_to "Waypoints", waypoints_path(page: 1)
+        = link_to "Waypoints", waypoints_path
+        |
+        = link_to "Routes", routes_path
         |
         = link_to "Importer", new_importer_path
         - if controller_name == "waypoints"

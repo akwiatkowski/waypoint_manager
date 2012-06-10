@@ -2,18 +2,24 @@
 
 %table
   %tr
+    %th Area
     %th Name
     %th Url
-    %th
+    %th Distance [m]
+    %th Distance [min]
     %th
     %th
     %th
 
   - @routes.each do |route|
     %tr
+      %td= route.area.name
       %td= route.name
-      %td= route.url
-      %td= route.url
+      %td
+        - unless route.url.blank?
+          = link_to "URL", route.url
+      %td= route.distance
+      %td= route.time_distance
       %td= link_to 'Elements', route_route_elements_path(route)
       %td= link_to 'Show', route
       %td= link_to 'Edit', edit_route_path(route)
