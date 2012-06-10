@@ -19,7 +19,11 @@
         - unless route.url.blank?
           = link_to "URL", route.url
       %td= route.distance
-      %td= route.time_distance
+      %td
+        = route.time_distance_human
+        (
+        = route.time_distance
+        min )
       %td= link_to 'Elements', route_route_elements_path(route)
       %td= link_to 'Show', route
       %td= link_to 'Edit', edit_route_path(route)

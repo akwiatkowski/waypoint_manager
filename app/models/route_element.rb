@@ -33,7 +33,7 @@ class RouteElement < ActiveRecord::Base
     if last_route_element
       return [last_route_element.finish]
     else
-      return self.route.area.waypoints
+      return self.route.area.waypoints.order(:name)
     end
   end
 
@@ -61,5 +61,9 @@ class RouteElement < ActiveRecord::Base
     else
       return self.route.area.waypoints
     end
+  end
+
+  def google_url
+    "https://maps.google.com/maps?saddr=#{self.start.lat},#{self.start.lon}&daddr=#{self.finish.lat},#{self.finish.lon}"
   end
 end

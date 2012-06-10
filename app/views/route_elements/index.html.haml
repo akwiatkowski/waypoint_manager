@@ -1,4 +1,4 @@
-%h1 Listing route_elements
+%h1 Listing route elements
 
 %table
   %tr
@@ -6,6 +6,8 @@
     %th Finish
     %th Distance [m]
     %th &#916; Elevation [m]
+    %th Time distance [min]
+    %th
     %th
     %th
     %th
@@ -37,11 +39,17 @@
         - else
           = route_element.d_elevation
 
+      %td
+        = route_element.real_time_distance
+
       %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
+      %td= link_to 'Google', route_element.google_url, target: '_blank'
       %td= link_to 'Edit', edit_route_route_element_path(route_element.route, route_element)
       %td= link_to 'Destroy', route_route_element_path(route_element.route, route_element), :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Route element', new_route_route_element_path(params[:route_id])
-= link_to 'Continue route', continue_route_route_elements_path(params[:route_id])
+- if @route.route_elements.count == 0
+  = link_to 'Add first element', new_route_route_element_path(params[:route_id])
+- else
+  = link_to 'Continue route', continue_route_route_elements_path(params[:route_id])

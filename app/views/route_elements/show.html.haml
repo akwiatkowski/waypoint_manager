@@ -1,5 +1,39 @@
 %p#notice= notice
 
+%p
+  %b Area:
+  = @route.area.name
+%p
+  %b From:
+  = link_to area_waypoint_path(@route.area, @route_element.start) do
+    = @route_element.start.name
+%p
+  %b To:
+  = link_to area_waypoint_path(@route.area, @route_element.finish) do
+    = @route_element.finish.name
+
+%p
+  %b Distance [m] (calculated):
+  = @route_element.distance
+%p
+  %b Distance [m] (real):
+  = @route_element.real_distance
+
+%p
+  %b &#916; Elevation [m] (calculated):
+  = @route_element.d_elevation
+%p
+  %b &#916; Elevation [m] (real):
+  = @route_element.real_d_elevation
+
+
+%p
+  %b Distance [min]:
+  = @route_element.real_time_distance
+
+%p
+  %strong
+    = link_to 'Continue route by adding new elements', continue_route_route_elements_path(@route)
 
 = link_to 'Edit', edit_route_route_element_path(@route, @route_element)
 \|

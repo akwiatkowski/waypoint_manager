@@ -1,12 +1,38 @@
 %p#notice= notice
 
 %p
+  %b Area:
+  = @route.area.name
+%p
   %b Name:
   = @route.name
 %p
   %b Url:
-  = @route.url
+  = link_to @route.url do
+    = @route.url
+%p
+  %b Distance [m]:
+  = @route.distance
+%p
+  %b Distance [min]:
+  = @route.time_distance
+%p
+  %b Elements:
+  = @route.route_elements.count
 
+
+%hr
+
+%ol
+  - @route.route_elements.each do |route_element|
+    %li
+      = route_element.start.name
+      = "-"
+      = route_element.finish.name
+  
+
+= link_to 'Elements', route_route_elements_path(@route)
+\|
 = link_to 'Edit', edit_route_path(@route)
 \|
 = link_to 'Back', routes_path

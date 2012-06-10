@@ -4,9 +4,6 @@
   Last
   = link_to route_route_element_path(@route, @last_route_element) do
     route element
-    (
-    = @last_route_element.id
-    )
   was from
   = link_to area_waypoint_path(@route.area.id, @last_route_element.start) do
     = @last_route_element.start.name

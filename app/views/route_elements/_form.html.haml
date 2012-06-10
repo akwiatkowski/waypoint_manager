@@ -2,16 +2,21 @@
   = f.error_notification
 
   .form-inputs
-    - _waypoints_start = @route_element.continue_waypoints_start || @route.area.waypoints
-    - _waypoints_finish = @route_element.continue_waypoints_finish || @route.area.waypoints
+    - unless @route_element.new_record?
+      - _waypoints_start = @route.area.waypoints.order(:name).all
+      - _waypoints_finish = @route.area.waypoints.order(:name).all
+    - else
+      - _waypoints_start = @route_element.continue_waypoints_start || @route.area.waypoints.order(:name).all
+      - _waypoints_finish = @route_element.continue_waypoints_finish || @route.area.waypoints.order(:name).all
+
+
 
     = f.input :waypoint_start_id, as: :select, collection: _waypoints_start, include_blank: false, label_method: :collection_label
-    %br
     = f.input :waypoint_finish_id, as: :select, collection: _waypoints_finish, include_blank: false, label_method: :collection_label
-    %br
 
     = f.input :real_distance
     = f.input :real_d_elevation
+    = f.input :real_time_distance
 
   .form-actions
     = f.button :submit

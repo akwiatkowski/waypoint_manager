@@ -9,7 +9,8 @@ class Waypoint < ActiveRecord::Base
 
   # http://stackoverflow.com/questions/639171/what-is-causing-this-activerecordreadonlyrecord-error
   #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }
-  default_scope lambda { order(:created_at).includes(:area) }
+  #default_scope lambda { order(:created_at).includes(:area) }
+  default_scope lambda { includes(:area) }
 
   # Temporary distance used in continuing route
   attr_accessor :tmp_distance

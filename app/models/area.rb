@@ -1,6 +1,6 @@
 class Area < ActiveRecord::Base
   attr_accessible :area_type, :name
-  has_many :waypoints
+  has_many :waypoints, order: :name
 
   TYPES = {
     "Mountains" => Waypoint::SYMBOLS["Summit"],
