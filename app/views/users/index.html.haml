@@ -1,0 +1,23 @@
+%h1= t('user.plural')
+%table.collection
+  %tr
+    %th ID
+    %th= t('user.name')
+    - if can? :read_email, User
+      %th= t('user.email')
+  - @users.each do |user|
+    %tr
+      %td= user.id
+      %td= user.name
+      - if can? :read_email, User
+        %td= user.email
+      - if can? :read, user
+        %td= link_to t('show'), user
+      - if can? :update, user
+        %td= link_to t('edit'), edit_user_path(user)
+      - if can? :destroy, user
+        %td= link_to t('destroy'), user, confirm: 'Are you sure?', method: :delete
+%br/
+
+- if can? :manage, User
+  = link_to 'New User', new_user_path

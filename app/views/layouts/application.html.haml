@@ -37,6 +37,20 @@
           |
           = link_to "Export to GPX", format: :gpx
 
+        |
+        - if current_user
+          = link_to current_user.email, user_path(current_user)
+          - if current_user.admin
+            %strong
+              (ADMIN)
+          |
+          = link_to "Sing out", destroy_user_session_path, method: :delete
+        - else
+          = link_to "Sign in", new_user_session_path
+          |
+          = link_to "Sign up", new_user_registration_path
+
+
       %hr
 
       - flash.each do |name, msg|

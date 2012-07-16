@@ -24,6 +24,9 @@
 %p
   %b Google maps:
   = link_to "map", @waypoint.google_maps_path, target: '_blank'
+%p
+  %b Owner:
+  = link_to @waypoint.user.name, @waypoint.user
 
 = link_to 'Edit', edit_waypoint_path(@waypoint)
 \|

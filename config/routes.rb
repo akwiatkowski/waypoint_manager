@@ -1,6 +1,7 @@
 WaypointManager::Application.routes.draw do
 
   devise_for :users
+  resources :users
 
   resources :routes do
     resources :route_elements do

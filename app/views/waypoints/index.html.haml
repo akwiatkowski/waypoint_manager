@@ -14,15 +14,13 @@
     %th Lat / Lon
     %th Private
 
-    %th
-    %th
-    %th
-    %th
-
   - @waypoints.each do |waypoint|
     %tr
       %td= image_tag "garmin/#{waypoint.img_symbol}"
-      %td= waypoint.name
+      %td
+        - if waypoint.private
+          = image_tag 'padlock.png'
+        = waypoint.name
       - unless waypoint.area.nil?
         %td= waypoint.area.name
       - else
@@ -35,14 +33,19 @@
         = waypoint.lon
 
       %td
-        = form_for waypoint do |f|
-          = f.hidden_field :private, value: (! waypoint.private)
-          = f.submit waypoint.private ? "Enable" : "Disable"
+        - if can? :edit, waypoint
+          = form_for waypoint do |f|
+            = f.hidden_field :private, value: (! waypoint.private)
+            = f.submit waypoint.private ? "Enable" : "Disable"
+        - else
+          = waypoint.private ? "Private" : "Public"
 
       %td= link_to 'Show', waypoint
       %td= link_to 'Google map', waypoint.google_maps_path, target: '_blank'
-      %td= link_to 'Edit', edit_waypoint_path(waypoint)
-      %td= link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
+      - if can? :edit, waypoint
+        %td= link_to 'Edit', edit_waypoint_path(waypoint)
+      - if can? :destroy, waypoint
+        %td= link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
 
 = paginate @waypoints
 %br

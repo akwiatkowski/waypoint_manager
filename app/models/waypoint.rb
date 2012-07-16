@@ -2,6 +2,7 @@ class Waypoint < ActiveRecord::Base
   attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords
   belongs_to :area
   has_many :route_elements
+  belongs_to :user
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   scope :private, lambda { |v| where(private: true) }

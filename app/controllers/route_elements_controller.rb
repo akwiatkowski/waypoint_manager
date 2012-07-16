@@ -1,4 +1,5 @@
 class RouteElementsController < InheritedResources::Base
+  load_and_authorize_resource
   belongs_to :route
 
   def continue

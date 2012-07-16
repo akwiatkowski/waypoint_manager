@@ -9,21 +9,22 @@
     %th Area type
     %th Name
     %th Waypoints
-    %th
-    %th
-    %th
 
   - @areas.each do |area|
     %tr
       %td= image_tag "garmin/#{area.img_symbol}"
       %td= area.area_type
       %td= area.name
-      %td= link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
+      - if can? :read, Waypoint
+        %td= link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
       %td= link_to 'Show', area
-      %td= link_to 'Edit', edit_area_path(area)
-      %td= link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
+      - if can? :edit, area
+        %td= link_to 'Edit', edit_area_path(area)
+      - if can? :destroy, area
+        %td= link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
 
 = paginate @areas
 %br
 
-= link_to 'New Area', new_area_path
+- if can? :create, Area
+  = link_to 'New Area', new_area_path
