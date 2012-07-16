@@ -20,6 +20,9 @@ gem 'geokit'
 gem 'geokit-rails3'
 gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
 
+# png manipulation
+gem 'rmagick'
+
 # need some fixes
 #gem 'panoramio', git: 'git://github.com/akwiatkowski/ruby-panoramio.git'
 

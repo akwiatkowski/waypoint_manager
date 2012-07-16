@@ -5,3 +5,4 @@
 # Mime::Type.register_alias "text/html", :iphone
 
 Mime::Type.register_alias "application/gpx+xml", :gpx
+Mime::Type.register_alias "image/png", :png

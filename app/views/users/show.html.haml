@@ -1,8 +1,12 @@
 %p#notice= notice
 
+- if can? :read_email, @user
+  %p
+    %b Email:
+    = @user.email
 %p
-  %b Email:
-  = @user.email
+  %b Name:
+  = @user.name
 %p
   %b= t('user.sign_in_count')
   = @user.sign_in_count

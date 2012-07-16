@@ -50,11 +50,12 @@
 = paginate @waypoints
 %br
 
-- if params[:area_id]
-  - _area = Area.find(params[:area_id])
-  = link_to new_area_waypoint_path(_area) do
-    = "New Waypoint in "
-    %strong
-      = _area.name
-- else
-  = link_to 'New Waypoint', new_waypoint_path
+- if can? :create, Waypoint
+  - if params[:area_id]
+    - _area = Area.find(params[:area_id])
+    = link_to new_area_waypoint_path(_area) do
+      = "New Waypoint in "
+      %strong
+        = _area.name
+  - else
+    = link_to 'New Waypoint', new_waypoint_path

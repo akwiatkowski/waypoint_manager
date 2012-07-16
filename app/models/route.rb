@@ -33,4 +33,25 @@ class Route < ActiveRecord::Base
     m = td - h * 60
     return "#{h}:#{"%.2d" % m}"
   end
+
+  # Create route map
+  def to_png(zoom = 12)
+    require 'gpx2png/osm'
+    require 'RMagick'
+    e = Gpx2png::Osm.new
+    e.renderer = :rmagick
+    e.renderer_options = { aa: false, opacity: 0.5, color: '#0000FF', crop_enabled: true }
+
+    coords = Array.new
+    self.route_elements.each do |re|
+      coords << re.start
+      coords << re.finish
+    end
+    coords = coords.map{|c| {lat: c.lat, lon: c.lon}}
+
+    e.coords = coords
+    e.zoom = zoom
+    e.to_png
+  end
+
 end

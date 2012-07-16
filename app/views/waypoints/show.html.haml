@@ -28,6 +28,7 @@
   %b Owner:
   = link_to @waypoint.user.name, @waypoint.user
 
-= link_to 'Edit', edit_waypoint_path(@waypoint)
-\|
+- if can? :edit, @waypoint
+  = link_to 'Edit', edit_waypoint_path(@waypoint)
+  |
 = link_to 'Back', waypoints_path

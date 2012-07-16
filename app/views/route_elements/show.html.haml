@@ -31,10 +31,12 @@
   %b Distance [min]:
   = @route_element.real_time_distance
 
-%p
-  %strong
-    = link_to 'Continue route by adding new elements', continue_route_route_elements_path(@route)
+- if can? :edit, @route
+  %p
+    %strong
+      = link_to 'Continue route by adding new elements', continue_route_route_elements_path(@route)
 
-= link_to 'Edit', edit_route_route_element_path(@route, @route_element)
-\|
+- if can? :edit, @route
+  = link_to 'Edit', edit_route_route_element_path(@route, @route_element)
+  |
 = link_to 'Back', route_route_elements_path(@route)

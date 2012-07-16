@@ -1,0 +1,7 @@
+<%=
+  zoom = params[:zoom] || 13
+  zoom = zoom.to_i
+  zoom = 8 if zoom < 8
+  zoom = 16 if zoom > 16
+  raw @route.to_png(zoom)
+%>

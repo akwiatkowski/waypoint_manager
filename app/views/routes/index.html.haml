@@ -7,9 +7,6 @@
     %th Url
     %th Distance [m]
     %th Distance [min]
-    %th
-    %th
-    %th
 
   - @routes.each do |route|
     %tr
@@ -24,11 +21,15 @@
         (
         = route.time_distance
         min )
-      %td= link_to 'Elements', route_route_elements_path(route)
+      - if can? :read, RouteElement
+        %td= link_to 'Elements', route_route_elements_path(route)
       %td= link_to 'Show', route
-      %td= link_to 'Edit', edit_route_path(route)
-      %td= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete
+      - if can? :edit, route
+        %td= link_to 'Edit', edit_route_path(route)
+      - if can? :destroy, route
+        %td= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Route', new_route_path
+- if can? :create, Route
+  = link_to 'New Route', new_route_path

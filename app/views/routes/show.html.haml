@@ -32,7 +32,8 @@
   
 
 = link_to 'Elements', route_route_elements_path(@route)
-\|
-= link_to 'Edit', edit_route_path(@route)
-\|
+|
+- if can? :edit, @waypoint
+  = link_to 'Edit', edit_route_path(@route)
+  |
 = link_to 'Back', routes_path
