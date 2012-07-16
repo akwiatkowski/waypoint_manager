@@ -1,22 +1,27 @@
 source 'https://rubygems.org'
 
+# 3.2.6 blow up itslog
 gem 'rails', '3.2.3'
 gem 'execjs'
 gem 'therubyracer'
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
-gem 'mocha'
 gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
 gem 'kaminari'
 gem 'simple_form'
+gem 'devise'
+gem 'cancan'
 
 # geo utils
 gem 'geokit'
 gem 'geokit-rails3'
 gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
+
+# need some fixes
+#gem 'panoramio', git: 'git://github.com/akwiatkowski/ruby-panoramio.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,10 +39,14 @@ end
 group :development do
   gem 'sqlite3'
   gem 'nifty-generators'
+  gem 'heroku'
+  gem 'pry-rails'
+
+  # webconsole
+  gem 'rack-webconsole-pry', :require => 'rack-webconsole'
 end
 
 group :production do
-  gem 'heroku'
   gem 'pg'
 end
 
