@@ -29,7 +29,15 @@
       = route_element.start.name
       = "-"
       = route_element.finish.name
-  
+
+%hr
+
+#map_links
+  Map (zoom):
+  - (12..16).each do |zoom|
+    = link_to zoom.to_s, route_path(@route, format: :png, zoom: zoom)
+
+%hr
 
 = link_to 'Elements', route_route_elements_path(@route)
 |
