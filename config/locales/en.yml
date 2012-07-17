@@ -3,3 +3,6 @@
 
 en:
   hello: "Hello world"
+
+  route_element:
+    real_distance: "Real distance [m]"

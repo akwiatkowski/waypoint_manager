@@ -9,7 +9,7 @@ WaypointManager::Application.configure do
   end
 
   # crazy web console
-  Rack::Webconsole.inject_jquery = true
-  Rack::Webconsole.key_code = 94
+  #Rack::Webconsole.inject_jquery = true
+  #Rack::Webconsole.key_code = 94
 end
 

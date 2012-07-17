@@ -59,7 +59,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "mocha"
+  gem "mocha", :require => false
   gem 'factory_girl' #, ">= 1.1.beta1"
   gem 'capybara', ">= 0.4.1.2"
   gem 'database_cleaner', '>= 0.6.7'

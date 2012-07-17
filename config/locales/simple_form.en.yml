@@ -10,6 +10,12 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
+    labels:
+      route_element:
+        real_distance: "Real distance [m]"
+        real_d_elevation: "Real delta elevation [m]"
+        real_time_distance: "Real time distance [min]"
+
     # Labels and hints examples
     # labels:
     #   defaults:
