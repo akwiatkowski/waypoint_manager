@@ -60,5 +60,19 @@ describe Waypoint, :type => :model do
       m.lon.should be_within(0.0001).of(15.83333)
     end
 
+    it "should create from factory and use other coords format" do
+      m = FactoryGirl.create(:waypoint)
+      m.should be_valid
+
+      m.dms_coords = '49°37′N 19°58′E'
+      m.should be_valid
+      m.save!
+
+      m.lat.should be_within(0.0001).of(49.616667)
+      m.lon.should be_within(0.0001).of(19.966667)
+
+    end
+
+
   end
 end
