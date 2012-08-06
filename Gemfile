@@ -18,7 +18,7 @@ gem 'cancan'
 # geo utils
 gem 'geokit'
 gem 'geokit-rails3'
-gem 'gpx2exif', git: 'git://github.com/akwiatkowski/gpx2exif.git'
+gem 'gpx2exif' #, git: 'git://github.com/akwiatkowski/gpx2exif.git'
 
 # png manipulation
 gem 'rmagick'
