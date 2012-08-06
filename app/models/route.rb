@@ -35,7 +35,7 @@ class Route < ActiveRecord::Base
   end
 
   # Create route map
-  def to_png(zoom = 12)
+  def to_png_zoomed(zoom = 12)
     require 'gpx2png/osm'
     require 'RMagick'
     e = Gpx2png::Osm.new
@@ -47,10 +47,52 @@ class Route < ActiveRecord::Base
       coords << re.start
       coords << re.finish
     end
-    coords = coords.map{|c| {lat: c.lat, lon: c.lon}}
+    coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
 
     e.coords = coords
     e.zoom = zoom
+    e.to_png
+  end
+
+  def to_png(_options = { })
+    _width = _options[:width] || 1200
+    _height = _options[:height] || 800
+    _width = _width.to_i
+    _height = _height.to_i
+
+    _zoom = _options[:zoom] || 13
+    _zoom = _zoom.to_i
+
+    _osm = _options[:osm] || false
+
+    _zoom = 8 if _zoom < 8
+    _zoom = 16 if _zoom > 16
+
+    _width = 2000 if _width > 2000
+    _height = 1500 if _height > 1500
+
+    require 'RMagick'
+    if _osm
+      require 'gpx2png/osm'
+      e = Gpx2png::Osm.new
+    else
+      require 'gpx2png/ump'
+      e = Gpx2png::Ump.new
+    end
+    e.renderer = :rmagick
+    e.renderer_options = { aa: false, opacity: 0.5, color: '#0000FF', crop_enabled: true }
+
+    coords = Array.new
+    self.route_elements.each do |re|
+      coords << re.start
+      coords << re.finish
+    end
+    coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
+
+    e.coords = coords
+    e.fixed_size(_width, _height)
+    puts _width, _height, "*" * 1000
+    #e.zoom = _zoom # tmp. disabled
     e.to_png
   end
 

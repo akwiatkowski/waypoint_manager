@@ -34,8 +34,9 @@
 
 #map_links
   Map (zoom):
-  - (12..16).each do |zoom|
-    = link_to zoom.to_s, route_path(@route, format: :png, zoom: zoom)
+  - sizes = {small: [400, 400], medium: [600, 800], big: [1200, 800], huge: [2000, 1500] }
+  - sizes.keys.each do |size|
+    = link_to size.to_s, route_path(@route, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank'
 
 %hr
 
