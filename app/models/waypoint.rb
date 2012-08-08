@@ -116,4 +116,12 @@ class Waypoint < ActiveRecord::Base
     not imported_at.nil?
   end
 
+  def lat_short
+    "%.4f" % lat
+  end
+
+  def lon_short
+    "%.4f" % lon
+  end
+
 end

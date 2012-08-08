@@ -1,3 +1,4 @@
+- default_full = true
 %h1 Listing waypoints
 
 = paginate @waypoints
@@ -11,11 +12,12 @@
     %th= link_to_sorted "Time", :created_at
 
     %th= link_to_sorted "El", :elevation
-    - if params[:full]
-      %th Lat / Lon
+    - if default_full || params[:full]
+      %th= link_to_sorted "Lat/Lon", [:lat, :lon]
     %th Private
 
     %th Show
+    %th= link_to_sorted "Url", :url
     %th Map
     %th Edit
     %th Destroy
@@ -41,10 +43,10 @@
 
 
       %td= waypoint.elevation
-      - if params[:full]
+      - if default_full || params[:full]
         %td
-          = waypoint.lat
-          = waypoint.lon
+          = waypoint.lat_short
+          = waypoint.lon_short
 
       %td
         - if can? :edit, waypoint
@@ -55,6 +57,9 @@
           = waypoint.private ? "Private" : "Public"
 
       %td= link_to 'Show', waypoint
+      %td
+        - if waypoint.url
+          = link_to 'Url', waypoint.url
       %td
         = waypoint_map_link_to(waypoint)
       %td
