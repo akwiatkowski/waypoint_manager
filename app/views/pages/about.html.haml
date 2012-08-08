@@ -1,0 +1,20 @@
+%h1 Hello
+
+%p
+  My name is
+  = link_to 'Aleksander Kwiatkowski', 'https://github.com/akwiatkowski'
+  and you are using
+  = link_to 'waypoint_manager', 'https://github.com/akwiatkowski/waypoint_manager'
+  = '.'
+  It is open source (GLPv3) trekking helper web application.
+
+%h3
+  Some urls:
+
+- urls = nice_links
+- urls.keys.each do |k|
+  %h4= k
+
+  %ul
+    - urls[k].each do |url|
+      %li= link_to url, url

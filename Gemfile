@@ -15,6 +15,7 @@ gem 'sorted'
 gem 'simple_form'
 gem 'devise'
 gem 'cancan'
+gem 'high_voltage'
 
 # geo utils
 gem 'geokit'

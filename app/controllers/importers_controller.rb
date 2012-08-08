@@ -1,6 +1,7 @@
 class ImportersController < ApplicationController
   def new
     authorize! :manage, Importer
+    flash[:alert] = "It works only on localhost instance."
   end
 
   def create

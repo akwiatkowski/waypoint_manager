@@ -7,3 +7,20 @@ module ApplicationHelper
     return s
   end
 end
+
+def nice_links
+  { "Competitors" =>
+      [
+        "http://www.szlaki.net.pl/",
+        "http://trail.pl/",
+        "http://www.traseo.pl/",
+        "http://www.everytrail.com/",
+      ],
+    "Personal" =>
+      [
+        "http://a-kwiatkowski.deviantart.com/gallery/",
+        "http://www.panoramio.com/user/4973339",
+        "https://github.com/akwiatkowski"
+      ]
+  }
+end
