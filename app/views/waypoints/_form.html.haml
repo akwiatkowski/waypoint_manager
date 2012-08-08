@@ -10,5 +10,5 @@
   = f.button :submit
 
 %p
-  %b Google maps:
-  = link_to "map", @waypoint.google_maps_path
+  %b Maps:
+  = waypoint_map_link_to(@waypoint)

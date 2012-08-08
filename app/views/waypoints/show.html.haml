@@ -23,8 +23,7 @@
         = @waypoint.area.name
 %p
   %b Maps:
-  = link_to "google", @waypoint.google_maps_path, target: '_blank'
-  = link_to "ump", @waypoint.ump_path, target: '_blank'
+  = waypoint_map_link_to(@waypoint)
 %p
   %b Owner:
   = link_to @waypoint.user.name, @waypoint.user
