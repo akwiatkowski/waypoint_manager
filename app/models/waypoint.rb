@@ -1,5 +1,5 @@
 class Waypoint < ActiveRecord::Base
-  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords
+  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords, :url
   belongs_to :area
   has_many :route_elements
   belongs_to :user

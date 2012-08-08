@@ -35,8 +35,9 @@
             - unless params[:public].nil? and params[:private].nil?
               |
               = link_to "All", public: nil, private: nil
-          |
-          = link_to "Export to GPX", format: :gpx
+          - if action_name == 'index'
+            |
+            = link_to "Export to GPX", format: :gpx
 
         |
         - if current_user

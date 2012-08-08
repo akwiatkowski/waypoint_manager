@@ -1,29 +1,36 @@
 %h1 Listing areas
 
-= paginate @areas
+= paginate collection
 %br
 
 %table
   %tr
     %th
-    %th Area type
-    %th Name
+    %th= link_to_sorted "Area Type", :area_type
+    %th= link_to_sorted "Name", :name
     %th Waypoints
 
-  - @areas.each do |area|
+    %th Show
+    %th Edit
+    %th Destroy
+
+  - collection.each do |area|
     %tr
       %td= image_tag "garmin/#{area.img_symbol}"
       %td= area.area_type
       %td= area.name
-      - if can? :read, Waypoint
-        %td= link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
+      %td
+        - if can? :read, Waypoint
+          = link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
       %td= link_to 'Show', area
-      - if can? :edit, area
-        %td= link_to 'Edit', edit_area_path(area)
-      - if can? :destroy, area
-        %td= link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
+      %td
+        - if can? :edit, area
+          = link_to 'Edit', edit_area_path(area)
+      %td
+        - if can? :destroy, area
+          = link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
 
-= paginate @areas
+= paginate collection
 %br
 
 - if can? :create, Area

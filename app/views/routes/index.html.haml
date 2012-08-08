@@ -1,16 +1,30 @@
 %h1 Listing routes
 
+= paginate collection
+%br
+
 %table
   %tr
-    %th Area
-    %th Name
-    %th Url
-    %th Distance [m]
-    %th Distance [min]
+    %th= link_to_sorted "Area", :area_id
+    %th= link_to_sorted "Name", :name
+    %th= link_to_sorted "Url", :url
+    - if false
+      %th= link_to_sorted "Distance [m]", :distance
+      %th= link_to_sorted "Distance [min]", :time_distance
+    - else
+      %th Distance [m]
+      %th Distance [min]
 
-  - @routes.each do |route|
+    %th Elements
+    %th Show
+    %th Edit
+    %th Destroy
+
+  - collection.each do |route|
     %tr
-      %td= route.area.name
+      %td
+        = link_to route.area do
+          - route.area.name
       %td= route.name
       %td
         - unless route.url.blank?
@@ -21,14 +35,21 @@
         (
         = route.time_distance
         min )
-      - if can? :read, RouteElement
-        %td= link_to 'Elements', route_route_elements_path(route)
+      %td
+        - if can? :read, RouteElement
+          = link_to 'Elements', route_route_elements_path(route)
       %td= link_to 'Show', route
-      - if can? :edit, route
-        %td= link_to 'Edit', edit_route_path(route)
-      - if can? :destroy, route
-        %td= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete
+      %td
+        - if can? :edit, route
+          = link_to 'Edit', edit_route_path(route)
+      %td
+        - if can? :destroy, route
+          = link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete
 
+
+%br
+
+= paginate collection
 %br
 
 - if can? :create, Route

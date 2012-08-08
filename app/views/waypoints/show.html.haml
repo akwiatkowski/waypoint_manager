@@ -12,6 +12,10 @@
 %p
   %b Name:
   = @waypoint.name
+- if resource.url
+  %p
+    %b Url:
+    = link_to @waypoint.url, @waypoint.url, target: '_blank'
 %p
   %b Symbol:
   = @waypoint.sym
