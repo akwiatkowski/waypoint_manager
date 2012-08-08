@@ -5,6 +5,7 @@ class WaypointsController < InheritedResources::Base
   has_scope :area_id
   has_scope :private
   has_scope :public
+  has_scope :sorted, as: :sort
 
   respond_to :gpx, :xml, :json, :csv
 end

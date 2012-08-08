@@ -65,6 +65,10 @@ class Waypoint < ActiveRecord::Base
     "http://maps.google.com/maps?q=#{lat},#{lon}&z=#{map_zoom}&t=p"
   end
 
+  def ump_path(map_zoom = 15)
+    "http://mapa.ump.waw.pl/ump-www/?zoom=#{map_zoom}&lat=#{lat}&lon=#{lon}"
+  end
+
   def alt
     elevation
   end
@@ -106,6 +110,10 @@ class Waypoint < ActiveRecord::Base
     self_geo = Geokit::LatLng.new(self.lat, self.lon)
     other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
     (self_geo.distance_to(other_geo) * 1000.0).ceil
+  end
+
+  def imported?
+    not imported_at.nil?
   end
 
 end

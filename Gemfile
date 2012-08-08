@@ -11,6 +11,7 @@ gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
 gem 'kaminari'
+gem 'sorted'
 gem 'simple_form'
 gem 'devise'
 gem 'cancan'
@@ -56,6 +57,7 @@ end
 group :development, :test do
   gem 'itslog'
   gem 'rspec-rails', '>= 2.6.1.beta1'
+  gem 'rails_best_practices'
 end
 
 group :test do

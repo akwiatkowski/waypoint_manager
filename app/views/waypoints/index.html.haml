@@ -5,14 +5,21 @@
 
 %table
   %tr
-    %th Type
-    %th Name
-    %th Area
-    %th Time
+    %th
+    %th= link_to_sorted "Name", :name
+    %th= link_to_sorted "Area", :area_id
+    %th= link_to_sorted "Time", :created_at
 
-    %th El.
-    %th Lat / Lon
+    %th= link_to_sorted "El", :elevation
+    - if params[:full]
+      %th Lat / Lon
     %th Private
+
+    %th Show
+    %th Map
+    %th Edit
+    %th Destroy
+
 
   - @waypoints.each do |waypoint|
     %tr
@@ -25,12 +32,19 @@
         %td= waypoint.area.name
       - else
         %td
-      %td= waypoint.created_at.to_s(:db)
+      %td
+        = waypoint.created_at.to_s(:db)
+        - if waypoint.imported?
+          %br
+          = image_tag "imported.gif", style: "height: 10px;"
+          %span.small= waypoint.imported_at.to_s(:db)
+
 
       %td= waypoint.elevation
-      %td
-        = waypoint.lat
-        = waypoint.lon
+      - if params[:full]
+        %td
+          = waypoint.lat
+          = waypoint.lon
 
       %td
         - if can? :edit, waypoint
@@ -41,11 +55,15 @@
           = waypoint.private ? "Private" : "Public"
 
       %td= link_to 'Show', waypoint
-      %td= link_to 'Google map', waypoint.google_maps_path, target: '_blank'
-      - if can? :edit, waypoint
-        %td= link_to 'Edit', edit_waypoint_path(waypoint)
-      - if can? :destroy, waypoint
-        %td= link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
+      %td
+        = link_to 'google', waypoint.google_maps_path, target: '_blank'
+        = link_to 'ump', waypoint.ump_path, target: '_blank'
+      %td
+        - if can? :edit, waypoint
+          = link_to 'Edit', edit_waypoint_path(waypoint)
+      %td
+        - if can? :destroy, waypoint
+          = link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
 
 = paginate @waypoints
 %br
