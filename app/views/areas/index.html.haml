@@ -30,6 +30,17 @@
         - if can? :destroy, area
           = link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
 
+  %tr
+    %td
+    %td= "N/A"
+    %td
+      - if can? :read, Waypoint
+        = link_to "Waypoints (#{Waypoint.wo_area.count})", waypoints_path(wo_area: 't')
+    %td
+    %td
+    %td
+
+
 = paginate collection
 %br
 

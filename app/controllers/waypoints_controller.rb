@@ -3,8 +3,9 @@ class WaypointsController < InheritedResources::Base
 
   has_scope :page, default: 1, if: Proc.new{ |r| r.request.format == 'html'}
   has_scope :area_id
-  has_scope :private
-  has_scope :public
+  has_scope :wo_area
+  has_scope :is_private
+  has_scope :is_public
   has_scope :sorted, as: :sort
 
   respond_to :gpx, :xml, :json, :csv

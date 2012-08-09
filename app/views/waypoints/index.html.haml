@@ -27,7 +27,7 @@
     %tr
       %td= image_tag "garmin/#{waypoint.img_symbol}"
       %td
-        - if waypoint.private
+        - if waypoint.is_private
           = image_tag 'padlock.png'
         = waypoint.name
       - unless waypoint.area.nil?
@@ -51,14 +51,14 @@
       %td
         - if can? :edit, waypoint
           = form_for waypoint do |f|
-            = f.hidden_field :private, value: (! waypoint.private)
-            = f.submit waypoint.private ? "Enable" : "Disable"
+            = f.hidden_field :is_private, value: (! waypoint.is_private)
+            = f.submit waypoint.is_private ? "Enable" : "Disable"
         - else
-          = waypoint.private ? "Private" : "Public"
+          = waypoint.is_private ? "Private" : "Public"
 
       %td= link_to 'Show', waypoint
       %td
-        - if waypoint.url
+        - unless waypoint.url.blank?
           = link_to 'Url', waypoint.url
       %td
         = waypoint_map_link_to(waypoint)

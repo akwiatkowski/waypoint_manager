@@ -4,7 +4,7 @@ class GpxExporter
     pois = Waypoint.order("created_at ASC")
     unless _private.nil?
       puts _private.inspect
-      pois = pois.where(private: _private)
+      pois = pois.where(is_private: _private)
     end
     pois = pois.all
 

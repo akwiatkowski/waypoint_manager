@@ -2,37 +2,40 @@
 
 %p
   %b Lat:
-  = @waypoint.lat
+  = resource.lat
 %p
   %b Lon:
-  = @waypoint.lon
+  = resource.lon
 %p
   %b Elevation:
-  = @waypoint.elevation
+  = resource.elevation
 %p
   %b Name:
-  = @waypoint.name
+  = resource.name
 - if resource.url
   %p
     %b Url:
-    = link_to @waypoint.url, @waypoint.url, target: '_blank'
+    = link_to resource.url, resource.url, target: '_blank'
 %p
   %b Symbol:
-  = @waypoint.sym
-- unless @waypoint.area.nil?
+  = resource.sym
+- unless resource.area.nil?
   %p
     %b
       Area:
-      = link_to area_waypoints_path(@waypoint.area) do
-        = @waypoint.area.name
+      = link_to area_waypoints_path(resource.area) do
+        = resource.area.name
 %p
   %b Maps:
-  = waypoint_map_link_to(@waypoint)
+  = waypoint_map_link_to(resource)
 %p
   %b Owner:
-  = link_to @waypoint.user.name, @waypoint.user
+  - if resource.user.nil?
+    = "N/A"
+  - else
+    = link_to resource.user.name, resource.user
 
-- if can? :edit, @waypoint
-  = link_to 'Edit', edit_waypoint_path(@waypoint)
+- if can? :edit, resource
+  = link_to 'Edit', edit_resource_path(resource)
   |
-= link_to 'Back', waypoints_path
+= link_to 'Back', collection_path

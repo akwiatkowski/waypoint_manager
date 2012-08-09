@@ -3,9 +3,9 @@ class Ability
 
   def initialize(user)
     can :read, Area
-    can :read, Waypoint, private: false
-    can :read, Route, private: false
-    can :read, RouteElement, route: {private: false}
+    can :read, Waypoint, is_private: false
+    can :read, Route, is_private: false
+    can :read, RouteElement, route: {is_private: false}
 
     if user
       can :manage, Waypoint, user_id: user.id

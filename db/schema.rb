@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716174634) do
+ActiveRecord::Schema.define(:version => 20120809105817) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20120716174634) do
     t.datetime "updated_at",                    :null => false
     t.integer  "area_id"
     t.integer  "user_id"
-    t.boolean  "private",    :default => false, :null => false
+    t.boolean  "is_private", :default => false, :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(:version => 20120716174634) do
     t.datetime "imported_at"
     t.string   "sym"
     t.integer  "area_id"
-    t.boolean  "private",     :default => false, :null => false
+    t.boolean  "is_private",  :default => false, :null => false
     t.string   "url"
     t.integer  "user_id"
   end

@@ -1,6 +1,6 @@
 class Importer
-  def self.process_path(path)
-    g = GarminUtils::GpxWaypointParser.new
+  def self.process_path(path, current_user)
+    g = GpxUtils::WaypointsImporter.new
     dir = Dir[File.join(path, "*")]
     dir.each do |f|
       if f =~ /\.gpx$/i
@@ -22,6 +22,9 @@ class Importer
       w.created_at = p[:time]
       w.updated_at = p[:time]
       w.imported_at = Time.now
+      w.user = current_user
+      w.is_private = true # private by default
+
 
       w.save!
     end

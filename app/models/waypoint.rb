@@ -1,12 +1,13 @@
 class Waypoint < ActiveRecord::Base
-  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :private, :dms_coords, :url
+  attr_accessible :elevation, :lat, :lon, :name, :sym, :area_id, :is_private, :dms_coords, :url
   belongs_to :area
   has_many :route_elements
   belongs_to :user
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
-  scope :private, lambda { |v| where(private: true) }
-  scope :public, lambda { |v| where(private: false) }
+  scope :wo_area, lambda { |v| where(area_id: nil) }
+  scope :is_private, lambda { |v| where(is_private: true) }
+  scope :is_public, lambda { |v| where(is_private: false) }
 
   # http://stackoverflow.com/questions/639171/what-is-causing-this-activerecordreadonlyrecord-error
   #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }

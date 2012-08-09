@@ -1,5 +1,5 @@
 <%=
-  g = GarminUtils::WaypointListGenerator.new
+  g = GpxUtils::WaypointsExporter.new
   collection.each do |poi|
     g.add(
       poi.lat,

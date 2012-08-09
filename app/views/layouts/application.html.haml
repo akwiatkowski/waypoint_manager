@@ -30,13 +30,13 @@
           - if false
             - unless params[:public]
               |
-              = link_to "Public", public: :true
-            - unless params[:private]
+              = link_to "Public", is_public: :true
+            - unless params[:is_private]
               |
-              = link_to "Private", private: :true
-            - unless params[:public].nil? and params[:private].nil?
+              = link_to "Private", is_private: :true
+            - unless params[:is_public].nil? and params[:is_private].nil?
               |
-              = link_to "All", public: nil, private: nil
+              = link_to "All", is_public: nil, is_private: nil
           - if action_name == 'index'
             |
             = link_to "Export to GPX", format: :gpx
