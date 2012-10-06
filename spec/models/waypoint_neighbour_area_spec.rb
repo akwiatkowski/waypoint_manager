@@ -27,6 +27,10 @@ describe WaypointNeighbourArea, :type => :model do
 
     w.neighbour_areas.size.should == 1
     w.neighbour_areas.first.waypoints.should == w.neighbour_waypoints
+    w.neighbour_areas.first.waypoints.should == w.neighbour_waypoints
+
+    # most important test
+    w.neighbour_waypoints.should == area_neighbour.waypoints
 
     area_original.reload
     area_neighbour.reload
@@ -41,6 +45,13 @@ describe WaypointNeighbourArea, :type => :model do
     area_original.neighbour_waypoints_via_waypoints.size.should == 1
     area_original.neighbour_waypoints_via_waypoints.first.should == w_in_neighbour
 
+    # add waypoint to original
+    w_somewhere = FactoryGirl.create(:waypoint, area: area_original)
+    w_somewhere.should be_valid
+    area_original.reload
+    area_neighbour.reload
 
+    # there is no info that this w. is near other area
+    w_somewhere.neighbour_waypoints.should be_empty
   end
 end
