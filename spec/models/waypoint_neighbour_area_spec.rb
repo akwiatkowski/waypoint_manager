@@ -25,9 +25,22 @@ describe WaypointNeighbourArea, :type => :model do
     w_in_neighbour = FactoryGirl.create(:waypoint, area: area_neighbour)
     w_in_neighbour.should be_valid
 
-    puts w.neighbour_areas.inspect
-    puts w.neighbour_areas.first.waypoints.inspect
-    puts w.neighbour_waypoints.inspect
+    w.neighbour_areas.size.should == 1
+    w.neighbour_areas.first.waypoints.should == w.neighbour_waypoints
+
+    area_original.reload
+    area_neighbour.reload
+
+    # access from area
+    area_original.waypoints.size.should == 1
+    area_original.waypoints.first.should == w
+
+    #puts WaypointNeighbourArea.all.inspect
+    #puts area_original.waypoint_neighbour_areas.inspect
+    #puts area_original.neighbour_areas.inspect
+
+    area_original.neighbour_areas.size.should == 1
+    area_original.neighbour_areas.first.should == area_neighbour
 
   end
 end
