@@ -42,8 +42,11 @@ class RouteElement < ActiveRecord::Base
   def continue_waypoints_finish
     last_route_element = self.route.route_elements.last
     if last_route_element
+      # last waypoint
       _last_finish = last_route_element.finish
       _all_waypoints = self.route.area.waypoints
+
+      # TODO add neighbour areas
 
       # remove
       _all_waypoints -= [_last_finish]

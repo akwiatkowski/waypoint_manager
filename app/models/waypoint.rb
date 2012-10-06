@@ -3,6 +3,9 @@ class Waypoint < ActiveRecord::Base
   belongs_to :area
   has_many :route_elements
   belongs_to :user
+  has_many :waypoint_neighbour_areas
+  has_many :neighbour_areas, through: :waypoint_neighbour_areas, source: :area
+  has_many :neighbour_waypoints, through: :neighbour_areas, source: :waypoints
 
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   scope :wo_area, lambda { |v| where(area_id: nil) }

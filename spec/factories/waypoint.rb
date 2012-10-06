@@ -6,7 +6,7 @@ FactoryGirl.define do
     sequence(:name) { |n| "waypoint_" + n.to_s }
     sym Waypoint::SYMBOLS.keys.sample
     association :area
-    private false
+    is_private false
   end
 end
 
