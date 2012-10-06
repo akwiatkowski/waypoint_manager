@@ -4,7 +4,7 @@
   .form-inputs
     = f.input :name
     = f.input :url
-    = f.input :area_id, as: :select, collection: Area.all, include_blank: false
+    = f.input :area_id, as: :select, collection: Area.order(:name).all, include_blank: false
 
   .form-actions
     = f.button :submit
