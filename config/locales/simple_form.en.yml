@@ -15,7 +15,16 @@ en:
         real_distance: "Real distance [m]"
         real_d_elevation: "Real delta elevation [m]"
         real_time_distance: "Real time distance [min]"
-
+      waypoint:
+        sym: 'Symbol'
+    hints:
+      waypoint:
+        dms_coords: 'DMS coords instead of lat/lon, ex. 50°46′35″N 15°54′25″E, format used in wikpedia'
+        lat: 'Latitude, geographic coordinate'
+        lon: 'Longitude, geographic coordinate'
+        elevation: 'in meters above sea level'
+        sym: 'symbol used in GPS device'
+        area: 'group of waypoints'
     # Labels and hints examples
     # labels:
     #   defaults:

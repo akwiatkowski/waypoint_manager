@@ -44,7 +44,8 @@ class RouteElement < ActiveRecord::Base
     if last_route_element
       # last waypoint
       _last_finish = last_route_element.finish
-      _all_waypoints = self.route.area.waypoints
+      # added way to go jump the other area
+      _all_waypoints = _last_finish.area.waypoints + _last_finish.neighbour_waypoints
 
       # TODO add neighbour areas
 

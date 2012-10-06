@@ -1,4 +1,4 @@
-= simple_form_for @waypoint do |f|
+= simple_form_for resource do |f|
   = f.input :lat
   = f.input :lon
   = f.input :dms_coords
@@ -10,6 +10,7 @@
 
   = f.button :submit
 
-%p
-  %b Maps:
-  = waypoint_map_link_to(@waypoint)
+- if resource.lon and resource.lat
+  %p
+    %b Maps:
+    = waypoint_map_link_to(@waypoint)

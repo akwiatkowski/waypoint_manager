@@ -11,13 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121006121542) do
+ActiveRecord::Schema.define(:version => 20121006143114) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
     t.string   "area_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.float    "avg_lat"
+    t.float    "avg_lon"
   end
 
   create_table "route_elements", :force => true do |t|
