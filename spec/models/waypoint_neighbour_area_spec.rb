@@ -35,11 +35,12 @@ describe WaypointNeighbourArea, :type => :model do
     area_original.waypoints.size.should == 1
     area_original.waypoints.first.should == w
 
-    area_original.neighbour_areas.size.should == 1
-    area_original.neighbour_areas.first.should == area_neighbour
+    area_original.neighbour_areas_via_waypoints.size.should == 1
+    area_original.neighbour_areas_via_waypoints.first.should == area_neighbour
 
-    area_original.neighbour_waypoints.size.should == 1
-    area_original.neighbour_waypoints.first.should == w_in_neighbour
+    area_original.neighbour_waypoints_via_waypoints.size.should == 1
+    area_original.neighbour_waypoints_via_waypoints.first.should == w_in_neighbour
+
 
   end
 end
