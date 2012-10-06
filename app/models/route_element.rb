@@ -81,8 +81,8 @@ class RouteElement < ActiveRecord::Base
   end
 
   def time_distance
-    _d = self.real_distance.nil? ? self.distance : self.real_distance.nil
-    _h = self.real_d_elevation.nil? ? self.d_elevation : self.real_d_elevation.nil
+    _d = self.real_distance.nil? ? self.distance : self.real_distance
+    _h = self.real_d_elevation.nil? ? self.d_elevation : self.real_d_elevation
 
     _td = ((60.0 * _d.to_f / 1000.0) / 4.0).ceil
     _th = (_h.abs.to_f / 100.0 * 10.0).ceil
