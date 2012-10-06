@@ -9,6 +9,8 @@
     %th= link_to_sorted "Area Type", :area_type
     %th= link_to_sorted "Name", :name
     %th Waypoints
+    %th= link_to_sorted "Avg. Lat", :avg_lat
+    %th= link_to_sorted "Avg. Lon", :avg_lon
 
     %th Show
     %th Edit
@@ -22,6 +24,8 @@
       %td
         - if can? :read, Waypoint
           = link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
+      %td= number_to_human area.avg_lat, precision: 4
+      %td= number_to_human area.avg_lon, precision: 4
       %td= link_to 'Show', area
       %td
         - if can? :edit, area
