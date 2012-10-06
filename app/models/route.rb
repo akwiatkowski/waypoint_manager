@@ -22,17 +22,65 @@ class Route < ActiveRecord::Base
   def time_distance
     _d = 0
     self.route_elements.each do |route_element|
+      if route_element.real_time_distance
+        _d += route_element.real_time_distance
+      else
+        _d += route_element.time_distance
+      end
+    end
+    return _d
+  end
+
+  def self.time_distance_human(minutes)
+    h = (minutes / 60).floor
+    m = minutes - h * 60
+    return "#{h}:#{"%.2d" % m}"
+  end
+
+  def time_distance_human
+    return self.class.time_distance_human(time_distance)
+  end
+
+  def real_distance
+    _d = 0
+    self.route_elements.each do |route_element|
+      _d += route_element.real_distance.to_i
+    end
+    return _d
+  end
+
+  def calculated_distance
+    _d = 0
+    self.route_elements.each do |route_element|
+      _d += route_element.distance.to_i
+    end
+    return _d
+  end
+
+  def real_time_distance
+    _d = 0
+    self.route_elements.each do |route_element|
       _d += route_element.real_time_distance.to_i
     end
     return _d
   end
 
-  def time_distance_human
-    td = time_distance
-    h = (td / 60).floor
-    m = td - h * 60
-    return "#{h}:#{"%.2d" % m}"
+  def real_time_distance_human
+    return self.class.time_distance_human(real_time_distance)
   end
+
+  def calculated_time_distance
+    _d = 0
+    self.route_elements.each do |route_element|
+      _d += route_element.time_distance.to_i
+    end
+    return _d
+  end
+
+  def calculated_time_distance_human
+    return self.class.time_distance_human(calculated_time_distance)
+  end
+
 
   # Create route map
   def to_png_zoomed(zoom = 12)

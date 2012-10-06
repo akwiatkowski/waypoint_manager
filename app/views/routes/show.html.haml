@@ -13,9 +13,21 @@
 %p
   %b Distance [m]:
   = @route.distance
+  (
+  real:
+  = @route.real_distance
+  calculated:
+  = @route.calculated_distance
+  )
 %p
-  %b Distance [min]:
-  = @route.time_distance
+  %b Time distance:
+  = @route.time_distance_human
+  (
+  real:
+  = @route.real_time_distance_human
+  calculated:
+  = @route.calculated_time_distance_human
+  )
 %p
   %b Elements:
   = @route.route_elements.count

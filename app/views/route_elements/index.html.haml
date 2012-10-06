@@ -36,7 +36,13 @@
           = route_element.d_elevation
 
       %td
-        = route_element.real_time_distance
+        - if route_element.real_time_distance
+          = route_element.real_time_distance
+          (
+          = route_element.time_distance
+          )
+        - else
+          = route_element.time_distance
 
       %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
       %td= link_to 'Google', route_element.google_url, target: '_blank'

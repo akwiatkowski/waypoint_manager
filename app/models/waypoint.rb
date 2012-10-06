@@ -7,6 +7,15 @@ class Waypoint < ActiveRecord::Base
   has_many :neighbour_areas, through: :waypoint_neighbour_areas, source: :area
   has_many :neighbour_waypoints, through: :neighbour_areas, source: :waypoints
 
+  GEO_NEAR = 0.1
+  scope :near, lambda { |_w|
+    where(["lat between ? and ? and lon between ? and ?",
+           _w.lat - GEO_NEAR,
+           _w.lat + GEO_NEAR,
+           _w.lon - GEO_NEAR,
+           _w.lon + GEO_NEAR
+          ]) }
+
   scope :area_id, lambda { |_area_id| where(area_id: _area_id) }
   scope :wo_area, lambda { where(area_id: nil) }
   scope :is_private, lambda { where(is_private: true) }

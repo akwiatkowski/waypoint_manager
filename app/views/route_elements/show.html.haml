@@ -28,7 +28,11 @@
 
 
 %p
-  %b Distance [min]:
+  %b Distance [min] (calculated)::
+  = @route_element.time_distance
+
+%p
+  %b Distance [min] (real):
   = @route_element.real_time_distance
 
 - if can? :edit, @route

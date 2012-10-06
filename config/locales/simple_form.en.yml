@@ -12,9 +12,9 @@ en:
       default_message: "Please review the problems below:"
     labels:
       route_element:
-        real_distance: "Real distance [m]"
-        real_d_elevation: "Real delta elevation [m]"
-        real_time_distance: "Real time distance [min]"
+        real_distance: "Real distance"
+        real_d_elevation: "Real elevation difference"
+        real_time_distance: "Real time distance"
       waypoint:
         sym: 'Symbol'
     hints:
@@ -25,6 +25,10 @@ en:
         elevation: 'in meters above sea level'
         sym: 'symbol used in GPS device'
         area: 'group of waypoints'
+      route_element:
+        real_distance: "meters"
+        real_d_elevation: "meters"
+        real_time_distance: "minutes"
     # Labels and hints examples
     # labels:
     #   defaults:
