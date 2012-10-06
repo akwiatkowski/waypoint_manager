@@ -3,7 +3,7 @@ class Area < ActiveRecord::Base
   has_many :waypoints, order: :name
   has_many :waypoint_neighbour_areas, through: :waypoints
   has_many :neighbour_areas, through: :waypoint_neighbour_areas, source: :area
-  #has_many :neighbour_waypoints, through: :neighbour_areas, source: :waypoint
+  has_many :neighbour_waypoints, through: :neighbour_areas, source: :waypoints
 
   TYPES = {
     "Mountains" => Waypoint::SYMBOLS["Summit"],
