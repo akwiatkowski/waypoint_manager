@@ -128,7 +128,7 @@ class Route < ActiveRecord::Base
       e = Gpx2png::Ump.new
     end
     e.renderer = :rmagick
-    e.renderer_options = { aa: false, opacity: 0.5, color: '#0000FF', crop_enabled: true }
+    e.renderer_options = { aa: true, opacity: 0.5, color: '#0000FF', crop_enabled: true }
 
     coords = Array.new
     self.route_elements.each do |re|
@@ -136,12 +136,25 @@ class Route < ActiveRecord::Base
       coords << re.finish
     end
     coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
-
     e.coords = coords
+
+    # markers
+    self.waypoints.each_with_index do |w, i|
+      e.add_marker(
+        label: "(#{i+1}) #{w.name} (#{w.elevation}m)",
+        lat: w.lat,
+        lon: w.lon
+      )
+    end
+
     e.fixed_size(_width, _height)
     puts _width, _height, "*" * 1000
     #e.zoom = _zoom # tmp. disabled
     e.to_png
+  end
+
+  def waypoints
+    self.route_elements.collect { |re| [re.start, re.finish] }.flatten.uniq
   end
 
 end
