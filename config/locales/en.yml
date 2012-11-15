@@ -8,6 +8,9 @@ en:
   details: "Details"
   are_you_sure: "Are you sure?"
 
+  private: "Private"
+  public: "Public"
+
   user_session:
     destroy: "Sign out"
     new: "Sign in"

@@ -54,12 +54,9 @@
           = waypoint.lon_short
 
       %td
-        - if can? :edit, waypoint
-          = form_for waypoint do |f|
-            = f.hidden_field :is_private, value: (! waypoint.is_private)
-            = f.submit waypoint.is_private ? "Enable" : "Disable"
-        - else
-          = waypoint.is_private ? "Private" : "Public"
+        = form_for waypoint do |f|
+          = f.hidden_field :is_private, value: (! waypoint.is_private)
+          = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
 
       %td= link_to 'Show', waypoint
       %td
