@@ -1,10 +1,15 @@
-- default_full = true
-%h1 Listing waypoints
+- default_full = false
+- if @area
+  - title = "#{t('waypoint.plural')} - #{@area.name}"
+- else
+  - title = "#{t('waypoint.plural')}"
+- content_for :title, title
+%h1= title
 
-= paginate @waypoints
+= paginate collection
 %br
 
-%table
+%table.table.table-striped.table-bordered
   %tr
     %th
     %th= link_to_sorted "Name", :name
@@ -23,7 +28,7 @@
     %th Destroy
 
 
-  - @waypoints.each do |waypoint|
+  - collection.each do |waypoint|
     %tr
       %td= image_tag "garmin/#{waypoint.img_symbol}"
       %td
@@ -70,14 +75,15 @@
           = link_to 'Destroy', waypoint, :confirm => 'Are you sure?', :method => :delete
 
 = paginate @waypoints
-%br
 
+%hr
+
+.btn-grp
 - if can? :create, Waypoint
-  - if params[:area_id]
-    - _area = Area.find(params[:area_id])
-    = link_to new_area_waypoint_path(_area) do
+  - if @area
+    = link_to new_area_waypoint_path(@area) do
       = "New Waypoint in "
       %strong
-        = _area.name
+        = @area.name
   - else
     = link_to 'New Waypoint', new_waypoint_path

@@ -1,5 +1,6 @@
 class WaypointsController < InheritedResources::Base
   load_and_authorize_resource
+  nested_belongs_to :area, optional: true
 
   has_scope :page, default: 1, if: Proc.new{ |r| r.request.format == 'html'}
   has_scope :area_id
