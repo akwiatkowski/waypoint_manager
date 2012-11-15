@@ -4,7 +4,7 @@ class Route < ActiveRecord::Base
   belongs_to :area
   belongs_to :user
 
-  validates_presence_of :area
+  validates_presence_of :area, :name
 
   # Total route distance
   def distance
