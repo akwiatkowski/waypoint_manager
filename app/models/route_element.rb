@@ -1,5 +1,5 @@
 class RouteElement < ActiveRecord::Base
-  attr_accessible :real_distance, :real_d_elevation, :real_time_distance, :waypoint_start_id, :waypoint_finish_id
+  attr_accessible :real_distance, :real_d_elevation, :real_time_distance, :waypoint_start_id, :waypoint_finish_id, :url
 
   belongs_to :route
   belongs_to :start, foreign_key: 'waypoint_start_id', class_name: 'Waypoint'
