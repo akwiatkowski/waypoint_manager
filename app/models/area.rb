@@ -13,6 +13,8 @@ class Area < ActiveRecord::Base
     "Countryside" => Waypoint::SYMBOLS["Residence"]
   }
 
+  scope :ordered, order(:name)
+
   def img_symbol
     TYPES[area_type] || ''
   end

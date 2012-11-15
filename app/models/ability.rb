@@ -2,9 +2,6 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    # TODO
-    can :manage, :all
-
     can :read, Area
     can :read, Waypoint, is_private: false
     can :read, Route, is_private: false

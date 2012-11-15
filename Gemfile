@@ -61,7 +61,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'itslog', git: "https://github.com/elle/itslog"
+  #gem 'itslog', git: "https://github.com/elle/itslog"
   gem 'rspec-rails', '>= 2.6.1.beta1'
   gem 'rails_best_practices'
 end

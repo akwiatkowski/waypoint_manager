@@ -1,9 +1,17 @@
-= semantic_navigation :primary, config: :bootstrap, class: klass do |n|
-  - n.item t('area.plural'), areas_path
-  - n.group 'Blog', class: 'blog' do
-    %li Custom Node
-    - n.item 'Articles', '/blog/posts'
-    - n.item 'Links', '/blog/links'
-  - n.group 'Info' do
-    - n.item 'Me', '/about', title: 'The Awesomeness That Is'
-    - n.item 'My Portfolio'
+= semantic_navigation :top, config: :bootstrap, class: 'nav nav-list' do |n|
+  - n.item "<i class=\"icon-glass\"></i>" + t(:about), page_path("about")
+  - n.item "<i class=\"icon-globe\"></i>" + t('area.plural'), areas_path do |s|
+    - Area.ordered.all.each do |a|
+      - s.item "<i class=\"icon-map-marker\"></i>" + a.name, area_waypoints_path(a), highlights_on: [{area_id: a.id.to_s}]
+  - n.item "<i class=\"icon-map-marker\"></i>" + t('waypoint.all'), waypoints_path
+  - n.item "<i class=\"icon-road\"></i>" + t('route.plural'), routes_path
+  - if can? :manage, Importer
+    - n.item "<i class=\"icon-hdd\"></i>" + t('importer.title'), new_importer_path
+  - if controller_name == "waypoints"
+    - n.item "<i class=\"icon-book\"></i>" + t('waypoint.to_gpx'), url_for(format: :gpx)
+  - if current_user
+    - n.item "<i class=\"icon-user\"></i>" + current_user.email, user_path(current_user)
+    - n.item "<i class=\"icon-off\"></i>" + t('user_session.destroy'), destroy_user_session_path, method: :delete
+  - else
+    - n.item "<i class=\"icon-user\"></i>" + t('user_session.new'), new_user_session_path
+    - n.item "<i class=\"icon-arrow-right\"></i>" + t('user.register'), new_user_registration_path

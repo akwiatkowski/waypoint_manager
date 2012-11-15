@@ -19,6 +19,7 @@ en:
 
   waypoint:
     plural: "Waypoints"
+    all: "All waypoints"
     to_gpx: "Export to GPX"
 
   route:
