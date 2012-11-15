@@ -11,6 +11,9 @@ en:
   private: "Private"
   public: "Public"
 
+  created_at: "Created at"
+  updated_at: "Updated at"
+
   user_session:
     destroy: "Sign out"
     new: "Sign in"

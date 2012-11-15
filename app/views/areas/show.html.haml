@@ -3,14 +3,7 @@
 - content_for :title, title
 %h1= title
 
-= simple_model_details(resource)
-
-%p
-  %b Name:
-  = resource.name
-%p
-  %b Area type:
-  = resource.area_type
+= raw simple_model_details(resource, timestamps: true)
 
 = link_to 'Edit', edit_area_path(resource)
 \|
