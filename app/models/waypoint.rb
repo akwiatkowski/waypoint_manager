@@ -74,12 +74,12 @@ class Waypoint < ActiveRecord::Base
     "Ground Transportation" => "ground-transportation1.gif" # all public ground transportation
   }
 
-  def google_maps_path(map_zoom = 15)
+  def google_maps_path(map_zoom = 13)
     "http://maps.google.com/maps?q=#{lat},#{lon}&z=#{map_zoom}&t=p"
   end
 
-  def ump_path(map_zoom = 15)
-    "http://mapa.ump.waw.pl/ump-www/?zoom=#{map_zoom}&lat=#{lat}&lon=#{lon}"
+  def ump_path(map_zoom = 13)
+    "http://mapa.ump.waw.pl/ump-www/?zoom=#{map_zoom}&lat=#{lat}&lon=#{lon}&mlat=#{lat}&mlon=#{lon}"
   end
 
   def alt
