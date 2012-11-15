@@ -1,0 +1,8 @@
+= semantic_navigation :primary, config: :bootstrap, class: klass do |n|
+  - n.group 'Blog', class: 'blog' do
+    %li Custom Node
+    - n.item 'Articles', '/blog/posts'
+    - n.item 'Links', '/blog/links'
+  - n.group 'Info' do
+    - n.item 'Me', '/about', title: 'The Awesomeness That Is'
+    - n.item 'My Portfolio'

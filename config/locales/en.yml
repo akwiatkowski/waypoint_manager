@@ -4,8 +4,28 @@
 en:
   hello: "Hello world"
 
+  user_session:
+    destroy: "Sign out"
+    new: "Sign in"
+
+  user:
+    register: "Sign up"
+
   route_element:
     real_distance: "Real distance [m]"
+
+  area:
+    plural: "Areas"
+
+  waypoint:
+    plural: "Waypoints"
+    to_gpx: "Export to GPX"
+
+  route:
+    plural: "Routes"
+
+  importer:
+    title: "Importer"
 
   simple_form:
     labels:

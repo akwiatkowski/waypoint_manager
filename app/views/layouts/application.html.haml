@@ -25,28 +25,69 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") WaypointManager
+          = link_to "Waypoint Manager", root_path, class: 'brand'
+          
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+              %li
+                = link_to page_path("about") do
+                  %i.icon-glass
+                  = t(:about)
+              %li
+                = link_to areas_path do
+                  %i.icon-globe
+                  = t('area.plural')
+              %li
+                = link_to waypoints_path do
+                  %i.icon-map-marker
+                  = t('waypoint.plural')
+              %li
+                = link_to routes_path do
+                  %i.icon-road
+                  = t('route.plural')
+              - if can? :manage, Importer
+                %li
+                  = link_to new_importer_path do
+                    %i.icon-hdd
+                    = t('importer.title')
+              - if controller_name == "waypoints"
+                %li
+                  = link_to format: :gpx do
+                    %i.icon-book
+                    = t('waypoint.to_gpx')
+              - if current_user
+                %li
+                  = link_to user_path(current_user) do
+                    %i.icon-user
+                    = current_user.email
+                  - if current_user.admin
+                    %strong
+                      (ADMIN)
+                %li
+                  = link_to destroy_user_session_path, method: :delete do
+                    %i.icon-off
+                    = t('user_session.destroy')
+              - else
+                %li
+                  = link_to new_user_session_path do
+                    %i.icon-user
+                    = t('user_session.new')
+                %li
+                  = link_to new_user_registration_path do
+                    %i.icon-arrow-right
+                    = t('user.register')
 
     .container-fluid
 
       .row-fluid
         .span3
           .well.sidebar-nav
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+            = render partial: '/layouts/navigation', locals: {klass: 'nav nav-list'}
         .span9
           = yield
     
       %footer
-        %p &copy; Company 2012
+        %p &copy; Aleksander Kwiatkowski 2012
     /
       Javascripts
       \==================================================
