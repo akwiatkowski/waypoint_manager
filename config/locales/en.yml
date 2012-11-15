@@ -18,6 +18,10 @@ en:
   :yes: "Yes"
   :no: "No"
 
+  back_to_area: "Back to Area"
+  back_to_area_waypoints: "Back to Area Waypoints"
+  new_waypoint_in: "New Waypoint in"
+
   user_session:
     destroy: "Sign out"
     new: "Sign in"

@@ -10,6 +10,10 @@
     = link_to edit_resource_path(resource), class: 'btn' do
       %i.icon-edit
       = t(:edit)
+  - if can?(:read, Waypoint)
+    = link_to area_waypoints_path(resource), class: 'btn' do
+      %i.icon-list
+      = t('waypoint.plural')
   - if false and can?(:manage, resource)
     = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
       %i.icon-remove

@@ -22,6 +22,19 @@
       %i.icon-remove
       = t(:delete)
   - if can?(:read, resource.class)
-    = link_to areas_path, class: 'btn' do
+    = link_to waypoints_path, class: 'btn' do
       %i.icon-search
       = t(:back)
+  - if can?(:read, resource.area)
+    = link_to resource.area, class: 'btn' do
+      %i.icon-search
+      = t(:back_to_area)
+  - if can?(:read, resource.area)
+    = link_to area_waypoints_path(resource.area), class: 'btn' do
+      %i.icon-search
+      = t(:back_to_area_waypoints)
+  - if can?(:create, resource.class)
+    = link_to new_area_waypoint_path(resource.area), class: 'btn' do
+      %i.icon-pencil
+      = t(:new_waypoint_in)
+      %strong= resource.area.name
