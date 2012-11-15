@@ -1,4 +1,5 @@
 = semantic_navigation :primary, config: :bootstrap, class: klass do |n|
+  - n.item t('area.plural'), areas_path
   - n.group 'Blog', class: 'blog' do
     %li Custom Node
     - n.item 'Articles', '/blog/posts'
