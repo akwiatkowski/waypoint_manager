@@ -1,12 +1,17 @@
-%p#notice= notice
+- default_full = false
+- title = "#{t('area.title')} - #{resource.name}"
+- content_for :title, title
+%h1= title
+
+= simple_model_details(resource)
 
 %p
   %b Name:
-  = @area.name
+  = resource.name
 %p
   %b Area type:
-  = @area.area_type
+  = resource.area_type
 
-= link_to 'Edit', edit_area_path(@area)
+= link_to 'Edit', edit_area_path(resource)
 \|
 = link_to 'Back', areas_path

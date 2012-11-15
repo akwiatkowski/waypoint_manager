@@ -24,3 +24,30 @@ def nice_links
       ]
   }
 end
+
+def simple_model_details(m)
+  table_class = "table table-striped table-bordered"
+
+  special_attrs = ["id", "created_at", "updated_at"]
+  attrs = m.attributes.keys.sort
+  object_tableize = m.class.to_s.tableize.singularize
+
+  # remove special attributes
+  special_attrs.each do |s|
+    attrs.delete(s)
+  end
+
+  # model's regular attributes
+  details = Array.new
+  attrs.each do |d|
+    details << [I18n.t("#{object_tableize}.#{d}"), m.attributes[d]]
+  end
+
+  s = "<table class=\"#{table_class}\">"
+  details.each do |d|
+    s += "<tr><td>#{d[0]}</td><td>#{d[1]}</td></tr>\n"
+  end
+  s += "</table>"
+
+  return s
+end

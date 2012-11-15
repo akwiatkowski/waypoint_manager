@@ -22,7 +22,12 @@ en:
     real_distance: "Real distance [m]"
 
   area:
+    title: "Area"
     plural: "Areas"
+    area_type: "Area type"
+    avg_lat: "Average latitude"
+    avg_lon: "Average longitude"
+    name: "Name"
 
   waypoint:
     plural: "Waypoints"
