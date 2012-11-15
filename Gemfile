@@ -16,6 +16,7 @@ gem 'devise'
 gem 'cancan'
 gem 'high_voltage'
 gem 'navigasmic'
+gem 'simple_show_helper'
 
 # bootstrap stuff
 gem "therubyracer"

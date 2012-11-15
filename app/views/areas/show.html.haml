@@ -3,7 +3,7 @@
 - content_for :title, title
 %h1= title
 
-= raw simple_model_details(resource, timestamps: true)
+= raw simple_show_helper(resource, timestamps: true)
 
 .btn-group
   - if can?(:edit, resource)

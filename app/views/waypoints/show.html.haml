@@ -1,41 +1,27 @@
-%p#notice= notice
+- default_full = false
+- title = "#{t('waypoint.title')} - #{resource.name}"
+- content_for :title, title
+%h1= title
 
-%p
-  %b Lat:
-  = resource.lat
-%p
-  %b Lon:
-  = resource.lon
-%p
-  %b Elevation:
-  = resource.elevation
-%p
-  %b Name:
-  = resource.name
-- if resource.url
-  %p
-    %b Url:
-    = link_to resource.url, resource.url, target: '_blank'
-%p
-  %b Symbol:
-  = resource.sym
-- unless resource.area.nil?
-  %p
-    %b
-      Area:
-      = link_to area_waypoints_path(resource.area) do
-        = resource.area.name
-%p
-  %b Maps:
-  = waypoint_map_link_to(resource)
-%p
-  %b Owner:
-  - if resource.user.nil?
-    = "N/A"
-  - else
-    = link_to resource.user.name, resource.user
+= raw simple_show_helper(resource, timestamps: true)
 
-- if can? :edit, resource
-  = link_to 'Edit', edit_resource_path(resource)
-  |
-= link_to 'Back', collection_path
+.btn-group
+  - unless resource.url.blank?
+    = link_to resource.url, target: '_blank', class: 'btn btn-info' do
+      %i.icon-globe
+      URL
+  = waypoint_map_link_to(resource, "")
+
+.btn-group
+  - if can?(:edit, resource)
+    = link_to edit_resource_path(resource), class: 'btn' do
+      %i.icon-edit
+      = t(:edit)
+  - if false and can?(:manage, resource)
+    = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
+      %i.icon-remove
+      = t(:delete)
+  - if can?(:read, resource.class)
+    = link_to areas_path, class: 'btn' do
+      %i.icon-search
+      = t(:back)
