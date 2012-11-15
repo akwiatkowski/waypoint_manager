@@ -5,6 +5,12 @@
   = f.input :elevation
   = f.input :name
   = f.input :url
+  .control-group
+    .controls
+      = link_to t('open_url_in_new_window'), "javascript:void(0);", class: "btn url-link"
+  = f.input :official_url
+  = f.input :phone
+  = f.input :email
   = f.input :sym, as: :select, collection: Waypoint::SYMBOLS.keys, include_blank: false
   = f.input :area_id, as: :select, collection: Area.all
 
@@ -13,4 +19,4 @@
 - if resource.lon and resource.lat
   %p
     %b Maps:
-    = waypoint_map_link_to(@waypoint)
+    = waypoint_map_link_to(resource)

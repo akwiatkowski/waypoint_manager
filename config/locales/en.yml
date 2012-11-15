@@ -21,6 +21,7 @@ en:
   back_to_area: "Back to Area"
   back_to_area_waypoints: "Back to Area Waypoints"
   new_waypoint_in: "New Waypoint in"
+  open_url_in_new_window: "Open URL in new window"
 
   user_session:
     destroy: "Sign out"
