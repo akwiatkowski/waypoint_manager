@@ -1,39 +1,33 @@
-%p#notice= notice
-
 %p
   %b Area:
   = @route.area.name
 %p
-  %b From:
-  = link_to area_waypoint_path(@route.area, @route_element.start) do
-    = @route_element.start.name
-%p
-  %b To:
-  = link_to area_waypoint_path(@route.area, @route_element.finish) do
-    = @route_element.finish.name
+  %b Waypoints:
+  = link_to area_waypoint_path(@route_element.waypoint.area, @route_element.waypoint) do
+    = @route_element.waypoint.name
 
-%p
-  %b Distance [m] (calculated):
-  = @route_element.distance
-%p
-  %b Distance [m] (real):
-  = @route_element.real_distance
-
-%p
-  %b &#916; Elevation [m] (calculated):
-  = @route_element.d_elevation
-%p
-  %b &#916; Elevation [m] (real):
-  = @route_element.real_d_elevation
-
-
-%p
-  %b Distance [min] (calculated)::
-  = @route_element.time_distance
-
-%p
-  %b Distance [min] (real):
-  = @route_element.real_time_distance
+-#%p
+-#  %b Distance [m] (calculated):
+-#  = @route_element.distance
+-#%p
+-#  %b Distance [m] (real):
+-#  = @route_element.real_distance
+-#
+-#%p
+-#  %b &#916; Elevation [m] (calculated):
+-#  = @route_element.d_elevation
+-#%p
+-#  %b &#916; Elevation [m] (real):
+-#  = @route_element.real_d_elevation
+-#
+-#
+-#%p
+-#  %b Distance [min] (calculated)::
+-#  = @route_element.time_distance
+-#
+-#%p
+-#  %b Distance [min] (real):
+-#  = @route_element.real_time_distance
 
 - if can? :edit, @route
   %p

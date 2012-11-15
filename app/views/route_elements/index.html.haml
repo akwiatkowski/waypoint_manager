@@ -2,8 +2,7 @@
 
 %table.table.table-striped.table-bordered
   %tr
-    %th Start
-    %th Finish
+    %th Waypoint
     %th Distance [m]
     %th &#916; Elevation [m]
     %th Time distance [min]
@@ -11,41 +10,38 @@
   - @route_elements.each do |route_element|
     %tr
       %td
-        = link_to area_waypoint_path(@route.area.id, route_element.start) do
-          = route_element.start.name
-      %td
-        = link_to area_waypoint_path(@route.area, route_element.finish) do
-          = route_element.finish.name
+        = link_to area_waypoint_path(route_element.waypoint.area, route_element.waypoint) do
+          = route_element.waypoint.name
 
-      %td
-        - if route_element.real_distance
-          = route_element.real_distance
-          (
-          = route_element.distance
-          )
-        - else
-          = route_element.distance
-
-      %td
-        - if route_element.real_d_elevation
-          = route_element.real_d_elevation
-          (
-          = route_element.d_elevation
-          )
-        - else
-          = route_element.d_elevation
-
-      %td
-        - if route_element.real_time_distance
-          = route_element.real_time_distance
-          (
-          = route_element.time_distance
-          )
-        - else
-          = route_element.time_distance
+      -#%td
+      -#  - if route_element.real_distance
+      -#    = route_element.real_distance
+      -#    (
+      -#    = route_element.distance
+      -#    )
+      -#  - else
+      -#    = route_element.distance
+      -#
+      -#%td
+      -#  - if route_element.real_d_elevation
+      -#    = route_element.real_d_elevation
+      -#    (
+      -#    = route_element.d_elevation
+      -#    )
+      -#  - else
+      -#    = route_element.d_elevation
+      -#
+      -#%td
+      -#  - if route_element.real_time_distance
+      -#    = route_element.real_time_distance
+      -#    (
+      -#    = route_element.time_distance
+      -#    )
+      -#  - else
+      -#    = route_element.time_distance
 
       %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
-      %td= link_to 'Google', route_element.google_url, target: '_blank'
+      -#%td= link_to 'Google', route_element.google_url, target: '_blank'
       - if can? :edit, @route
         %td= link_to 'Edit', edit_route_route_element_path(route_element.route, route_element)
       - if can? :edit, @route
@@ -54,7 +50,4 @@
 %br
 
 - if can? :edit, @route
-  - if @route.route_elements.count == 0
-    = link_to 'Add first element', new_route_route_element_path(params[:route_id])
-  - else
-    = link_to 'Continue route', continue_route_route_elements_path(params[:route_id])
+  = link_to 'Add route element', new_route_route_element_path(params[:route_id])

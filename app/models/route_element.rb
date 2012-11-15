@@ -8,30 +8,53 @@ class RouteElement < ActiveRecord::Base
 
   before_save :distance
 
-  validates_presence_of :start, :finish, :route
+  validates_presence_of :waypoint, :route
 
-  USE_GEO_DISTANCE = true
+  after_initialize :assign_previous
 
-  # Recalculate distance
-  def calculate_distance
-    return nil if self.start.nil? or self.finish.nil?
-    self.start.distance_to(self.finish)
+  def assign_previous
+    self.previous_route_element_id ||= self.route.last_route_element_id
   end
 
-  def calculate_elevation
-    return nil if self.start.nil? or self.finish.nil?
-    self.finish.elevation - self.start.elevation
+  after_create :assign_last_route_element_id
+
+  def assign_last_route_element_id
+    a = self.route.last_route_element_id
+    b = self.id
+
+    if a.nil? or a < b
+      self.route.last_route_element_id = b
+      self.route.save!
+    end
+
+    # assign next
+    if not a.nil? and not a == b
+      rn = RouteElement.find(a)
+      rn.next_route_element_id = b
+      rn.save!
+    end
   end
 
-  def distance
-    self.distance = calculate_distance
-    super
-  end
-
-  def d_elevation
-    self.d_elevation = calculate_elevation
-    super
-  end
+  ## Recalculate distance
+  #def calculate_distance
+  #  return nil if self.start.nil? or self.finish.nil?
+  #  self.start.distance_to(self.finish)
+  #end
+  #
+  #def calculate_elevation
+  #  return nil if self.start.nil? or self.finish.nil?
+  #  self.finish.elevation - self.start.elevation
+  #end
+  #
+  #def distance
+  #  self.distance = calculate_distance
+  #  super
+  #end
+  #
+  #def d_elevation
+  #  self.d_elevation = calculate_elevation
+  #  super
+  #end
 
   def time_distance
     _d = self.real_distance.nil? ? self.distance : self.real_distance
