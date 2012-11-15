@@ -1,5 +1,12 @@
-%h1 New area
+- default_full = false
+- title = "#{t('new')} - #{t('area.title')}"
+- content_for :title, title
+%h1= title
 
 = render 'form'
 
-= link_to 'Back', areas_path
+.btn-group
+  - if can?(:read, resource.class)
+    = link_to areas_path, class: 'btn' do
+      %i.icon-search
+      = t(:back)

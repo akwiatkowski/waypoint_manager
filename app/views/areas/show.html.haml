@@ -7,7 +7,7 @@
 
 .btn-group
   - if can?(:edit, resource)
-    = link_to edit_area_path(resource), class: 'btn' do
+    = link_to edit_resource_path(resource), class: 'btn' do
       %i.icon-edit
       = t(:edit)
   - if false and can?(:manage, resource)

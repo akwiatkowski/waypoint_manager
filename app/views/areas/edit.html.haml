@@ -1,10 +1,20 @@
 - default_full = false
-- title = "#{t('edit')} - #{t('area.plural')}"
+- title = "#{t('edit')} - #{t('area.title')} - #{resource.name}"
 - content_for :title, title
 %h1= title
 
 = render 'form'
 
-= link_to 'Show', @area
-\|
-= link_to 'Back', areas_path
+.btn-group
+  - if can?(:read, resource)
+    = link_to resource, class: 'btn' do
+      %i.icon-search
+      = t(:details)
+  - if false and can?(:manage, resource)
+    = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
+      %i.icon-remove
+      = t(:delete)
+  - if can?(:read, resource.class)
+    = link_to areas_path, class: 'btn' do
+      %i.icon-search
+      = t(:back)
