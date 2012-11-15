@@ -39,12 +39,10 @@
         - if can? :edit, area
           = link_to edit_area_path(area), class: 'btn btn-mini' do
             %i.icon-edit
-            = t('edit')
       %td
         - if can? :destroy, area
           = link_to area, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
-            %i.icon-trash
-            = t('delete')
+            %i.icon-remove
 
   %tr
     %td
