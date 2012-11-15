@@ -1,9 +1,12 @@
-%h1 Listing areas
+- default_full = false
+- title = "#{t('area.plural')}"
+- content_for :title, title
+%h1= title
 
 = paginate collection
 %br
 
-%table
+%table.table.table-striped.table-bordered
   %tr
     %th
     %th= link_to_sorted "Area Type", :area_type
@@ -23,23 +26,35 @@
       %td= area.name
       %td
         - if can? :read, Waypoint
-          = link_to "Waypoints (#{area.waypoints.count})", area_waypoints_path(area)
+          = link_to area_waypoints_path(area), class: 'btn btn-mini' do
+            %i.icon-list
+            = "#{t('waypoint.plural')} (#{area.waypoints.count})"
       %td= number_to_human area.avg_lat, precision: 4
       %td= number_to_human area.avg_lon, precision: 4
-      %td= link_to 'Show', area
+      %td
+        = link_to area, class: 'btn btn-mini btn-info' do
+          %i.icon-search
+          = t('details')
       %td
         - if can? :edit, area
-          = link_to 'Edit', edit_area_path(area)
+          = link_to edit_area_path(area), class: 'btn btn-mini' do
+            %i.icon-edit
+            = t('edit')
       %td
         - if can? :destroy, area
-          = link_to 'Destroy', area, :confirm => 'Are you sure?', :method => :delete
+          = link_to area, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+            %i.icon-trash
+            = t('delete')
 
   %tr
     %td
     %td= "N/A"
     %td
+    %td
       - if can? :read, Waypoint
-        = link_to "Waypoints (#{Waypoint.wo_area.count})", waypoints_path(wo_area: 't')
+        = link_to waypoints_path(wo_area: 't'), class: 'btn btn-mini' do
+          %i.icon-list
+          = "#{t('waypoint.plural')} (#{Waypoint.wo_area.count})"
     %td
     %td
     %td
@@ -48,5 +63,8 @@
 = paginate collection
 %br
 
-- if can? :create, Area
-  = link_to 'New Area', new_area_path
+.btn-group
+  - if can?(:create, Area)
+    = link_to new_area_path, class: 'btn' do
+      %i.icon-pencil
+      = t(:new)

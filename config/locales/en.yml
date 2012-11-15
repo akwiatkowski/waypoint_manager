@@ -2,7 +2,11 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  new: "New"
+  edit: "Edit"
+  delete: "Delete"
+  details: "Details"
+  are_you_sure: "Are you sure?"
 
   user_session:
     destroy: "Sign out"
