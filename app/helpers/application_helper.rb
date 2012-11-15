@@ -1,8 +1,8 @@
 module ApplicationHelper
   def waypoint_map_link_to(waypoint)
-    s = link_to "google", waypoint.google_maps_path
+    s = link_to "google", waypoint.google_maps_path, class: "btn btn-mini btn-info"
     s += " "
-    s += link_to "ump", waypoint.ump_path
+    s += link_to "ump", waypoint.ump_path, class: "btn btn-mini btn-info"
 
     return s
   end

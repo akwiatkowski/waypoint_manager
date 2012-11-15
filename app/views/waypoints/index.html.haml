@@ -61,7 +61,8 @@
       %td= link_to 'Show', waypoint
       %td
         - unless waypoint.url.blank?
-          = link_to 'Url', waypoint.url
+          = link_to waypoint.url, class: 'btn btn-mini btn-info' do
+            %i.icon-globe
       %td
         = waypoint_map_link_to(waypoint)
       %td
