@@ -10,7 +10,7 @@
   - if controller_name == "waypoints"
     - n.item "<i class=\"icon-book\"></i>" + t('waypoint.to_gpx'), url_for(format: :gpx)
   - if current_user
-    - n.item "<i class=\"icon-user\"></i>" + current_user.email, user_path(current_user)
+    - n.item "<i class=\"icon-user\"></i>" + current_user.name, user_path(current_user)
     - n.item "<i class=\"icon-off\"></i>" + t('user_session.destroy'), destroy_user_session_path, method: :delete
   - else
     - n.item "<i class=\"icon-user\"></i>" + t('user_session.new'), new_user_session_path

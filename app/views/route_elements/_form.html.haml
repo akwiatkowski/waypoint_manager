@@ -1,11 +1,8 @@
-= simple_form_for [@route, @route_element] do |f|
+= simple_form_for [@route, @route_element], html: {class: "form-horizontal"} do |f|
   = f.error_notification
 
   .form-inputs
-    - if @route_element.start.nil?
-      - _waypoints_start = @route.area.waypoints.order(:name).all
-    - else
-      - _waypoints_start = @route_element.continue_waypoints_start
+    - _waypoints_start = @route_element.continue_waypoints_start
 
     - if @route_element.finish.nil?
       - _waypoints_finish = @route.area.waypoints.order(:name).all

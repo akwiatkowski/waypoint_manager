@@ -32,57 +32,8 @@ class RouteElement < ActiveRecord::Base
     super
   end
 
-  # List of waypoints for new route element: all from area or finish
-  # waypoint from last route element
-  def continue_waypoints_start
-    if self.start.nil?
-      last_route_element = self.route.route_elements.last
-      if last_route_element
-        # creating new element, it should has only finish from last element
-        return [last_route_element.finish]
-      else
-        # creating first element
-        return self.route.area.waypoints.order(:name)
-      end
-    else
-      # editing, maintaining start
-      return [self.start]
-    end
-  end
 
-  # List of waypoints for new route element: all from area or all except
-  # finish waypoint from last route element with proper order
-  def continue_waypoints_finish
-    last_route_element = self.route.route_elements.last
-    if last_route_element
-      # last waypoint
-      _last_finish = last_route_element.finish
-
-      if USE_GEO_DISTANCE
-        # within lat/lon distance
-        _all_waypoints = Waypoint.near(_last_finish).all
-      else
-        # waypoints from similar area + neighbours
-        _all_waypoints = _last_finish.area.waypoints + _last_finish.neighbour_waypoints
-      end
-
-      # remove
-      _all_waypoints -= [_last_finish] unless self.finish == _last_finish
-
-      # add distance
-      _all_waypoints.each do |w|
-        w.tmp_distance = w.distance_to(self.start)
-      end
-
-      # and sort
-      _all_waypoints = _all_waypoints.sort { |a, b| a.tmp_distance <=> b.tmp_distance }
-
-      return _all_waypoints
-
-    else
-      return self.route.area.waypoints
-    end
-  end
+  
 
   def time_distance
     _d = self.real_distance.nil? ? self.distance : self.real_distance

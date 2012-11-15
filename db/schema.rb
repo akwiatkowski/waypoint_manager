@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115222321) do
+ActiveRecord::Schema.define(:version => 20121115224222) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -23,17 +23,18 @@ ActiveRecord::Schema.define(:version => 20121115222321) do
   end
 
   create_table "route_elements", :force => true do |t|
-    t.integer  "waypoint_start_id",  :null => false
-    t.integer  "waypoint_finish_id", :null => false
+    t.integer  "waypoint_id",               :null => false
     t.integer  "distance"
     t.integer  "d_elevation"
     t.integer  "route_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.integer  "real_distance"
     t.integer  "real_d_elevation"
     t.integer  "real_time_distance"
     t.string   "url"
+    t.integer  "next_route_element_id"
+    t.integer  "previous_route_element_id"
   end
 
   create_table "routes", :force => true do |t|
