@@ -5,6 +5,17 @@
 
 = raw simple_model_details(resource, timestamps: true)
 
-= link_to 'Edit', edit_area_path(resource)
-\|
-= link_to 'Back', areas_path
+.btn-group
+  - if can?(:edit, resource)
+    = link_to edit_area_path(resource), class: 'btn' do
+      %i.icon-edit
+      = t(:edit)
+  - if false and can?(:manage, resource)
+    = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
+      %i.icon-remove
+      = t(:delete)
+  - if can?(:read, resource.class)
+    = link_to areas_path, class: 'btn' do
+      %i.icon-search
+      = t(:back)
+
