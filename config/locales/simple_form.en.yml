@@ -10,25 +10,6 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
-    labels:
-      route_element:
-        real_distance: "Real distance"
-        real_d_elevation: "Real elevation difference"
-        real_time_distance: "Real time distance"
-      waypoint:
-        sym: 'Symbol'
-    hints:
-      waypoint:
-        dms_coords: 'DMS coords instead of lat/lon, ex. 50°46′35″N 15°54′25″E, format used in wikpedia'
-        lat: 'Latitude, geographic coordinate'
-        lon: 'Longitude, geographic coordinate'
-        elevation: 'in meters above sea level'
-        sym: 'symbol used in GPS device'
-        area: 'group of waypoints'
-      route_element:
-        real_distance: "meters"
-        real_d_elevation: "meters"
-        real_time_distance: "minutes"
     # Labels and hints examples
     # labels:
     #   defaults:
@@ -42,4 +23,3 @@ en:
     #   defaults:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
-

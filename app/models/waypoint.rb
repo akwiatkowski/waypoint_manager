@@ -120,6 +120,7 @@ class Waypoint < ActiveRecord::Base
   end
 
   def distance_to(_waypoint)
+    return nil if _waypoint.nil?
     self_geo = Geokit::LatLng.new(self.lat, self.lon)
     other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
     (self_geo.distance_to(other_geo, units: :kms) * 1000.0).ceil

@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-# 3.2.6 blow up itslog
-gem 'rails', '3.2.3'
+gem 'rails'
+gem 'thin'
 gem 'execjs'
-gem 'therubyracer'
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
@@ -16,6 +15,12 @@ gem 'simple_form'
 gem 'devise'
 gem 'cancan'
 gem 'high_voltage'
+gem 'navigasmic'
+
+# bootstrap stuff
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
 
 # geo utils
 gem 'geokit'
@@ -56,7 +61,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'itslog'
+  gem 'itslog', git: "https://github.com/elle/itslog"
   gem 'rspec-rails', '>= 2.6.1.beta1'
   gem 'rails_best_practices'
 end

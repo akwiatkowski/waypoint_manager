@@ -13,7 +13,7 @@ class Route < ActiveRecord::Base
       if route_element.real_distance
         _d += route_element.real_distance
       else
-        _d += route_element.distance
+        _d += route_element.distance.to_f
       end
     end
     return _d
@@ -25,7 +25,7 @@ class Route < ActiveRecord::Base
       if route_element.real_time_distance
         _d += route_element.real_time_distance
       else
-        _d += route_element.time_distance
+        _d += route_element.time_distance.to_i
       end
     end
     return _d
@@ -130,12 +130,16 @@ class Route < ActiveRecord::Base
     e.renderer = :rmagick
     e.renderer_options = { aa: true, opacity: 0.5, color: '#0000FF', crop_enabled: true }
 
-    coords = Array.new
-    self.route_elements.each do |re|
-      coords << re.start
-      coords << re.finish
+    unless _options[:coords]
+      coords = Array.new
+      self.route_elements.each do |re|
+        coords << re.start
+        coords << re.finish
+      end
+      coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
+    else
+      coords = _options[:coords]
     end
-    coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
     e.coords = coords
 
     # markers

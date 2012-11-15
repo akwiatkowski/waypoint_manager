@@ -7,14 +7,18 @@ class RouteElement < ActiveRecord::Base
 
   before_save :distance
 
+  validates_presence_of :start, :finish, :route
+
   USE_GEO_DISTANCE = true
 
   # Recalculate distance
   def calculate_distance
+    return nil if self.start.nil? or self.finish.nil?
     self.start.distance_to(self.finish)
   end
 
   def calculate_elevation
+    return nil if self.start.nil? or self.finish.nil?
     self.finish.elevation - self.start.elevation
   end
 
@@ -83,6 +87,8 @@ class RouteElement < ActiveRecord::Base
   def time_distance
     _d = self.real_distance.nil? ? self.distance : self.real_distance
     _h = self.real_d_elevation.nil? ? self.d_elevation : self.real_d_elevation
+
+    return nil if _d.nil? or _h.nil?
 
     _td = ((60.0 * _d.to_f / 1000.0) / 4.0).ceil
     _th = (_h.abs.to_f / 100.0 * 10.0).ceil

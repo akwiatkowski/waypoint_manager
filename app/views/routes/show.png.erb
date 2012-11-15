@@ -1,3 +1,7 @@
 <%=
+  #f = "/home/olek/pliki.big/zdjecia/backup/2012-10-10 - rudawy i karkonosze/gpx/dzien2.gpx"
+  #g = GpxUtils::TrackImporter.new
+  #g.add_file(f)
+  #params[:coords] = g.coords
   raw @route.to_png(params)
 %>
