@@ -1,60 +1,86 @@
-%p#notice= notice
+%table.table
+  %tr
+    %td
+      = t('area.title')
+    %td
+      = resource.area.name
 
-%p
-  %b Area:
-  = @route.area.name
-%p
-  %b Name:
-  = @route.name
-%p
-  %b Url:
-  = link_to @route.url do
-    = @route.url
-%p
-  %b Distance [m]:
-  = @route.distance
-  (
-  real:
-  = @route.real_distance
-  calculated:
-  = @route.calculated_distance
-  )
-%p
-  %b Time distance:
-  = @route.time_distance_human
-  (
-  real:
-  = @route.real_time_distance_human
-  calculated:
-  = @route.calculated_time_distance_human
-  )
-%p
-  %b Elements:
-  = @route.route_elements.count
+  %tr
+    %td
+      = t('route.name')
+    %td
+      = resource.name
 
 
-%hr
+  %tr
+    %td
+      = t('route.distance')
+    %td
+      = resource.distance
+  %tr
+    %td
+      = t('route_element.d_elevation')
+    %td
+      = resource.d_elevation
+  %tr
+    %td
+      = t('route_element.time_distance')
+    %td
+      = resource.time_distance_human
+      (
+      = resource.time_distance
+      )
 
-%ol
-  - @route.route_elements.each do |route_element|
-    %li
-      = route_element.start.name
-      = "-"
-      = route_element.finish.name
 
-%hr
-
-#map_links
-  Map (zoom):
-  - sizes = {small: [400, 400], medium: [800, 600], big: [1200, 800], huge: [2000, 1500] }
-  - sizes.keys.each do |size|
-    = link_to size.to_s, route_path(@route, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank'
-
-%hr
-
-= link_to 'Elements', route_route_elements_path(@route)
-|
-- if can? :edit, @waypoint
-  = link_to 'Edit', edit_route_path(@route)
-  |
-= link_to 'Back', routes_path
+-#%p
+-#  %b Url:
+-#  = link_to @route.url do
+-#    = @route.url
+-#%p
+-#  %b Distance [m]:
+-#  = @route.distance
+-#  (
+-#  real:
+-#  = @route.real_distance
+-#  calculated:
+-#  = @route.calculated_distance
+-#  )
+-#%p
+-#  %b Time distance:
+-#  = @route.time_distance_human
+-#  (
+-#  real:
+-#  = @route.real_time_distance_human
+-#  calculated:
+-#  = @route.calculated_time_distance_human
+-#  )
+-#%p
+-#  %b Elements:
+-#  = @route.route_elements.count
+-#
+-#
+-#%hr
+-#
+-#%ol
+-#  - @route.route_elements.each do |route_element|
+-#    %li
+-#      = route_element.start.name
+-#      = "-"
+-#      = route_element.finish.name
+-#
+-#%hr
+-#
+-##map_links
+-#  Map (zoom):
+-#  - sizes = {small: [400, 400], medium: [800, 600], big: [1200, 800], huge: [2000, 1500] }
+-#  - sizes.keys.each do |size|
+-#    = link_to size.to_s, route_path(@route, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank'
+-#
+-#%hr
+-#
+-#= link_to 'Elements', route_route_elements_path(@route)
+-#|
+-#- if can? :edit, @waypoint
+-#  = link_to 'Edit', edit_route_path(@route)
+-#  |
+-#= link_to 'Back', routes_path
