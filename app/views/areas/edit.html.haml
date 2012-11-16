@@ -15,6 +15,6 @@
       %i.icon-remove
       = t(:delete)
   - if can?(:read, resource.class)
-    = link_to areas_path, class: 'btn' do
+    = link_to collection_path, class: 'btn' do
       %i.icon-search
       = t(:back)
