@@ -12,7 +12,7 @@
   = f.input :phone
   = f.input :email
   = f.input :sym, as: :select, collection: Waypoint::SYMBOLS.keys, include_blank: false
-  = f.input :area_id, as: :select, collection: Area.all
+  = f.input :area_id, as: :select, collection: Area.order(:name).all
 
   = f.button :submit
 
