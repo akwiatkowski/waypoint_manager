@@ -79,6 +79,7 @@ en:
       route_element:
         real_distance: "Real distance"
         real_d_elevation: "Real elevation difference"
+        track_altitudes: "Most important elevation on track"
         real_time_distance: "Real time distance"
       waypoint:
         sym: 'Symbol'
@@ -94,3 +95,4 @@ en:
         real_distance: "meters"
         real_d_elevation: "meters"
         real_time_distance: "minutes"
+        track_altitudes: "meters, ex. 100 - 150 - 300 - 180"

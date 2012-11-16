@@ -1,5 +1,5 @@
 class RouteElement < ActiveRecord::Base
-  attr_accessible :real_distance, :real_d_elevation, :real_time_distance, :waypoint_id, :url
+  attr_accessible :real_distance, :real_d_elevation, :real_time_distance, :waypoint_id, :url, :track_altitudes
 
   belongs_to :route
   belongs_to :waypoint
