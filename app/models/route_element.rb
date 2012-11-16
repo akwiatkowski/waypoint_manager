@@ -79,12 +79,12 @@ class RouteElement < ActiveRecord::Base
     end
   end
 
-  def is_first_on_route?
+  def is_first_on_route_when_creating_new?
     previous_or_last.nil?
   end
 
   def possible_next_waypoint
-    if is_first_on_route?
+    if is_first_on_route_when_creating_new?
       # all waypoints from area
       return self.route.area.waypoints
     else

@@ -11,7 +11,6 @@
     %td
       = resource.name
 
-
   %tr
     %td
       = t('route.distance')
@@ -32,41 +31,37 @@
       )
 
 
+
+%p
+  = t('route_element.plural')
+  = "-"
+  = resource.route_elements.count
+
+%table.table
+  - resource.route_elements.each_with_index do |route_element, i|
+    %tr
+      %td
+        = i + 1
+      %td
+        - if can? :read, route_element
+          = link_to route_element.waypoint.name, route_route_element_path(resource, route_element)
+        - else
+          = route_element.waypoint.name
+
+
 -#%p
 -#  %b Url:
 -#  = link_to @route.url do
 -#    = @route.url
 -#%p
--#  %b Distance [m]:
--#  = @route.distance
--#  (
--#  real:
--#  = @route.real_distance
--#  calculated:
--#  = @route.calculated_distance
--#  )
--#%p
--#  %b Time distance:
--#  = @route.time_distance_human
--#  (
--#  real:
--#  = @route.real_time_distance_human
--#  calculated:
--#  = @route.calculated_time_distance_human
--#  )
--#%p
 -#  %b Elements:
--#  = @route.route_elements.count
+-#  = @route..count
 -#
 -#
 -#%hr
 -#
 -#%ol
--#  - @route.route_elements.each do |route_element|
--#    %li
--#      = route_element.start.name
--#      = "-"
--#      = route_element.finish.name
+-#  -
 -#
 -#%hr
 -#
