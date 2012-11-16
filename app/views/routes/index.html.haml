@@ -31,7 +31,7 @@
       %td= route.name
       %td
         - unless route.url.blank?
-          = link_to route.url, class: 'btn btn-mini btn-info' do
+          = link_to route.url, class: 'btn btn-mini btn-info', target: '_blank' do
             %i.icon-globe
       %td= route.distance
       %td
@@ -47,10 +47,12 @@
       %td= link_to 'Show', route
       %td
         - if can? :edit, route
-          = link_to 'Edit', edit_route_path(route)
+          = link_to edit_route_path(route), class: 'btn btn-mini' do
+            %i.icon-edit
       %td
         - if can? :destroy, route
-          = link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete
+          = link_to route, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+            %i.icon-remove
 
 
 %br
