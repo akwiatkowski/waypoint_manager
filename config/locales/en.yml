@@ -49,9 +49,11 @@ en:
     to_gpx: "Export to GPX"
 
   route:
+    title: "Route"
     plural: "Routes"
 
   route_element:
+    title: "Element"
     plural: "Elements"
     distance: "Distance [m]"
     real_distance: "Distance [m] (real)"
