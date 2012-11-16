@@ -2,7 +2,7 @@
 - if resource.is_first_on_route?
   - title_addon = ": #{resource.waypoint.name}"
 - else
-  - title_addon = ": #{t(:from)} #{resource.waypoint.name} to #{resource.previous_route_element.waypoint.name}"
+  - title_addon = ": #{t(:from)} #{resource.previous_route_element.waypoint.name} to #{resource.waypoint.name}"
 
 - title = "#{@route.name} #{title_addon}"
 - content_for :title, title

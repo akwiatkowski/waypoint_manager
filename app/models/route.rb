@@ -105,8 +105,7 @@ class Route < ActiveRecord::Base
     unless _options[:coords]
       coords = Array.new
       self.route_elements.each do |re|
-        coords << re.start
-        coords << re.finish
+        coords << re.waypoint
       end
       coords = coords.map { |c| { lat: c.lat, lon: c.lon } }
     else
@@ -130,7 +129,7 @@ class Route < ActiveRecord::Base
   end
 
   def waypoints
-    self.route_elements.collect { |re| [re.start, re.finish] }.flatten.uniq
+    self.route_elements.collect { |re| re.waypoint }
   end
 
 end

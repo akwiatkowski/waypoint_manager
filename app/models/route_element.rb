@@ -12,6 +12,8 @@ class RouteElement < ActiveRecord::Base
 
   after_create :update_route_last_route_element_id
 
+  default_scope order: ('id ASC')
+
   def update_route_last_route_element_id
     if self.route.last_route_element
       self.class.join_elements(self.route.last_route_element_id, self.id)
