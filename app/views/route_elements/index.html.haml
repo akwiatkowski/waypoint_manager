@@ -60,6 +60,10 @@
           = link_to 'Google', route_element.google_url, target: '_blank', class: 'btn btn-mini'
 
       %td
+        - unless route_element.url.blank?
+          = link_to 'URL', route_element.url, target: '_blank', class: 'btn btn-mini'
+
+      %td
         - if can? :edit, route_element
           = link_to edit_route_route_element_path(route_element.route, route_element), class: 'btn btn-mini' do
             %i.icon-edit
@@ -76,3 +80,7 @@
     = link_to new_route_route_element_path(@route), class: 'btn' do
       %i.icon-pencil
       = t('route.add_new_element')
+  - if can?(:read, @route)
+    = link_to @route, class: 'btn' do
+      %i.icon-road
+      = t('route.title')
