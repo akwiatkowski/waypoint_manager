@@ -13,19 +13,24 @@ class RouteElement < ActiveRecord::Base
   after_create :update_route_last_route_element_id
 
   def update_route_last_route_element_id
-    if self.route.last_route_element_id
-      # f. magic!
-      self.previous_route_element_id ||= self.route.last_route_element_id
-      self.route.last_route_element.next_route_element_id = self.id
-
-      self.previous_route_element.save!
-      self.previous_route_element.reload
-      self.route.last_route_element.save!
-      self.route.last_route_element.reload
+    if self.route.last_route_element
+      self.class.join_elements(self.route.last_route_element_id, self.id)
+      self.reload
+      # self.previous_route_element.reload
     end
 
     self.route.last_route_element_id = self.route.route_elements.last.id
     self.route.save!
+  end
+
+  def self.join_elements(previous_id, next_id)
+    p = find(previous_id)
+    n = find(next_id)
+
+    n.previous_route_element_id ||= previous_id
+    p.next_route_element_id ||= next_id
+    n.save!
+    p.save!
   end
 
 
@@ -100,8 +105,16 @@ class RouteElement < ActiveRecord::Base
     "https://maps.google.com/maps?saddr=#{self.start.lat},#{self.start.lon}&daddr=#{self.finish.lat},#{self.finish.lon}"
   end
 
+  def previous_or_last
+    if self.new_record?
+      self.route.last_route_element
+    else
+      self.previous_route_element
+    end
+  end
+
   def is_first_on_route?
-    self.previous_route_element.nil?
+    previous_or_last.nil?
   end
 
   def possible_next_waypoint
@@ -110,7 +123,7 @@ class RouteElement < ActiveRecord::Base
       return self.route.area.waypoints
     else
       # get all near waypoints
-      _previous_waypoint = self.previous_route_element.waypoint
+      _previous_waypoint = self.previous_or_last.waypoint
       _near_waypoints = Waypoint.near(_previous_waypoint).all
       # add distance
       _near_waypoints.each do |w|

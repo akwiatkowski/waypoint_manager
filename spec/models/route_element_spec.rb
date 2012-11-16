@@ -34,11 +34,14 @@ describe RouteElement do
       reb.route = r
       reb.save!
 
+      puts RouteElement.all.to_yaml
+
       reb.previous_route_element_id.should == rea.id
       reb.previous_route_element.should == rea
       reb.next_route_element_id.should be_nil
       reb.next_route_element.should be_nil
 
+      rea.reload # has to be reloaded
       rea.previous_route_element_id.should be_nil
       rea.previous_route_element.should be_nil
       rea.next_route_element_id.should == reb.id
@@ -46,8 +49,6 @@ describe RouteElement do
 
       r.reload
       r.last_route_element_id.should == reb.id
-
-      puts RouteElement.all.to_yaml
     end
 
     #it "should create from factory" do
