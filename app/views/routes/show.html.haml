@@ -1,3 +1,8 @@
+- default_full = false
+- title = "#{t('route.title')} - #{resource.name}"
+- content_for :title, title
+%h1= title
+
 %table.table
   %tr
     %td
@@ -55,34 +60,34 @@
         - else
           = route_element.waypoint.name
 
+.btn-group
+  = link_to route_route_elements_path(resource), class: 'btn' do
+    %i.icon-list
+    = t('route_element.plural')
+  - unless resource.url.blank?
+    = link_to resource.url, class: 'btn' do
+      %i.icon-globe
+      URL
 
--#%p
--#  %b Url:
--#  = link_to @route.url do
--#    = @route.url
--#%p
--#  %b Elements:
--#  = @route..count
--#
--#
--#%hr
--#
--#%ol
--#  -
--#
--#%hr
--#
--##map_links
--#  Map (zoom):
--#  - sizes = {small: [400, 400], medium: [800, 600], big: [1200, 800], huge: [2000, 1500] }
--#  - sizes.keys.each do |size|
--#    = link_to size.to_s, route_path(@route, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank'
--#
--#%hr
--#
--#= link_to 'Elements', route_route_elements_path(@route)
--#|
--#- if can? :edit, @waypoint
--#  = link_to 'Edit', edit_route_path(@route)
--#  |
--#= link_to 'Back', routes_path
+Map:
+.btn-group
+  - sizes = {small: [400, 400], medium: [800, 600], big: [1200, 800], huge: [2000, 1500] }
+  - sizes.keys.each do |size|
+    = link_to route_path(resource, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank', class: 'btn' do
+      %i.icon-globe
+      = I18n.t(size)
+
+.btn-group
+  - if can?(:edit, resource)
+    = link_to edit_resource_path(resource), class: 'btn' do
+      %i.icon-edit
+      = t(:edit)
+  - if false and can?(:manage, resource)
+    = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
+      %i.icon-remove
+      = t(:delete)
+  - if can?(:read, resource.class)
+    = link_to routes_path, class: 'btn' do
+      %i.icon-search
+      = t(:back)
+

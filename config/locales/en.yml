@@ -13,6 +13,11 @@ en:
   private: "Private"
   public: "Public"
 
+  small: "Small"
+  medium: "Medium"
+  big: "Big"
+  huge: "Huge"
+
   created_at: "Created at"
   updated_at: "Updated at"
 
