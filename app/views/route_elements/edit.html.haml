@@ -1,7 +1,25 @@
-%h1 Editing route element
+- default_full = false
+- if resource.is_first_on_route?
+  - title_addon = ": #{resource.waypoint.name}"
+- else
+  - title_addon = ": #{t(:from)} #{resource.waypoint.name} to #{resource.previous_route_element.waypoint.name}"
+
+- title = "#{t('route.title')} - #{@route.name} - #{t('route_element.title')}#{title_addon}"
+- content_for :title, title
+%h1= title
 
 = render 'form'
 
-= link_to 'Show', route_route_element_path(params[:route_id], @route_element)
-\|
-= link_to 'Back', route_route_elements_path(params[:route_id])
+.btn-group
+  - if can?(:read, resource)
+    = link_to route_route_element_path(@route, resource), class: 'btn' do
+      %i.icon-search
+      = t(:details)
+  - if false and can?(:manage, resource)
+    = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
+      %i.icon-remove
+      = t(:delete)
+  - if can?(:read, resource.class)
+    = link_to route_route_elements_path(@route), class: 'btn' do
+      %i.icon-search
+      = t(:back)

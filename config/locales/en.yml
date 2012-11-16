@@ -18,6 +18,9 @@ en:
   big: "Big"
   huge: "Huge"
 
+  from: "from"
+  to: "to"
+
   created_at: "Created at"
   updated_at: "Updated at"
 
