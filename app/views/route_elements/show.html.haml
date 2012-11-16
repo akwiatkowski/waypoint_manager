@@ -1,33 +1,49 @@
-%p
-  %b Area:
-  = @route.area.name
-%p
-  %b Waypoints:
-  = link_to area_waypoint_path(@route_element.waypoint.area, @route_element.waypoint) do
-    = @route_element.waypoint.name
+%table.table
+  %tr
+    %td
+      = t('area.title')
+    %td{colspan: 2}
+      = @route.area.name
 
--#%p
--#  %b Distance [m] (calculated):
--#  = @route_element.distance
--#%p
--#  %b Distance [m] (real):
--#  = @route_element.real_distance
--#
--#%p
--#  %b &#916; Elevation [m] (calculated):
--#  = @route_element.d_elevation
--#%p
--#  %b &#916; Elevation [m] (real):
--#  = @route_element.real_d_elevation
--#
--#
--#%p
--#  %b Distance [min] (calculated)::
--#  = @route_element.time_distance
--#
--#%p
--#  %b Distance [min] (real):
--#  = @route_element.real_time_distance
+  %tr
+    %td
+      = t('waypoint.title')
+    %td{colspan: 2}
+      = link_to area_waypoint_path(@route_element.waypoint.area, @route_element.waypoint) do
+        = @route_element.waypoint.name
+
+  %tr
+    %td
+      = t('route_element.distance')
+    %td
+      = @route_element.distance
+      %span.small= t('_calculated_')
+    %td
+      - unless @route_element.real_distance.blank?
+        = @route_element.real_distance
+        %span.small= t('_real_')
+
+  %tr
+    %td
+      = t('route_element.d_elevation')
+    %td
+      = @route_element.d_elevation
+      %span.small= t('_calculated_')
+    %td
+      - unless @route_element.real_d_elevation.blank?
+        = @route_element.real_d_elevation
+        %span.small= t('_real_')
+
+  %tr
+    %td
+      = t('route_element.time_distance')
+    %td
+      = @route_element.time_distance
+      %span.small= t('_calculated_')
+    %td
+      - unless @route_element.real_time_distance.blank?
+        = @route_element.real_time_distance
+        %span.small= t('_real_')
 
 - if can? :edit, @route
   %p

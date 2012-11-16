@@ -13,32 +13,32 @@
         = link_to area_waypoint_path(route_element.waypoint.area, route_element.waypoint) do
           = route_element.waypoint.name
 
-      -#%td
-      -#  - if route_element.real_distance
-      -#    = route_element.real_distance
-      -#    (
-      -#    = route_element.distance
-      -#    )
-      -#  - else
-      -#    = route_element.distance
-      -#
-      -#%td
-      -#  - if route_element.real_d_elevation
-      -#    = route_element.real_d_elevation
-      -#    (
-      -#    = route_element.d_elevation
-      -#    )
-      -#  - else
-      -#    = route_element.d_elevation
-      -#
-      -#%td
-      -#  - if route_element.real_time_distance
-      -#    = route_element.real_time_distance
-      -#    (
-      -#    = route_element.time_distance
-      -#    )
-      -#  - else
-      -#    = route_element.time_distance
+      %td
+        - if route_element.real_distance
+          = route_element.real_distance
+          (
+          = route_element.distance
+          )
+        - else
+          = route_element.distance
+
+      %td
+        - if route_element.real_d_elevation
+          = route_element.real_d_elevation
+          (
+          = route_element.d_elevation
+          )
+        - else
+          = route_element.d_elevation
+
+      %td
+        - if route_element.real_time_distance
+          = route_element.real_time_distance
+          (
+          = route_element.time_distance
+          )
+        - else
+          = route_element.time_distance
 
       %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
       -#%td= link_to 'Google', route_element.google_url, target: '_blank'

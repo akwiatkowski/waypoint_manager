@@ -8,6 +8,7 @@ en:
   delete: "Delete"
   details: "Details"
   are_you_sure: "Are you sure?"
+  _calculated_: "(calculated)"
 
   private: "Private"
   public: "Public"
@@ -49,6 +50,14 @@ en:
 
   route:
     plural: "Routes"
+
+  route_element:
+    distance: "Distance [m]"
+    real_distance: "Distance [m] (real)"
+    d_elevation: "Δ Elevation [m]"
+    real_d_elevation: "Δ Elevation [m] (real)"
+    time_distance: "Distance [min]"
+    real_time_distance: "Distance [min] (real)"
 
   importer:
     title: "Importer"
