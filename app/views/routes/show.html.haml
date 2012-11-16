@@ -11,6 +11,13 @@
     %td
       = resource.name
 
+  - unless resource.url.blank?
+    %tr
+      %td
+        = t('route.url')
+      %td
+        = link_to resource.url, resource.url
+
   %tr
     %td
       = t('route.distance')
