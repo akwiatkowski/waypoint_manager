@@ -12,8 +12,12 @@
     %th Distance [m]
     %th &#916; Elevation [m]
     %th Time distance [min]
+    %th= t('details')
+    %th
+    %th= t('edit')
+    %th= t('delete')
 
-  - @route_elements.each do |route_element|
+  - collection.each do |route_element|
     %tr
       %td
         = link_to area_waypoint_path(route_element.waypoint.area, route_element.waypoint) do
@@ -46,14 +50,29 @@
         - else
           = route_element.time_distance
 
-      %td= link_to 'Show', route_route_element_path(route_element.route, route_element)
-      -#%td= link_to 'Google', route_element.google_url, target: '_blank'
-      - if can? :edit, @route
-        %td= link_to 'Edit', edit_route_route_element_path(route_element.route, route_element)
-      - if can? :edit, @route
-        %td= link_to 'Destroy', route_route_element_path(route_element.route, route_element), :confirm => 'Are you sure?', :method => :delete
+      %td
+        = link_to route_route_element_path(route_element.route, route_element), class: 'btn btn-mini btn-info' do
+          %i.icon-search
+          = t('details')
+          
+      %td
+        - unless route_element.is_first_on_route?
+          = link_to 'Google', route_element.google_url, target: '_blank', class: 'btn btn-mini'
+
+      %td
+        - if can? :edit, route_element
+          = link_to edit_route_route_element_path(route_element.route, route_element), class: 'btn btn-mini' do
+            %i.icon-edit
+
+      %td
+        - if can? :destroy, route_element
+          = link_to route_route_element_path(route_element.route, route_element), confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+            %i.icon-remove
 
 %br
 
-- if can? :edit, @route
-  = link_to 'Add route element', new_route_route_element_path(params[:route_id])
+.btn-group
+  - if can?(:create, RouteElement) and can?(:edit, @route)
+    = link_to new_route_route_element_path(@route), class: 'btn' do
+      %i.icon-pencil
+      = t('route.add_new_element')

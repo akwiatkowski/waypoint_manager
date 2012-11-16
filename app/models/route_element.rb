@@ -68,7 +68,7 @@ class RouteElement < ActiveRecord::Base
   end
 
   def google_url
-    "https://maps.google.com/maps?saddr=#{self.start.lat},#{self.start.lon}&daddr=#{self.finish.lat},#{self.finish.lon}"
+    "https://maps.google.com/maps?saddr=#{self.previous_route_element.waypoint.lat},#{self.previous_route_element.waypoint.lon}&daddr=#{self.waypoint.lat},#{self.waypoint.lon}"
   end
 
   def previous_or_last
@@ -77,6 +77,10 @@ class RouteElement < ActiveRecord::Base
     else
       self.previous_route_element
     end
+  end
+
+  def is_first_on_route?
+    self.previous_route_element_id.nil?
   end
 
   def is_first_on_route_when_creating_new?
