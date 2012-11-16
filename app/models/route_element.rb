@@ -10,30 +10,58 @@ class RouteElement < ActiveRecord::Base
 
   validates_presence_of :waypoint, :route
 
-  after_initialize :assign_previous
+  after_create :update_route_last_route_element_id
 
-  def assign_previous
-    self.previous_route_element_id ||= self.route.last_route_element_id
-  end
+  def update_route_last_route_element_id
+    if self.route.last_route_element_id
+      # f. magic!
+      self.previous_route_element_id ||= self.route.last_route_element_id
+      self.route.last_route_element.next_route_element_id = self.id
 
-  after_create :assign_last_route_element_id
-
-  def assign_last_route_element_id
-    a = self.route.last_route_element_id
-    b = self.id
-
-    if a.nil? or a < b
-      self.route.last_route_element_id = b
-      self.route.save!
+      self.previous_route_element.save!
+      self.previous_route_element.reload
+      self.route.last_route_element.save!
+      self.route.last_route_element.reload
     end
 
-    # assign next
-    if not a.nil? and not a == b
-      rn = RouteElement.find(a)
-      rn.next_route_element_id = b
-      rn.save!
-    end
+    self.route.last_route_element_id = self.route.route_elements.last.id
+    self.route.save!
   end
+
+
+  #
+  #def previous_route_element_id
+  #  if self.route
+  #    self.previous_route_element_id ||= self.route.last_route_element_id
+  #  end
+  #  super
+  #end
+
+  #after_initialize :assign_previous
+  #
+  #def assign_previous
+  #  return if self.route.nil?
+  #  self.previous_route_element_id ||= self.route.last_route_element_id
+  #end
+  #
+  #after_create :assign_last_route_element_id
+  #
+  #def assign_last_route_element_id
+  #  a = self.route.last_route_element_id
+  #  b = self.id
+  #
+  #  if a.nil? or a < b
+  #    self.route.last_route_element_id = b
+  #    self.route.save!
+  #  end
+  #
+  #  # assign next
+  #  if not a.nil? and not a == b
+  #    rn = RouteElement.find(a)
+  #    rn.next_route_element_id = b
+  #    rn.save!
+  #  end
+  #end
 
   ## Recalculate distance
   #def calculate_distance

@@ -3,6 +3,7 @@ class Route < ActiveRecord::Base
   has_many :route_elements
   belongs_to :area
   belongs_to :user
+  belongs_to :last_route_element, foreign_key: 'last_route_element_id', class_name: 'RouteElement'
 
   validates_presence_of :area, :name
 
