@@ -5,8 +5,19 @@ class RouteElementsController < InheritedResources::Base
   belongs_to :route
 
   def continue
-    @route = Route.find(params[:route_id])
-    @last_route_element = @route.route_elements.last
-    new!
+    # TODO remove it
   end
+
+  def create
+    super do |format|
+      format.html { redirect_to route_route_element_path(resource.route, resource)}
+    end
+  end
+
+  def update
+    super do |format|
+      format.html { redirect_to route_route_element_path(resource.route, resource)}
+    end
+  end
+
 end

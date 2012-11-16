@@ -34,7 +34,7 @@ describe RouteElement do
       reb.route = r
       reb.save!
 
-      puts RouteElement.all.to_yaml
+      # puts RouteElement.all.to_yaml
 
       reb.previous_route_element_id.should == rea.id
       reb.previous_route_element.should == rea
@@ -49,6 +49,19 @@ describe RouteElement do
 
       r.reload
       r.last_route_element_id.should == reb.id
+    end
+
+    it "calculate altitude deviation from >1 altitudes" do
+      re = FactoryGirl.create(:route_element)
+      re.save!
+
+      re.real_d_elevation.should be_nil
+      s = "1000 - 900 - 800 - 1000 mnpm"
+      re.track_altitudes = s
+      re.save!
+
+      re.real_d_elevation.should_not be_nil
+      re.real_d_elevation.should == (1000 - 900) + (900 - 800) + (800 - 1000).abs
     end
 
     #it "should create from factory" do

@@ -14,6 +14,9 @@ class RouteElement < ActiveRecord::Base
 
   default_scope order: ('id ASC')
 
+  attr_accessor :track_altitudes
+  before_save :process_track_altitudes
+
   def update_route_last_route_element_id
     if self.route.last_route_element
       self.class.join_elements(self.route.last_route_element_id, self.id)
@@ -35,6 +38,19 @@ class RouteElement < ActiveRecord::Base
     p.save!
   end
 
+  # You can type altitudes and it calculate absolute altitude deviation
+  def process_track_altitudes
+    if self.track_altitudes
+      d_alt = 0
+      alts = self.track_altitudes.scan(/\d+/)
+      return if alts.size < 2
+
+      (1...alts.size).each do |i|
+        d_alt += (alts[i - 1].to_i - alts[i].to_i).abs
+      end
+      self.real_d_elevation = d_alt
+    end
+  end
 
   # Recalculate distance
   def calculate_distance
@@ -42,9 +58,10 @@ class RouteElement < ActiveRecord::Base
     self.waypoint.distance_to(self.previous_route_element.waypoint)
   end
 
+  # Absolute
   def calculate_elevation
     return nil if self.previous_route_element.nil?
-    self.waypoint.elevation - self.previous_route_element.waypoint.elevation
+    (self.waypoint.elevation - self.previous_route_element.waypoint.elevation).abs
   end
 
   def distance
