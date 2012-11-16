@@ -1,4 +1,10 @@
-%h1 Listing route elements
+- default_full = false
+- title = "#{t('route.title')} - #{@route.name} - #{t('route_element.plural')}"
+- content_for :title, title
+%h1= title
+
+= paginate collection
+%br
 
 %table.table.table-striped.table-bordered
   %tr
