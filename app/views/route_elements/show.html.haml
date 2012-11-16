@@ -1,15 +1,28 @@
+- default_full = false
+- if resource.is_first_on_route?
+  - title_addon = ": #{resource.waypoint.name}"
+- else
+  - title_addon = ": #{t(:from)} #{resource.waypoint.name} to #{resource.previous_route_element.waypoint.name}"
+
+- title = "#{@route.name} #{title_addon}"
+- content_for :title, title
+%h1= title
+
 %table.table
   %tr
     %td
       = t('area.title')
     %td{colspan: 2}
-      = @route.area.name
+      = link_to area_path(resource.waypoint.area) do
+        %i.icon-globe
+        = resource.waypoint.area.name
 
   %tr
     %td
       = t('waypoint.title')
     %td{colspan: 2}
       = link_to area_waypoint_path(@route_element.waypoint.area, @route_element.waypoint) do
+        %i.icon-map-marker
         = @route_element.waypoint.name
 
   %tr
@@ -46,12 +59,16 @@
         %span.small= t('_real_')
 
 
-- if can? :edit, @route
-  %p
-    %strong
-      = link_to 'Continue route by adding new elements', continue_route_route_elements_path(@route)
-
-- if can? :edit, @route
-  = link_to 'Edit', edit_route_route_element_path(@route, @route_element)
-  |
-= link_to 'Back', route_route_elements_path(@route)
+.btn-group
+  - if can?(:edit, @route)
+    = link_to new_route_route_element_path(@route), class: 'btn' do
+      %i.icon-file
+      = t('route.add_new_element')
+  - if can?(:edit, resource)
+    = link_to edit_route_route_element_path(@route, resource), class: 'btn' do
+      %i.icon-edit
+      = t('edit')
+  - if can?(:read, @route)
+    = link_to route_route_elements_path(@route), class: 'btn' do
+      %i.icon-search
+      = t(:back)

@@ -4,7 +4,8 @@
 - else
   - title_addon = ": #{t(:from)} #{resource.waypoint.name} to #{resource.previous_route_element.waypoint.name}"
 
-- title = "#{t('route.title')} - #{@route.name} - #{t('route_element.title')}#{title_addon}"
+-# title = "#{t('route.title')} - #{@route.name} - #{t('route_element.title')}#{title_addon}"
+- title = "#{@route.name} #{title_addon}"
 - content_for :title, title
 %h1= title
 
