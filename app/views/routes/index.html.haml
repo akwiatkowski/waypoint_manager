@@ -44,7 +44,10 @@
           = link_to route_route_elements_path(route), class: 'btn btn-mini' do
             %i.icon-list
             = "#{t('route_element.plural')} (#{route.route_elements.count})"
-      %td= link_to 'Show', route
+      %td
+        = link_to route, class: 'btn btn-mini btn-info' do
+          %i.icon-search
+          = t('details')
       %td
         - if can? :edit, route
           = link_to edit_route_path(route), class: 'btn btn-mini' do
