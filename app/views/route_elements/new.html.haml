@@ -1,5 +1,12 @@
-%h1 New route element
+- default_full = false
+- title = "#{t('route.title')} - #{@route.name} - #{t('new')} #{t('route_element.title')}"
+- content_for :title, title
+%h1= title
 
 = render 'form'
 
-= link_to 'Back', route_route_elements_path(params[:route_id])
+.btn-group
+  - if can?(:read, resource.class)
+    = link_to route_route_elements_path(@route), class: 'btn' do
+      %i.icon-search
+      = t(:back)
