@@ -52,6 +52,7 @@ en:
     plural: "Routes"
 
   route_element:
+    plural: "Elements"
     distance: "Distance [m]"
     real_distance: "Distance [m] (real)"
     d_elevation: "Δ Elevation [m]"

@@ -1,4 +1,7 @@
-%h1 Listing routes
+- default_full = false
+- title = "#{t('route.plural')}"
+- content_for :title, title
+%h1= title
 
 = paginate collection
 %br
@@ -28,7 +31,8 @@
       %td= route.name
       %td
         - unless route.url.blank?
-          = link_to "URL", route.url
+          = link_to route.url, class: 'btn btn-mini btn-info' do
+            %i.icon-globe
       %td= route.distance
       %td
         = route.time_distance_human
@@ -37,7 +41,9 @@
         min )
       %td
         - if can? :read, RouteElement
-          = link_to 'Elements', route_route_elements_path(route)
+          = link_to route_route_elements_path(route), class: 'btn btn-mini' do
+            %i.icon-list
+            = "#{t('route_element.plural')} (#{route.route_elements.count})"
       %td= link_to 'Show', route
       %td
         - if can? :edit, route
@@ -52,5 +58,8 @@
 = paginate collection
 %br
 
-- if can? :create, Route
-  = link_to 'New Route', new_route_path
+.btn-group
+  - if can?(:create, Route)
+    = link_to new_resource_path, class: 'btn' do
+      %i.icon-pencil
+      = t(:new)
