@@ -9,7 +9,7 @@
 %table.table.table-striped.table-bordered
   %tr
     %th
-    %th= link_to_sorted "Area Type", :area_type
+    %th= link_to_sorted "Area Type", :area_type_id
     %th= link_to_sorted "Name", :name
     %th Waypoints
     %th= link_to_sorted "Avg. Lat", :avg_lat
@@ -22,7 +22,7 @@
   - collection.each do |area|
     %tr
       %td= image_tag "garmin/#{area.img_symbol}"
-      %td= area.area_type
+      %td= area.area_type_name
       %td= area.name
       %td
         - if can? :read, Waypoint
@@ -44,18 +44,19 @@
           = link_to area, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
             %i.icon-remove
 
-  %tr
-    %td
-    %td= "N/A"
-    %td
-    %td
-      - if can? :read, Waypoint
-        = link_to waypoints_path(wo_area: 't'), class: 'btn btn-mini' do
-          %i.icon-list
-          = "#{t('waypoint.plural')} (#{Waypoint.wo_area.count})"
-    %td
-    %td
-    %td
+  - unless params[:area_type_id]
+    %tr
+      %td
+      %td= "N/A"
+      %td
+      %td
+        - if can? :read, Waypoint
+          = link_to waypoints_path(wo_area: 't'), class: 'btn btn-mini' do
+            %i.icon-list
+            = "#{t('waypoint.plural')} (#{Waypoint.wo_area.count})"
+      %td
+      %td
+      %td
 
 
 = paginate collection

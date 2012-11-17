@@ -49,6 +49,10 @@ en:
     avg_lat: "Average latitude"
     avg_lon: "Average longitude"
     name: "Name"
+    types:
+      Mountains: "Mountains"
+      Cities: "Cities"
+      Countryside: "Countryside"
 
   waypoint:
     title: "Waypoint"

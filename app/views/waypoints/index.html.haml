@@ -86,7 +86,7 @@
     - if @area
       = link_to new_area_waypoint_path(@area), class: 'btn' do
         %i.icon-pencil
-        = "New Waypoint in "
+        = t(:new_waypoint_in)
         = @area.name
     - else
       = link_to 'New Waypoint', new_waypoint_path

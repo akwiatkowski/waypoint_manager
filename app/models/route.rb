@@ -88,8 +88,17 @@ class Route < ActiveRecord::Base
     _zoom = 8 if _zoom < 8
     _zoom = 16 if _zoom > 16
 
-    _width = 2000 if _width > 2000
-    _height = 1500 if _height > 1500
+    if user.can? :draw_super_big_map, Route
+      _width = 2000 if _width > 8000
+      _height = 1500 if _height > 600
+    elsif user.can? :draw_normal_big_map, Route
+      _width = 2000 if _width > 2000
+      _height = 1500 if _height > 1500
+    else
+      _width = 2000 if _width > 1000
+      _height = 1500 if _height > 500
+    end
+
 
     require 'RMagick'
     if _osm

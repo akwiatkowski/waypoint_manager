@@ -11,15 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115232953) do
+ActiveRecord::Schema.define(:version => 20121117131349) do
+
+  create_table "area_types", :force => true do |t|
+    t.string   "name"
+    t.string   "sym"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "areas", :force => true do |t|
     t.string   "name"
-    t.string   "area_type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.float    "avg_lat"
     t.float    "avg_lon"
+    t.text     "desc"
+    t.string   "url"
+    t.string   "photo_url"
+    t.integer  "area_type_id"
   end
 
   create_table "route_elements", :force => true do |t|
@@ -91,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20121115232953) do
     t.string   "phone"
     t.string   "email"
     t.string   "official_url"
+    t.string   "photo_url"
   end
 
 end

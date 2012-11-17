@@ -11,6 +11,8 @@ class Ability
       can :manage, Waypoint, user_id: user.id
       can :manage, Route, user_id: user.id
       can :manage, RouteElement, route: {user_id: user.id}
+
+      can :draw_normal_big_map, Route
     end
 
     if user and user.admin
@@ -21,6 +23,8 @@ class Ability
 
       can :manage, User
       can :manage, Importer
+
+      can :draw_super_big_map, Route
     end
 
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities

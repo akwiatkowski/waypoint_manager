@@ -15,4 +15,11 @@ class User < ActiveRecord::Base
   has_many :waypoints
   has_many :routes
   has_many :route_elements, through: :routes
+
+  def ability
+    @ability ||= Ability.new(self)
+  end
+
+  delegate :can?, :cannot?, :to => :ability
+
 end

@@ -18,8 +18,13 @@
     = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
       %i.icon-remove
       = t(:delete)
+  - if can? :create, Waypoint
+    - if @area
+      = link_to new_area_waypoint_path(@area), class: 'btn' do
+        %i.icon-pencil
+        = t(:new_waypoint_in)
+        = @area.name
   - if can?(:read, resource.class)
     = link_to areas_path, class: 'btn' do
       %i.icon-search
       = t(:back)
-
