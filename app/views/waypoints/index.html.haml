@@ -63,7 +63,11 @@
           = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
 
       %td
-        = link_to waypoint, class: 'btn btn-mini btn-info' do
+        - if waypoint.area
+          - _url = area_waypoint_path(waypoint.area, waypoint)
+        - else
+          - _url = waypoint
+        = link_to _url, class: 'btn btn-mini btn-info' do
           %i.icon-search
           = t('details')
       %td

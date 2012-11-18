@@ -1,5 +1,8 @@
 - default_full = false
-- title = "#{t('new')} - #{t('waypoint.title')}"
+- if @area
+  - title = title_string([t('new_waypoint_in') + " " + @area.name])
+- else
+  - title = title_string([t('new') + " " + t('waypoint.title')])
 - content_for :title, title
 %h1= title
 
