@@ -1,5 +1,5 @@
 - default_full = false
-- title = "#{t('edit')} - #{t('waypoint.title')} - #{resource.name}"
+- title = title_string([resource.name, t('waypoint.title') + " " + t('edit')])
 - content_for :title, title
 %h1= title
 

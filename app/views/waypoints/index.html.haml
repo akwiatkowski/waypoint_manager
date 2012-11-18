@@ -1,8 +1,8 @@
 - default_full = false
 - if @area
-  - title = "#{t('waypoint.plural')} - #{@area.name}"
+  - title = title_string([t('waypoint.plural'), @area.name])
 - else
-  - title = "#{t('waypoint.plural')}"
+  - title = title_string([t('waypoint.plural')])
 - content_for :title, title
 %h1= title
 
@@ -35,10 +35,14 @@
         - if waypoint.is_private
           = image_tag 'padlock.png'
         = waypoint.name
-      - unless waypoint.area.nil?
-        %td= waypoint.area.name
-      - else
-        %td
+      %td
+        - unless waypoint.area.nil?
+          - if can? :read, waypoint.area
+            = link_to waypoint.area.name, waypoint.area
+          - else
+            = waypoint.area.name
+        - else
+          = ""
       %td
         = waypoint.created_at.to_s(:db)
         - if waypoint.imported?

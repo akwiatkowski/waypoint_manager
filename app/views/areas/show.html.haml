@@ -1,5 +1,6 @@
 - default_full = false
-- title = "#{t('area.title')} - #{resource.name}"
+- title = "#{t('area.title')} - #{}"
+- title = title_string([resource.name, t('area.title')])
 - content_for :title, title
 %h1= title
 
