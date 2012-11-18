@@ -4,6 +4,12 @@ class Waypoint < ActiveRecord::Base
   has_many :route_elements
   belongs_to :user
 
+  after_create :update_area_avg_lat_lon
+
+  def update_area_avg_lat_lon
+    self.area.update_avg_lat_lon!
+  end
+
   GEO_NEAR = 0.3
   scope :near, lambda { |_w|
     where(["lat between ? and ? and lon between ? and ?",

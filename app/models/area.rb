@@ -8,6 +8,7 @@ class Area < ActiveRecord::Base
   scope :area_type_id, lambda { |_area_type_id| where(area_type_id: _area_type_id) }
 
   scope :ordered, order(:name)
+  scope :horizontal, order("avg_lon ASC")
   delegate :name, to: :area_type, prefix: :area_type, allow_nil: true
 
   def img_symbol
@@ -24,6 +25,11 @@ class Area < ActiveRecord::Base
       self.avg_lon = self.waypoints.average(:lon)
     end
     return self
+  end
+
+  def update_avg_lat_lon!
+    update_avg_lat_lon
+    save!
   end
 
   #def area_type

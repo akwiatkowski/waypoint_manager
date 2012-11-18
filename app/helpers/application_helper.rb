@@ -7,6 +7,10 @@ module ApplicationHelper
     return s
   end
 
+  def title_string(array)
+    return array.join(" - ")
+  end
+
   def nice_links
     { "Competitors" =>
         [
