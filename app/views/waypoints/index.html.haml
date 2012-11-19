@@ -100,4 +100,5 @@
       = link_to 'New Waypoint', new_waypoint_path
   - if @area and can? :read, @area
     = link_to @area.name, @area, class: 'btn'
+  = link_to 'Full table', {full: true}, class: 'btn'
 

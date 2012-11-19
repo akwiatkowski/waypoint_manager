@@ -2,7 +2,7 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :waypoint_id, as: :select, collection: @route_element.possible_next_waypoint, include_blank: false, label_method: :collection_label
+    = f.input :waypoint_id, as: :select, collection: @route_element.possible_next_waypoint, include_blank: false, label_method: :collection_label, input_html: {class: 'input-xxlarge'}
 
     - unless @route_element.is_first_on_route_when_creating_new?
       = f.input :real_distance

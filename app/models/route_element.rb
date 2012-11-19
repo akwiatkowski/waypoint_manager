@@ -116,7 +116,8 @@ class RouteElement < ActiveRecord::Base
       _near_waypoints = Waypoint.near(_previous_waypoint).all
       # add distance
       _near_waypoints.each do |w|
-        w.tmp_distance = w.distance_to(_previous_waypoint)
+        w.tmp_distance = (w.distance_to(_previous_waypoint) * 0.1).round * 0.01
+        w.tmp_direction = _previous_waypoint.heading_to_human(w)
       end
       # and sort
       return _near_waypoints.sort { |a, b| a.tmp_distance <=> b.tmp_distance }

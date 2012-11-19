@@ -30,13 +30,17 @@ class Waypoint < ActiveRecord::Base
   default_scope lambda { includes(:area) }
 
   # Temporary distance used in continuing route
-  attr_accessor :tmp_distance
+  attr_accessor :tmp_distance, :tmp_direction
 
   # Used in continuing route to display distance to next waypoint
   def collection_label
     _str = self.name
     if @tmp_distance
-      _str += " (#{tmp_distance})"
+      _str += " (#{tmp_distance}km"
+      if @tmp_direction
+        _str += " " + @tmp_direction
+      end
+      _str += ")"
     end
     return _str
   end
@@ -127,6 +131,38 @@ class Waypoint < ActiveRecord::Base
     self_geo = Geokit::LatLng.new(self.lat, self.lon)
     other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
     (self_geo.distance_to(other_geo, units: :kms) * 1000.0).ceil
+  end
+
+  def heading_to(_waypoint)
+    return nil if _waypoint.nil? or _waypoint == self
+    self_geo = Geokit::LatLng.new(self.lat, self.lon)
+    other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
+    self_geo.heading_to(other_geo)
+  end
+
+  def heading_to_human(_waypoint)
+    h = heading_to(_waypoint)
+    return nil if h.nil?
+
+    h += 22.5
+    h = h.round
+    h %= 360
+    h /= 45.0
+    h = h.floor
+
+    h = case h
+      when 0 then "N"
+      when 1 then "NE"
+      when 2 then "E"
+      when 3 then "SE"
+      when 4 then "S"
+      when 5 then "SW"
+      when 6 then "W"
+      when 7 then "NW"
+      else "error"
+    end
+    
+    return h.to_s
   end
 
   def imported?
