@@ -4,7 +4,11 @@
 - content_for :title, title
 %h1= title
 
-= raw simple_show_helper(resource, timestamps: true)
+.row
+  .span8
+    = raw simple_show_helper(resource, timestamps: true)
+  .span4
+    = render partial: '/waypoints/panoramio'
 
 .btn-group
   - if can?(:edit, resource)

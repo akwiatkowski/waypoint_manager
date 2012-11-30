@@ -3,62 +3,67 @@
 - content_for :title, title
 %h1= title
 
-%table.table
-  %tr
-    %td
-      = t('area.title')
-    %td
-      = resource.area.name
+.row
+  .span8
+    %table.table
+      %tr
+        %td
+          = t('area.title')
+        %td
+          = resource.area.name
 
-  %tr
-    %td
-      = t('route.name')
-    %td
-      = resource.name
+      %tr
+        %td
+          = t('route.name')
+        %td
+          = resource.name
 
-  - unless resource.url.blank?
-    %tr
-      %td
-        = t('route.url')
-      %td
-        = link_to resource.url, resource.url
+      - unless resource.url.blank?
+        %tr
+          %td
+            = t('route.url')
+          %td
+            = link_to resource.url, resource.url
 
-  %tr
-    %td
-      = t('route.distance')
-    %td
-      = resource.distance
-  %tr
-    %td
-      = t('route_element.d_elevation')
-    %td
-      = resource.d_elevation
-  %tr
-    %td
-      = t('route_element.time_distance')
-    %td
-      = resource.time_distance_human
-      (
-      = resource.time_distance
-      )
+      %tr
+        %td
+          = t('route.distance')
+        %td
+          = resource.distance
+      %tr
+        %td
+          = t('route_element.d_elevation')
+        %td
+          = resource.d_elevation
+      %tr
+        %td
+          = t('route_element.time_distance')
+        %td
+          = resource.time_distance_human
+          (
+          = resource.time_distance
+          )
 
 
 
-%p
-  = t('route_element.plural')
-  = "-"
-  = resource.route_elements.count
+    %p
+      = t('route_element.plural')
+      = "-"
+      = resource.route_elements.count
 
-%table.table
-  - resource.route_elements.each_with_index do |route_element, i|
-    %tr
-      %td
-        = i + 1
-      %td
-        - if can? :read, route_element
-          = link_to route_element.waypoint.name, route_route_element_path(resource, route_element)
-        - else
-          = route_element.waypoint.name
+    %table.table
+      - resource.route_elements.each_with_index do |route_element, i|
+        %tr
+          %td
+            = i + 1
+          %td
+            - if can? :read, route_element
+              = link_to route_element.waypoint.name, route_route_element_path(resource, route_element)
+            - else
+              = route_element.waypoint.name
+
+  .span4
+    = render partial: '/waypoints/panoramio'
 
 .btn-group
   = link_to route_route_elements_path(resource), class: 'btn' do

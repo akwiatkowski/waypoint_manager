@@ -32,8 +32,20 @@ class Area < ActiveRecord::Base
     save!
   end
 
-  #def area_type
-  #  TYPES[self.area_type_id - 1]
-  #end
+  def sw_lat
+    self.waypoints.order("lat ASC").first.lat - Waypoint::PANORAMIO_NEAR
+  end
+
+  def ne_lat
+    self.waypoints.order("lat DESC").first.lat + Waypoint::PANORAMIO_NEAR
+  end
+
+  def sw_lon
+    self.waypoints.order("lon ASC").first.lon - Waypoint::PANORAMIO_NEAR
+  end
+
+  def ne_lon
+    self.waypoints.order("lon DESC").first.lon + Waypoint::PANORAMIO_NEAR
+  end
 
 end

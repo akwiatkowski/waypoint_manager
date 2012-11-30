@@ -1,0 +1,17 @@
+#panoramio_photos
+:javascript
+  var myRequest = new panoramio.PhotoRequest({
+    'rect': {'sw': {'lat': #{resource.sw_lat}, 'lng': #{resource.sw_lon} }, 'ne': {'lat': #{resource.ne_lat}, 'lng': #{resource.ne_lon} }}
+  });
+
+  var myOptions = {
+    'width': 200,
+    'height': 600,
+    'columns': 3,
+    'rows': 8,
+    'orientation': panoramio.PhotoListWidgetOptions.Orientation.VERTICAL,
+    'croppedPhotos': true
+  };
+
+  var widget = new panoramio.PhotoListWidget('panoramio_photos', myRequest, myOptions);
+  widget.setPosition(0);

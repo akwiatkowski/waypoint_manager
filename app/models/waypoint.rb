@@ -11,6 +11,9 @@ class Waypoint < ActiveRecord::Base
   end
 
   GEO_NEAR = 0.3
+  # http://www.panoramio.com/api/widget/api.html
+  PANORAMIO_NEAR = 0.005
+
   scope :near, lambda { |_w|
     where(["lat between ? and ? and lon between ? and ?",
            _w.lat - GEO_NEAR,
@@ -175,6 +178,22 @@ class Waypoint < ActiveRecord::Base
 
   def lon_short
     "%.4f" % lon
+  end
+
+  def sw_lat
+    self.lat - PANORAMIO_NEAR
+  end
+
+  def ne_lat
+    self.lat + PANORAMIO_NEAR
+  end
+
+  def sw_lon
+    self.lon - PANORAMIO_NEAR
+  end
+
+  def ne_lon
+    self.lon + PANORAMIO_NEAR
   end
 
 end

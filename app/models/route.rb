@@ -137,8 +137,26 @@ class Route < ActiveRecord::Base
     e.to_png
   end
 
-  def waypoints
-    self.route_elements.collect { |re| re.waypoint }
+  #def waypoints
+  #  self.route_elements.collect { |re| re.waypoint }
+  #end
+
+  has_many :waypoints, through: :route_elements
+
+  def sw_lat
+    self.waypoints.order("lat ASC").first.lat - Waypoint::PANORAMIO_NEAR
+  end
+
+  def ne_lat
+    self.waypoints.order("lat DESC").first.lat + Waypoint::PANORAMIO_NEAR
+  end
+
+  def sw_lon
+    self.waypoints.order("lon ASC").first.lon - Waypoint::PANORAMIO_NEAR
+  end
+
+  def ne_lon
+    self.waypoints.order("lon DESC").first.lon + Waypoint::PANORAMIO_NEAR
   end
 
 end
