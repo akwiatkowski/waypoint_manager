@@ -6,6 +6,8 @@ class Waypoint < ActiveRecord::Base
 
   after_create :update_area_avg_lat_lon
 
+  validates_presence_of :name, :lat, :lon
+
   def update_area_avg_lat_lon
     self.area.update_avg_lat_lon!
   end
@@ -26,6 +28,7 @@ class Waypoint < ActiveRecord::Base
   scope :wo_area, lambda { where(area_id: nil) }
   scope :is_private, lambda { where(is_private: true) }
   scope :is_public, lambda { where(is_private: false) }
+  scope :sym, lambda { |_sym| where(sym: _sym) }
 
   # http://stackoverflow.com/questions/639171/what-is-causing-this-activerecordreadonlyrecord-error
   #default_scope lambda { order(:created_at).joins("LEFT JOIN `areas` ON waypoints.area_id = areas.id") }

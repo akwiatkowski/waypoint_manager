@@ -6,6 +6,10 @@
 - content_for :title, title
 %h1= title
 
+= form_tag url_for(params), method: :get, class: 'form-search form-inline' do
+  = select_tag :sym, options_for_select(Waypoint::SYMBOLS.keys, params[:sym])
+  = button_tag t('filter'), class: 'btn'
+
 = paginate collection
 %br
 
