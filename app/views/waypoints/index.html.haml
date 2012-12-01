@@ -10,6 +10,12 @@
   = select_tag :sym, options_for_select(Waypoint::SYMBOLS.keys, params[:sym])
   = button_tag t('filter'), class: 'btn'
 
+  -# links for special syms
+  .btn-group
+    = link_to t('cities'), url_for(params.merge(sym: 'Residence')), class: 'btn'
+    = link_to t('places_to_rest'), url_for(params.merge(sym: 'Lodging')), class: 'btn'
+    = link_to t('summits'), url_for(params.merge(sym: 'Summit')), class: 'btn'
+
 = paginate collection
 %br
 

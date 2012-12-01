@@ -58,6 +58,22 @@ class Waypoint < ActiveRecord::Base
 
   # http://freegeographytools.com/2008/garmin-gps-unit-waypoint-icons-table
   SYMBOLS = {
+    "Residence" => "residence1.gif", # towns, villages, cities, ...
+    "Lodging" => "lodging3.gif", # rooms, beds, place to sleep, mountain hus
+    "Trail Head" => "trail-head1.gif", # other trail parts, not summits
+    "Summit" => "summit1.gif", # top of mountain
+    "Scenic Area" => "scenic-area1.gif", # for an awesome photos, or any other interesting part of track
+    "Picnic Area" => "picnic-area1.gif", # any "light hiking" places
+
+    "Building" => "building1.gif",
+    "Church" => "church1.gif",
+    "Cemetery" => "cemetery1.gif",
+
+    "Restaurant" => "restaurant5.gif", # any place to eat
+    "Shopping" => "shopping3.gif",
+
+    "Ground Transportation" => "ground-transportation1.gif", # all public ground transportation stops
+
     "Flag, Blue" => "blue-flag1.gif",
     "Flag, Green" => "green-flag1.gif",
     "Flag, Red" => "red-flag1.gif",
@@ -69,22 +85,6 @@ class Waypoint < ActiveRecord::Base
     #"Block, Blue",
     #"Block, Green",
     #"Block, Red",
-
-    "Summit" => "summit1.gif",
-    "Trail Head" => "trail-head1.gif", # other trail parts, not summits
-    "Lodging" => "lodging3.gif", # rooms, beds, place to sleep
-    "Restaurant" => "restaurant5.gif", # any place to eat
-    "Shopping" => "shopping3.gif",
-
-    "Picnic Area" => "picnic-area1.gif", # any "light hiking" places
-    "Scenic Area" => "scenic-area1.gif", # for an awesome photos
-
-    "Residence" => "residence1.gif", # towns, villages, ...
-    "Building" => "building1.gif",
-    "Church" => "church1.gif",
-    "Cemetery" => "cemetery1.gif",
-
-    "Ground Transportation" => "ground-transportation1.gif" # all public ground transportation
   }
 
   def google_maps_path(map_zoom = 13)
