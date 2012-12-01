@@ -1,0 +1,76 @@
+- default_full = false
+%table.table.table-striped.table-bordered
+  %tr
+    %th
+    %th= link_to_sorted "Name", :name
+    %th= link_to_sorted "Area", :area_id
+    %th= link_to_sorted "Time", :created_at
+
+    %th= link_to_sorted "El", :elevation
+    - if default_full || params[:full]
+      %th= link_to_sorted "Lat/Lon", [:lat, :lon]
+    %th Private
+
+    %th Show
+    %th= link_to_sorted "Url", :url
+    %th Map
+    %th Edit
+    %th Destroy
+
+
+  - collection.each do |waypoint|
+    %tr
+      %td= image_tag "garmin/#{waypoint.img_symbol}"
+      %td
+        - if waypoint.is_private
+          = image_tag 'padlock.png'
+        = waypoint.name
+      %td
+        - unless waypoint.area.nil?
+          - if can? :read, waypoint.area
+            = link_to waypoint.area.name, waypoint.area
+          - else
+            = waypoint.area.name
+        - else
+          = ""
+      %td
+        = waypoint.created_at.to_s(:db)
+        - if waypoint.imported?
+          %br
+          = image_tag "imported.gif", style: "height: 10px;"
+          %span.small= waypoint.imported_at.to_s(:db)
+
+
+      %td= waypoint.elevation
+      - if default_full || params[:full]
+        %td
+          = waypoint.lat_short
+          = waypoint.lon_short
+
+      %td
+        = form_for waypoint do |f|
+          = f.hidden_field :is_private, value: (! waypoint.is_private)
+          = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
+
+      %td
+        - if waypoint.area
+          - _url = area_waypoint_path(waypoint.area, waypoint)
+        - else
+          - _url = waypoint
+        = link_to _url, class: 'btn btn-mini btn-info' do
+          %i.icon-search
+          = t('details')
+      %td
+        - unless waypoint.url.blank?
+          = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
+            %i.icon-globe
+      %td
+        = waypoint_map_link_to(waypoint)
+      %td
+        - if can? :edit, waypoint
+          = link_to edit_waypoint_path(waypoint), class: 'btn btn-mini' do
+            %i.icon-edit
+      %td
+        - if can? :destroy, waypoint
+          = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+            %i.icon-remove
