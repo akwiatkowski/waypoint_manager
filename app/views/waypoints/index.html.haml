@@ -25,6 +25,15 @@
 = paginate collection
 
 .btn-group
+  - if params[:panoramio]
+    = link_to url_for(panoramio: nil), class: 'btn' do
+      %i.icon-globe
+      Standard
+  - else
+    = link_to url_for(panoramio: true), class: 'btn' do
+      %i.icon-globe
+      Panoramio
+
   - if can? :create, Waypoint
     - if @area
       = link_to new_area_waypoint_path(@area), class: 'btn' do

@@ -61,4 +61,20 @@
             %i.icon-remove
     %tr
       %td{colspan: 10}
-        Panoramio
+        %div{id: "panoramio_#{waypoint.id}"}
+        :javascript
+          var myRequest = new panoramio.PhotoRequest({
+            'rect': {'sw': {'lat': #{waypoint.sw_lat}, 'lng': #{waypoint.sw_lon} }, 'ne': {'lat': #{waypoint.ne_lat}, 'lng': #{waypoint.ne_lon} }}
+          });
+
+          var myOptions = {
+            'width': 1000,
+            'height': 180,
+            'columns': 10,
+            'rows': 1,
+            'orientation': panoramio.PhotoListWidgetOptions.Orientation.HORIZONTAL,
+            'croppedPhotos': true
+          };
+
+          var widget = new panoramio.PhotoListWidget('panoramio_#{waypoint.id}', myRequest, myOptions);
+          widget.setPosition(0);
