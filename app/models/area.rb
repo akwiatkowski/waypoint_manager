@@ -33,18 +33,22 @@ class Area < ActiveRecord::Base
   end
 
   def sw_lat
+    return nil if self.waypoints.empty?
     self.waypoints.order("lat ASC").first.lat - Waypoint::PANORAMIO_NEAR
   end
 
   def ne_lat
+    return nil if self.waypoints.empty?
     self.waypoints.order("lat DESC").first.lat + Waypoint::PANORAMIO_NEAR
   end
 
   def sw_lon
+    return nil if self.waypoints.empty?
     self.waypoints.order("lon ASC").first.lon - Waypoint::PANORAMIO_NEAR
   end
 
   def ne_lon
+    return nil if self.waypoints.empty?
     self.waypoints.order("lon DESC").first.lon + Waypoint::PANORAMIO_NEAR
   end
 
