@@ -1,0 +1,40 @@
+- default_full = false
+- if @area
+  - title = title_string([resource.name, @area.name, t('waypoint.sunrise_sunset')])
+- else
+  - title = title_string([resource.name, t('waypoint.sunrise_sunset')])
+- content_for :title, title
+%h1= title
+
+.row
+  .span8
+    %table.table.sunrise_sunset
+      %tr
+        %th{rowspan: 2}= t(:day)
+        %th.sunrise{colspan: 4}= t(:sunrise)
+        %th.sunset{colspan: 4}= t(:sunset)
+      %tr
+        %th.sunrise.civil civil
+        %th.sunrise.official official
+        %th.sunrise.nautical nautical
+        %th.sunrise.astronomical astronomical
+
+        %th.sunset.civil civil
+        %th.sunset.official official
+        %th.sunset.nautical nautical
+        %th.sunset.astronomical astronomical
+
+
+      - @sunrise.each do |s|
+        %tr
+          %td= s[:date]
+
+          %td.sunrise.civil= l(s[:sunrise][:civil], format: :short_time)
+          %td.sunrise.official= l(s[:sunrise][:official], format: :short_time)
+          %td.sunrise.nautical= l(s[:sunrise][:nautical], format: :short_time)
+          %td.sunrise.astronomical= l(s[:sunrise][:astronomical], format: :short_time)
+
+          %td.sunset.civil= l(s[:sunset][:civil], format: :short_time)
+          %td.sunset.official= l(s[:sunset][:official], format: :short_time)
+          %td.sunset.nautical= l(s[:sunset][:nautical], format: :short_time)
+          %td.sunset.astronomical= l(s[:sunset][:astronomical], format: :short_time)

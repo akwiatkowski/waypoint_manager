@@ -20,6 +20,7 @@ en:
 
   from: "from"
   to: "to"
+  day: "Day"
 
   created_at: "Created at"
   updated_at: "Updated at"
@@ -31,6 +32,13 @@ en:
   back_to_area_waypoints: "Back to Area Waypoints"
   new_waypoint_in: "New Waypoint in"
   open_url_in_new_window: "Open URL in new window"
+
+  sunrise: "Sunrise"
+  sunset: "Sunset"
+  civil: "Civil"
+  official: "Official"
+  nautical: "Nautical"
+  astronomical: "Astronomical"
 
   user_session:
     destroy: "Sign out"
@@ -59,6 +67,7 @@ en:
     plural: "Waypoints"
     all: "All waypoints"
     to_gpx: "Export to GPX"
+    sunrise_sunset: "Sunrise and sunset"
 
   route:
     title: "Route"
@@ -100,3 +109,7 @@ en:
         real_d_elevation: "meters"
         real_time_distance: "minutes"
         track_altitudes: "meters, ex. 100 - 150 - 300 - 180"
+
+  time:
+    formats:
+      short_time: "%H:%M"

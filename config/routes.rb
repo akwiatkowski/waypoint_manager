@@ -4,15 +4,15 @@ WaypointManager::Application.routes.draw do
   resources :users
 
   resources :routes do
-    resources :route_elements do
-      collection do
-        get 'continue'
-      end
-    end
+    resources :route_elements
   end
 
   resources :areas do
-    resources :waypoints
+    resources :waypoints do
+      member do
+        get 'sunrise_sunset'
+      end
+    end
     resource :exporter, only: [:show]
   end
 

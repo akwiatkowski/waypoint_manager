@@ -11,4 +11,8 @@ class WaypointsController < InheritedResources::Base
   has_scope :sorted, as: :sort
 
   respond_to :gpx, :xml, :json, :csv
+
+  def sunrise_sunset
+    @sunrise = resource.get_sunrise_sunset_data
+  end
 end

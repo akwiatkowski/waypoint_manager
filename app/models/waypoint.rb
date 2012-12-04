@@ -157,17 +157,26 @@ class Waypoint < ActiveRecord::Base
     h = h.floor
 
     h = case h
-      when 0 then "N"
-      when 1 then "NE"
-      when 2 then "E"
-      when 3 then "SE"
-      when 4 then "S"
-      when 5 then "SW"
-      when 6 then "W"
-      when 7 then "NW"
-      else "error"
-    end
-    
+          when 0 then
+            "N"
+          when 1 then
+            "NE"
+          when 2 then
+            "E"
+          when 3 then
+            "SE"
+          when 4 then
+            "S"
+          when 5 then
+            "SW"
+          when 6 then
+            "W"
+          when 7 then
+            "NW"
+          else
+            "error"
+        end
+
     return h.to_s
   end
 
@@ -197,6 +206,36 @@ class Waypoint < ActiveRecord::Base
 
   def ne_lon
     self.lon + PANORAMIO_NEAR
+  end
+
+  def sunrise_sunset(date = Date.today)
+    calc = SolarEventCalculator.new(date, BigDecimal.new(self.lat.to_s), BigDecimal.new(self.lon.to_s))
+
+    d = {
+      sunrise: {
+        civil: calc.compute_utc_civil_sunrise.to_time.localtime,
+        official: calc.compute_utc_official_sunrise.to_time.localtime,
+        nautical: calc.compute_utc_nautical_sunrise.to_time.localtime,
+        astronomical: calc.compute_utc_astronomical_sunrise.to_time.localtime,
+      },
+      sunset: {
+        civil: calc.compute_utc_civil_sunset.to_time.localtime,
+        official: calc.compute_utc_official_sunset.to_time.localtime,
+        nautical: calc.compute_utc_nautical_sunset.to_time.localtime,
+        astronomical: calc.compute_utc_astronomical_sunset.to_time.localtime,
+      },
+      date: date
+    }
+  end
+
+  def get_sunrise_sunset_data
+    res = Array.new
+    d = Date.today
+    (0...10).each do |i|
+      res << sunrise_sunset(d + i)
+    end
+    
+    return res
   end
 
 end

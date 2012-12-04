@@ -17,6 +17,7 @@ gem 'cancan'
 gem 'high_voltage'
 gem 'navigasmic'
 gem 'simple_show_helper'
+gem 'jquery-rails'
 
 # bootstrap stuff
 gem "therubyracer"
@@ -27,6 +28,7 @@ gem "twitter-bootstrap-rails"
 gem 'geokit'
 gem 'geokit-rails3'
 gem 'gpx2exif' #, git: 'git://github.com/akwiatkowski/gpx2exif.git'
+gem 'RubySunrise', require: 'solareventcalculator'
 
 # png manipulation
 gem 'rmagick'

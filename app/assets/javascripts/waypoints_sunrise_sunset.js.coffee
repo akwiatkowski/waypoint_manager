@@ -1,0 +1,2 @@
+#$(document).ready ->
+#$('.sunset').hide()

@@ -18,6 +18,9 @@
       %i.icon-globe
       URL
   = waypoint_map_link_to(resource, "")
+  = link_to sunrise_sunset_area_waypoint_path(resource.area, resource), class: 'btn btn-info' do
+    %i.icon-globe
+    = t('waypoint.sunrise_sunset')
 
 .btn-group
   - if can?(:edit, resource)
