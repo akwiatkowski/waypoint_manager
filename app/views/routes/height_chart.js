@@ -36,7 +36,7 @@ nv.addGraph({
          .width(width)
          .height(height);
 
-      d3.select('#test1')
+      d3.select('#route_height_chart')
         .attr('width', width)
         .attr('height', height)
         .call(graph);
@@ -47,22 +47,25 @@ nv.addGraph({
 
 
 function route_data() {
-  var sin = [],
-      cos = [];
+  <%
+    _data = Array.new
+    distance = 0
+    resource.route_elements.each do |r|
+      _data << {x: distance, y: r.waypoint.elevation}
+      distance += r.distance.to_i
+    end
+  %>
 
-  for (var i = 0; i < 100; i++) {
-    sin.push({x: i, y: Math.sin(i/10)});
-    cos.push({x: i, y: .5 * Math.cos(i/10)});
-  }
+  var d = <%= raw _data.to_json %>;
 
   return [
     {
-      values: sin,
+      values: d,
       key: "Sine Wave",
       color: "#ff7f0e"
     },
     {
-      values: cos,
+      values: d,
       key: "Cosine Wave",
       color: "#2ca02c"
     }
