@@ -5,6 +5,9 @@ WaypointManager::Application.routes.draw do
 
   resources :routes do
     resources :route_elements
+    member do
+      get 'height_chart'
+    end
   end
 
   resources :areas do

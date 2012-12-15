@@ -7,6 +7,9 @@ class Route < ActiveRecord::Base
 
   validates_presence_of :area, :name
 
+  # TODO add height chart using
+  # http://nvd3.org/ghpages/line.html
+
   # Total route distance
   def distance
     _d = 0

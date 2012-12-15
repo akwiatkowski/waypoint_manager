@@ -1,6 +1,7 @@
 - default_full = false
 - title = "#{t('route.title')} - #{resource.name}"
 - content_for :title, title
+= hidden_field_tag :route_id, resource.id
 %h1= title
 
 .row
@@ -64,6 +65,8 @@
 
   .span4
     = render partial: '/waypoints/panoramio'
+
+= render partial: 'chart'
 
 .btn-group
   = link_to route_route_elements_path(resource), class: 'btn' do

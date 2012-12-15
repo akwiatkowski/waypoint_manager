@@ -4,7 +4,7 @@ class Ability
   def initialize(user)
     can :read, Area
     can [:read, :sunrise_sunset], Waypoint, is_private: false
-    can :read, Route, is_private: false
+    can [:read, :height_chart], Route, is_private: false
     can :read, RouteElement, route: {is_private: false}
 
     if user

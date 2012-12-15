@@ -20,6 +20,7 @@ gem 'simple_show_helper'
 gem 'jquery-rails'
 
 # bootstrap stuff
+gem 'libv8', '~> 3.11.8'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
@@ -32,6 +33,9 @@ gem 'RubySunrise', require: 'solareventcalculator'
 
 # png manipulation
 gem 'rmagick'
+
+# js graphs
+gem "nvd3-rails", git: "git@github.com:adeven/nvd3-rails.git", submodules: true
 
 # need some fixes
 #gem 'panoramio', git: 'git://github.com/akwiatkowski/ruby-panoramio.git'
