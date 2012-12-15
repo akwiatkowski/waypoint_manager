@@ -18,6 +18,7 @@ gem 'high_voltage'
 gem 'navigasmic'
 gem 'simple_show_helper'
 gem 'jquery-rails'
+gem 'configatron'
 
 # bootstrap stuff
 gem 'libv8', '~> 3.11.8'

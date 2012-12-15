@@ -39,4 +39,6 @@ WaypointManager::Application.configure do
 
   Rack::Webconsole.inject_jquery = true
   Rack::Webconsole.key_code = 94
+
+  configatron.use_panoramio = false
 end

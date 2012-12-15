@@ -4,7 +4,7 @@ nv.addGraph({
     var width = 700;
     var height = 300;
 
-    var chart = nv.models.line()
+    var chart = nv.models.stackedArea()
                 .width(width)
                 .height(height)
                 .margin({top: 20, right: 20, bottom: 20, left: 20})
