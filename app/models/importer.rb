@@ -50,4 +50,47 @@ class Importer
     f.close
   end
 
+  def self.import_seeds!
+    e = "importer@localhost.org"
+    u = User.find_by_email(e)
+    if u.nil?
+      u = User.new(email: e, password: e, password_confirmation: e, name: 'importer')
+      u.save!
+    end
+
+    f = File.new(Rails.root.join("db", "seeds", "areas.yml"))
+    data = YAML::load(File.open(f))
+
+    # area loop
+    data.each do |a|
+      area = Area.find_by_name(a[:area]['name'])
+      if area.nil?
+        area = Area.new
+      end
+
+      a[:area].keys.each do |k|
+        area.send(k.to_s + "=", a[:area][k])
+      end
+      area.save!
+
+      # waypoints loop
+      a[:waypoints].each do |w|
+        waypoint = Waypoint.where(area_id: a[:area]['id']).where(lat: w['lat']).where(lon: w['lon']).first
+        if waypoint.nil?
+          waypoint = Waypoint.new
+        end
+
+        w.keys.each do |k|
+          waypoint.send(k.to_s + "=", w[k])
+        end
+        waypoint.save!
+
+        waypoint.area = area
+        waypoint.save!
+      end
+    end
+
+    return true
+  end
+
 end
