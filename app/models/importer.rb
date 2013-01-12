@@ -31,4 +31,23 @@ class Importer
 
     return g.pois
   end
+
+  def self.prepare_seeds
+    data = Array.new
+
+    Area.all.each do |a|
+      h = { area: a.attributes, waypoints: Array.new }
+
+      a.waypoints.where(is_private: false).each do |w|
+        h[:waypoints] << w.attributes
+      end
+
+      data << h
+    end
+
+    f = File.new(Rails.root.join("db", "seeds", "areas.yml"), "w")
+    f.puts(data.to_yaml)
+    f.close
+  end
+
 end

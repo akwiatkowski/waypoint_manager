@@ -1,0 +1,6921 @@
+--- 
+- :area: 
+    id: 1
+    name: Beskid Niski
+    created_at: 2012-05-06 19:15:02.959844 Z
+    updated_at: 2012-12-01 12:40:08.548580 Z
+    avg_lat: 49.50410082920354
+    avg_lon: 21.32047767325467
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 352
+    lat: 49.548658333333336
+    lon: 21.35707777777778
+    elevation: 750
+    name: "Bac\xC3\xB3wka PTTK w Bartnem"
+    created_at: 2012-11-19 10:37:42.356447 Z
+    updated_at: 2012-11-19 10:37:42.356447 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_w_Bartnem
+    user_id: 1
+    phone: 018 351 80 32
+    email: andwio@wp.pl
+    official_url: http://www.gorlice.pttk.pl/index.php?id=24&Itemid=37
+    photo_url: 
+  - id: 368
+    lat: 49.46666666666667
+    lon: 21.05
+    elevation: 
+    name: Banica
+    created_at: 2012-11-30 14:18:28.715440 Z
+    updated_at: 2012-11-30 14:18:28.715440 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Banica_%28gmina_U%C5%9Bcie_Gorlickie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 29
+    lat: 49.437222
+    lon: 21.596389
+    elevation: 754
+    name: Baranie
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:32.980074 Z
+    imported_at: 2012-05-06 10:45:32.240034 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 427
+    lat: 49.64137
+    lon: 21.33324
+    elevation: 
+    name: Bednarka
+    created_at: 2012-12-01 12:30:49.614800 Z
+    updated_at: 2012-12-01 12:30:49.614800 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 398
+    lat: 49.59054
+    lon: 21.1166
+    elevation: 
+    name: Bielanka
+    created_at: 2012-12-01 11:55:11.225658 Z
+    updated_at: 2012-12-01 11:55:11.225658 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 75
+    lat: 49.44195
+    lon: 21.09712
+    elevation: 600
+    name: Bieliczna
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-11-15 17:01:19.609193 Z
+    imported_at: 2012-05-06 10:45:39.160671 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bieliczna
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 381
+    lat: 49.418344
+    lon: 21.201525
+    elevation: 400
+    name: Blechnarka
+    created_at: 2012-11-30 14:55:05.994809 Z
+    updated_at: 2012-11-30 14:55:44.625221 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Blechnarka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 48
+    lat: 49.494717
+    lon: 21.110418
+    elevation: 752
+    name: "Bordi\xC3\xB3w Wierch"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:23.042049 Z
+    imported_at: 2012-05-06 10:45:35.237815 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 369
+    lat: 49.532562
+    lon: 21.034842
+    elevation: 400
+    name: Brunary
+    created_at: 2012-11-30 14:19:05.358920 Z
+    updated_at: 2012-11-30 14:39:28.497388 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Brunary
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 419
+    lat: 49.58197
+    lon: 21.46405
+    elevation: 
+    name: Brzezowa
+    created_at: 2012-12-01 12:23:02.877401 Z
+    updated_at: 2012-12-01 12:23:02.877401 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 31
+    lat: 49.388611
+    lon: 21.162778
+    elevation: 1002
+    name: Busov
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:41.866576 Z
+    imported_at: 2012-05-06 10:45:32.519993 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 353
+    lat: 49.53805555555556
+    lon: 21.46527777777778
+    elevation: 500
+    name: Chata Micha
+    created_at: 2012-11-19 10:40:18.658833 Z
+    updated_at: 2012-11-19 10:40:18.658833 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chata_Micha
+    user_id: 1
+    phone: 603 514 046
+    email: misieq73@yahoo.ie
+    official_url: http://www.michata.pl/
+    photo_url: 
+  - id: 354
+    lat: 49.48212222222222
+    lon: 21.625127777777777
+    elevation: 400
+    name: Chatka Malucha w Ropiance
+    created_at: 2012-11-19 10:41:50.598274 Z
+    updated_at: 2012-11-19 10:41:50.598274 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chatka_Malucha_w_Ropiance#Chatka_Malucha_w_Ropiance
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 355
+    lat: 49.490833333333335
+    lon: 21.39138888888889
+    elevation: 400
+    name: Chatka w Nieznajowej
+    created_at: 2012-11-19 10:43:36.821499 Z
+    updated_at: 2012-11-19 10:43:36.821499 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chatka_w_Nieznajowej
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: http://www.nieznajowa.obozy.pl/
+    photo_url: 
+  - id: 77
+    lat: 49.45
+    lon: 21.516111
+    elevation: 600
+    name: Ciechania
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:58:15.125734 Z
+    imported_at: 2012-05-06 10:45:39.416129 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 412
+    lat: 49.44175
+    lon: 21.50937
+    elevation: 
+    name: Ciechania
+    created_at: 2012-12-01 12:18:58.768792 Z
+    updated_at: 2012-12-01 12:18:58.768792 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 370
+    lat: 49.523425
+    lon: 21.078959
+    elevation: 
+    name: Czarna
+    created_at: 2012-11-30 14:19:46.808326 Z
+    updated_at: 2012-11-30 14:20:31.540625 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Czarna_%28wojew%C3%B3dztwo_ma%C5%82opolskie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 387
+    lat: 49.48014
+    lon: 21.36603
+    elevation: 
+    name: Czarne
+    created_at: 2012-12-01 11:46:00.429700 Z
+    updated_at: 2012-12-01 11:46:00.429700 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 32
+    lat: 49.442034
+    lon: 21.200165
+    elevation: 706
+    name: "Czarny Dzia\xC5\x82"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:49.400663 Z
+    imported_at: 2012-05-06 10:45:32.659792 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 417
+    lat: 49.55325
+    lon: 21.48465
+    elevation: 
+    name: Desznica
+    created_at: 2012-12-01 12:21:57.846299 Z
+    updated_at: 2012-12-01 12:21:57.846299 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 423
+    lat: 49.61724
+    lon: 21.38079
+    elevation: 
+    name: Folusz
+    created_at: 2012-12-01 12:27:43.183049 Z
+    updated_at: 2012-12-01 12:27:43.183049 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 395
+    lat: 49.65493
+    lon: 21.16021
+    elevation: 
+    name: Gorlice
+    created_at: 2012-12-01 11:51:46.612903 Z
+    updated_at: 2012-12-01 11:51:46.612903 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 401
+    lat: 49.44421
+    lon: 21.43641
+    elevation: 
+    name: Grab
+    created_at: 2012-12-01 12:10:31.136165 Z
+    updated_at: 2012-12-01 12:10:31.136165 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 27
+    lat: 49.571389
+    lon: 21.538611
+    elevation: 567
+    name: "Grzywacka G\xC3\xB3ra"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:24.156074 Z
+    imported_at: 2012-05-06 10:45:31.943533 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 371
+    lat: 49.524428
+    lon: 21.266241
+    elevation: 
+    name: "G\xC5\x82adysz\xC3\xB3w"
+    created_at: 2012-11-30 14:21:40.491793 Z
+    updated_at: 2012-11-30 14:41:11.859233 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/G%C5%82adysz%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 41
+    lat: 49.475201
+    lon: 21.162432
+    elevation: 500
+    name: "Ha\xC5\x84czowa"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:59.723054 Z
+    imported_at: 2012-05-06 10:45:34.232044 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 413
+    lat: 49.45716
+    lon: 21.53838
+    elevation: 
+    name: "Huta Pola\xC5\x84ska"
+    created_at: 2012-12-01 12:19:27.362778 Z
+    updated_at: 2012-12-01 12:19:27.362778 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 38
+    lat: 49.441566
+    lon: 21.064196
+    elevation: 500
+    name: Izby
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:47.866053 Z
+    imported_at: 2012-05-06 10:45:33.709722 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 24
+    lat: 49.367222
+    lon: 21.909722
+    elevation: 600
+    name: Jasiel
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:46:49.236364 Z
+    imported_at: 2012-05-06 10:45:31.466597 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 430
+    lat: 49.36809
+    lon: 21.91309
+    elevation: 
+    name: Jasiel
+    created_at: 2012-12-01 12:37:59.946667 Z
+    updated_at: 2012-12-01 12:37:59.946667 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 388
+    lat: 49.50076
+    lon: 21.31865
+    elevation: 400
+    name: Jasionka
+    created_at: 2012-12-01 11:46:41.651140 Z
+    updated_at: 2012-12-01 11:46:41.651140 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 26
+    lat: 49.4475
+    lon: 21.263889
+    elevation: 881
+    name: "Jaworzyna Koniecznia\xC5\x84ska"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:20.205747 Z
+    imported_at: 2012-05-06 10:45:31.787221 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 433
+    lat: 49.44103
+    lon: 21.80151
+    elevation: 
+    name: "Ja\xC5\x9Bliska"
+    created_at: 2012-12-01 12:40:08.443482 Z
+    updated_at: 2012-12-01 12:40:08.443482 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 84
+    lat: 49.435876
+    lon: 21.17852
+    elevation: 512
+    name: Jedzenie (Wysowa)
+    created_at: 2012-04-29 18:16:19 Z
+    updated_at: 2012-08-09 12:01:48.299876 Z
+    imported_at: 2012-05-06 10:45:40.445453 Z
+    sym: Restaurant
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 90
+    lat: 49.556473
+    lon: 21.072452
+    elevation: 444
+    name: Jedzenie i Sklep
+    created_at: 2012-05-01 10:10:00 Z
+    updated_at: 2012-07-16 13:30:32.482916 Z
+    imported_at: 2012-05-06 10:45:41.245572 Z
+    sym: Shopping
+    area_id: 1
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 374
+    lat: 49.45944444444444
+    lon: 21.307777777777776
+    elevation: 400
+    name: Konieczna
+    created_at: 2012-11-30 14:43:38.990180 Z
+    updated_at: 2012-11-30 14:43:38.990180 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Konieczna_%28wie%C5%9B%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 409
+    lat: 49.52194
+    lon: 21.47366
+    elevation: 
+    name: "Kota\xC5\x84"
+    created_at: 2012-12-01 12:16:40.415382 Z
+    updated_at: 2012-12-01 12:16:40.415382 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 43
+    lat: 49.4625
+    lon: 21.203611
+    elevation: 847
+    name: "Kozie \xC5\xBBebro"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:07.379557 Z
+    imported_at: 2012-05-06 10:45:34.512030 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 410
+    lat: 49.51113
+    lon: 21.50061
+    elevation: 
+    name: Krempna
+    created_at: 2012-12-01 12:17:17.956086 Z
+    updated_at: 2012-12-01 12:17:17.956086 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 389
+    lat: 49.51615
+    lon: 21.31127
+    elevation: 
+    name: Krzywa
+    created_at: 2012-12-01 11:47:41.608990 Z
+    updated_at: 2012-12-01 11:47:41.608990 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 375
+    lat: 49.554839
+    lon: 21.12977
+    elevation: 400
+    name: Kunkowa
+    created_at: 2012-11-30 14:44:48.641734 Z
+    updated_at: 2012-11-30 14:45:25.610485 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kunkowa
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 376
+    lat: 49.50236
+    lon: 21.173716
+    elevation: 400
+    name: "Kwiato\xC5\x84"
+    created_at: 2012-11-30 14:47:27.707017 Z
+    updated_at: 2012-11-30 14:47:27.707017 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kwiato%C5%84
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 416
+    lat: 49.56137
+    lon: 21.52224
+    elevation: 
+    name: "K\xC4\x85ty"
+    created_at: 2012-12-01 12:21:24.116106 Z
+    updated_at: 2012-12-01 12:21:24.116106 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 76
+    lat: 49.428333
+    lon: 21.096111
+    elevation: 997
+    name: Lackowa
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:58:11.127537 Z
+    imported_at: 2012-05-06 10:45:39.292374 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 399
+    lat: 49.5675
+    lon: 21.1372
+    elevation: 
+    name: Leszczyny
+    created_at: 2012-12-01 11:55:49.305531 Z
+    updated_at: 2012-12-01 11:55:49.305531 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 23
+    lat: 49.556111
+    lon: 21.221667
+    elevation: 813
+    name: "Magura Ma\xC5\x82astowska"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:46:14.074218 Z
+    imported_at: 2012-05-06 10:45:31.332995 Z
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 391
+    lat: 49.56995
+    lon: 21.24175
+    elevation: 
+    name: "Ma\xC5\x82ast\xC3\xB3w"
+    created_at: 2012-12-01 11:48:56.568766 Z
+    updated_at: 2012-12-01 11:48:56.568766 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 420
+    lat: 49.59187
+    lon: 21.45203
+    elevation: 
+    name: Mrukowa
+    created_at: 2012-12-01 12:26:25.394571 Z
+    updated_at: 2012-12-01 12:26:25.394571 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 51
+    lat: 49.633056
+    lon: 20.737778
+    elevation: 450
+    name: "Mu\xC5\xBCe\xC5\x84"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:51:03.511929 Z
+    imported_at: 2012-05-06 10:45:35.657524 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 415
+    lat: 49.52896
+    lon: 21.55503
+    elevation: 
+    name: Myscowa
+    created_at: 2012-12-01 12:20:51.290399 Z
+    updated_at: 2012-12-01 12:20:51.290399 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 424
+    lat: 49.62113
+    lon: 21.23299
+    elevation: 
+    name: "M\xC4\x99cina Ma\xC5\x82a"
+    created_at: 2012-12-01 12:28:49.326071 Z
+    updated_at: 2012-12-01 12:28:49.326071 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 425
+    lat: 49.62113
+    lon: 21.25977
+    elevation: 
+    name: "M\xC4\x99cina Wielka"
+    created_at: 2012-12-01 12:29:12.969789 Z
+    updated_at: 2012-12-01 12:29:12.969789 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 403
+    lat: 49.49263
+    lon: 21.40517
+    elevation: 
+    name: Nieznajowa
+    created_at: 2012-12-01 12:11:48.068983 Z
+    updated_at: 2012-12-01 12:11:48.068983 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 367
+    lat: 49.551721
+    lon: 21.18742
+    elevation: 400
+    name: Nowica
+    created_at: 2012-11-30 14:17:28.865382 Z
+    updated_at: 2012-11-30 14:17:28.865382 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Nowica_%28wojew%C3%B3dztwo_ma%C5%82opolskie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 45
+    lat: 49.434645
+    lon: 21.240635
+    elevation: 788
+    name: Obycz
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:13.556065 Z
+    imported_at: 2012-05-06 10:45:34.801767 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 382
+    lat: 49.535
+    lon: 21.166666666666668
+    elevation: 
+    name: Oderne
+    created_at: 2012-11-30 14:57:06.127153 Z
+    updated_at: 2012-11-30 14:57:06.127153 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Oderne
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 36
+    lat: 49.439167
+    lon: 21.123056
+    elevation: 938
+    name: Ostry Wierch (Beskid Niski)
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:05.826715 Z
+    imported_at: 2012-05-06 10:45:33.237807 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 400
+    lat: 49.42735
+    lon: 21.46216
+    elevation: 
+    name: "O\xC5\xBCenna"
+    created_at: 2012-12-01 12:10:05.183780 Z
+    updated_at: 2012-12-01 12:10:05.183780 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 85
+    lat: 49.461531
+    lon: 21.160355
+    elevation: 492
+    name: "PKS Ha\xC5\x84czowa"
+    created_at: 2012-04-30 07:10:48 Z
+    updated_at: 2012-08-09 12:01:44.025725 Z
+    imported_at: 2012-05-06 10:45:40.595451 Z
+    sym: Ground Transportation
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 89
+    lat: 49.555602
+    lon: 21.073157
+    elevation: 448
+    name: "PKS Klimk\xC3\xB3wka"
+    created_at: 2012-05-01 09:46:41 Z
+    updated_at: 2012-07-16 13:30:32.342961 Z
+    imported_at: 2012-05-06 10:45:41.113962 Z
+    sym: Ground Transportation
+    area_id: 1
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 422
+    lat: 49.61524
+    lon: 21.44001
+    elevation: 
+    name: Pielgrzymka
+    created_at: 2012-12-01 12:27:17.036488 Z
+    updated_at: 2012-12-01 12:27:17.036488 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 83
+    lat: 49.45702
+    lon: 21.162273
+    elevation: 482
+    name: "Pod Grzybkiem (Ha\xC5\x84czowa)"
+    created_at: 2012-04-29 10:46:40 Z
+    updated_at: 2012-11-30 14:48:00.932349 Z
+    imported_at: 2012-05-06 10:45:40.296770 Z
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 414
+    lat: 49.49385
+    lon: 21.56687
+    elevation: 
+    name: Polany
+    created_at: 2012-12-01 12:20:19.375402 Z
+    updated_at: 2012-12-01 12:20:19.375402 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 37
+    lat: 49.425825
+    lon: 21.075525
+    elevation: 800
+    name: "Prze\xC5\x82\xC4\x99cz Beskid (Beskid Niski)"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:09.983012 Z
+    imported_at: 2012-05-06 10:45:33.385947 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 44
+    lat: 49.439444
+    lon: 21.248056
+    elevation: 646
+    name: "Prze\xC5\x82\xC4\x99cz Regetowska"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:10.551962 Z
+    imported_at: 2012-05-06 10:45:34.643812 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 428
+    lat: 49.25072222222222
+    lon: 22.038525
+    elevation: 640
+    name: "Prze\xC5\x82\xC4\x99cz \xC5\x81upkowsk"
+    created_at: 2012-12-01 12:33:00.937784 Z
+    updated_at: 2012-12-01 12:33:00.937784 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_%C5%81upkowska
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 30
+    lat: 49.541111
+    lon: 21.805833
+    elevation: 626
+    name: Przymiarki
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:36.419531 Z
+    imported_at: 2012-05-06 10:45:32.388015 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 383
+    lat: 49.54044
+    lon: 21.20475
+    elevation: 400
+    name: "Przys\xC5\x82up"
+    created_at: 2012-12-01 11:36:16.605498 Z
+    updated_at: 2012-12-01 11:36:16.605498 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Przys%C5%82up_%28wojew%C3%B3dztwo_ma%C5%82opolskie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 390
+    lat: 49.55414
+    lon: 21.26132
+    elevation: 
+    name: "P\xC4\x99tna"
+    created_at: 2012-12-01 11:48:20.771849 Z
+    updated_at: 2012-12-01 11:48:20.771849 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 59
+    lat: 49.4666667
+    lon: 21.3833333
+    elevation: 600
+    name: Radocyna
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:56:15.982813 Z
+    imported_at: 2012-05-06 10:45:36.778918 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 386
+    lat: 49.45504
+    lon: 21.37135
+    elevation: 400
+    name: Radocyna
+    created_at: 2012-12-01 11:44:24.066497 Z
+    updated_at: 2012-12-01 11:44:24.066497 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Radocyna
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 429
+    lat: 49.305277777777775
+    lon: 22.0475
+    elevation: 
+    name: Radoszyce
+    created_at: 2012-12-01 12:35:39.761433 Z
+    updated_at: 2012-12-01 12:35:39.761433 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Radoszyce_%28wojew%C3%B3dztwo_podkarpackie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 71
+    lat: 49.45268
+    lon: 21.22367
+    elevation: 600
+    name: "Reget\xC3\xB3w"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:58:07.852728 Z
+    imported_at: 2012-05-06 10:45:38.560904 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 47
+    lat: 49.451928
+    lon: 21.224319
+    elevation: 500
+    name: "Reget\xC3\xB3w Wy\xC5\xBCny (Cementary)"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:20.242982 Z
+    imported_at: 2012-05-06 10:45:35.097762 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 46
+    lat: 49.479444
+    lon: 21.216667
+    elevation: 500
+    name: "Regiet\xC3\xB3w"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:16.840647 Z
+    imported_at: 2012-05-06 10:45:34.958245 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 392
+    lat: 49.60267
+    lon: 21.21977
+    elevation: 400
+    name: "Ropica G\xC3\xB3rna"
+    created_at: 2012-12-01 11:49:56.166020 Z
+    updated_at: 2012-12-01 11:49:56.166020 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 396
+    lat: 49.63792
+    lon: 21.14029
+    elevation: 
+    name: Ropica Polska
+    created_at: 2012-12-01 11:52:36.213894 Z
+    updated_at: 2012-12-01 11:52:36.213894 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 35
+    lat: 49.466667
+    lon: 21.133333
+    elevation: 500
+    name: Ropki
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:01.520605 Z
+    imported_at: 2012-05-06 10:45:33.081407 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 25
+    lat: 49.626667
+    lon: 20.858056
+    elevation: 753
+    name: Rosochatka
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:14.999452 Z
+    imported_at: 2012-05-06 10:45:31.598328 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 34
+    lat: 49.4725
+    lon: 21.233889
+    elevation: 771
+    name: Rotunda (Beskid Niski)
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:57.971454 Z
+    imported_at: 2012-05-06 10:45:32.949648 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 405
+    lat: 49.49318
+    lon: 21.42216
+    elevation: 
+    name: Rozstajne
+    created_at: 2012-12-01 12:13:18.236391 Z
+    updated_at: 2012-12-01 12:13:18.236391 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 421
+    lat: 49.60834
+    lon: 21.46267
+    elevation: 
+    name: "Samokl\xC4\x99ski"
+    created_at: 2012-12-01 12:26:52.173221 Z
+    updated_at: 2012-12-01 12:26:52.173221 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 356
+    lat: 49.54716944444444
+    lon: 21.23056111111111
+    elevation: 740
+    name: "Schronisko PTTK na Magurze Ma\xC5\x82astowskiej"
+    created_at: 2012-11-19 10:44:57.234253 Z
+    updated_at: 2012-11-19 10:44:57.234253 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Magurze_Ma%C5%82astowskiej
+    user_id: 1
+    phone: (0-18) 351-80-57  Kom. 0-795-758-145
+    email: schroniskomagura@gmail.com
+    official_url: http://www.schroniskomagura.pl/
+    photo_url: 
+  - id: 394
+    lat: 49.6258
+    lon: 21.17703
+    elevation: 
+    name: Siary
+    created_at: 2012-12-01 11:51:05.703081 Z
+    updated_at: 2012-12-01 11:51:05.703081 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 418
+    lat: 49.57696
+    lon: 21.49237
+    elevation: 
+    name: Skalnik
+    created_at: 2012-12-01 12:22:26.781116 Z
+    updated_at: 2012-12-01 12:22:26.781116 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 86
+    lat: 49.47294
+    lon: 21.159564
+    elevation: 471
+    name: "Sklep (Ha\xC5\x84czowa)"
+    created_at: 2012-04-30 07:33:51 Z
+    updated_at: 2012-08-09 12:01:40.395697 Z
+    imported_at: 2012-05-06 10:45:40.743263 Z
+    sym: Shopping
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 91
+    lat: 49.480639
+    lon: 21.218343
+    elevation: 400
+    name: "Sklep (Regiet\xC3\xB3w)"
+    created_at: 2012-05-02 10:05:10 Z
+    updated_at: 2012-08-09 12:01:33.275071 Z
+    imported_at: 2012-05-06 10:45:41.385447 Z
+    sym: Shopping
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 87
+    lat: 49.470029
+    lon: 21.160691
+    elevation: 476
+    name: "Sklep 2 (Ha\xC5\x84czowa)"
+    created_at: 2012-05-01 08:03:22 Z
+    updated_at: 2012-08-09 12:01:36.540204 Z
+    imported_at: 2012-05-06 10:45:40.866936 Z
+    sym: Shopping
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 377
+    lat: 49.491769
+    lon: 21.191568
+    elevation: 400
+    name: Skwirtne
+    created_at: 2012-11-30 14:48:51.611984 Z
+    updated_at: 2012-11-30 14:49:20.226067 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Skwirtne
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 50
+    lat: 49.468577
+    lon: 21.647826
+    elevation: 600
+    name: Smereczne
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:54:25.655374 Z
+    imported_at: 2012-05-06 10:45:35.517538 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 49
+    lat: 49.516667
+    lon: 21.233333
+    elevation: 500
+    name: Smerekowiec
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:26.887637 Z
+    imported_at: 2012-05-06 10:45:35.385972 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 378
+    lat: 49.494779
+    lon: 21.07913
+    elevation: 400
+    name: Stawisza
+    created_at: 2012-11-30 14:50:11.544123 Z
+    updated_at: 2012-11-30 14:50:48.883830 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Stawisza
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 397
+    lat: 49.6198
+    lon: 21.08399
+    elevation: 
+    name: Szymbark
+    created_at: 2012-12-01 11:54:16.186443 Z
+    updated_at: 2012-12-01 11:54:16.186443 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 393
+    lat: 49.61245
+    lon: 21.20553
+    elevation: 
+    name: "S\xC4\x99kowa"
+    created_at: 2012-12-01 11:50:26.034100 Z
+    updated_at: 2012-12-01 11:50:26.034100 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 40
+    lat: 49.521357
+    lon: 21.1396
+    elevation: 500
+    name: "U\xC5\x9Bcie Gorlickie"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:55.004784 Z
+    imported_at: 2012-05-06 10:45:34.092230 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 426
+    lat: 49.62613
+    lon: 21.28346
+    elevation: 
+    name: Wapienne
+    created_at: 2012-12-01 12:30:22.501599 Z
+    updated_at: 2012-12-01 12:30:22.501599 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 78
+    lat: 49.462776
+    lon: 21.628771
+    elevation: 600
+    name: Wilsznia
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:58:19.999344 Z
+    imported_at: 2012-05-06 10:45:39.547817 Z
+    sym: Trail Head
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 432
+    lat: 49.43031
+    lon: 21.84185
+    elevation: 
+    name: "Wola Ni\xC5\xBCna"
+    created_at: 2012-12-01 12:39:18.143391 Z
+    updated_at: 2012-12-01 12:39:18.143391 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 431
+    lat: 49.38943
+    lon: 21.87361
+    elevation: 
+    name: "Wola Wy\xC5\xBCna"
+    created_at: 2012-12-01 12:38:55.954185 Z
+    updated_at: 2012-12-01 12:38:55.954185 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wola_Wy%C5%BCna
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 404
+    lat: 49.51715
+    lon: 21.35315
+    elevation: 
+    name: "Wo\xC5\x82owiec"
+    created_at: 2012-12-01 12:12:36.782977 Z
+    updated_at: 2012-12-01 12:12:36.782977 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 33
+    lat: 49.429085
+    lon: 21.208062
+    elevation: 784
+    name: Wysota
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:53.034400 Z
+    imported_at: 2012-05-06 10:45:32.808112 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 42
+    lat: 49.441616
+    lon: 21.173247
+    elevation: 500
+    name: "Wysowa Zdr\xC3\xB3j"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:49:04.756393 Z
+    imported_at: 2012-05-06 10:45:34.380200 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 402
+    lat: 49.45414
+    lon: 21.41684
+    elevation: 
+    name: Wyszowatka
+    created_at: 2012-12-01 12:11:00.659019 Z
+    updated_at: 2012-12-01 12:11:00.659019 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 92
+    lat: 49.445126
+    lon: 21.137573
+    elevation: 659
+    name: "Wzg\xC3\xB3rze Sensu"
+    created_at: 2012-05-03 08:33:58 Z
+    updated_at: 2012-07-16 13:30:32.762644 Z
+    imported_at: 2012-05-06 10:45:41.525613 Z
+    sym: Picnic Area
+    area_id: 1
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 380
+    lat: 49.483963
+    lon: 21.276369
+    elevation: 400
+    name: Zdynia
+    created_at: 2012-11-30 14:53:21.267047 Z
+    updated_at: 2012-11-30 14:54:08.422611 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Zdynia
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 39
+    lat: 49.569919
+    lon: 21.086385
+    elevation: 500
+    name: "\xC5\x81osie"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:48:51.645005 Z
+    imported_at: 2012-05-06 10:45:33.935910 Z
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 384
+    lat: 49.49257
+    lon: 21.26037
+    elevation: 400
+    name: "\xC5\x81ug"
+    created_at: 2012-12-01 11:41:48.236942 Z
+    updated_at: 2012-12-01 11:41:48.236942 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 28
+    lat: 49.564722
+    lon: 21.551944
+    elevation: 641
+    name: "\xC5\x81ysa G\xC3\xB3ra (Beskid Niski)"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:47:29.062588 Z
+    imported_at: 2012-05-06 10:45:32.083742 Z
+    sym: Summit
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 379
+    lat: 49.510832
+    lon: 21.054068
+    elevation: 400
+    name: "\xC5\x9Anietnica"
+    created_at: 2012-11-30 14:51:32.935991 Z
+    updated_at: 2012-11-30 14:52:16.004774 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Anietnica
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 408
+    lat: 49.54534
+    lon: 21.41203
+    elevation: 
+    name: "\xC5\x9Awie\xC5\xBCowa Rusla"
+    created_at: 2012-12-01 12:16:00.969603 Z
+    updated_at: 2012-12-01 12:16:00.969603 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 406
+    lat: 49.51715
+    lon: 21.44293
+    elevation: 
+    name: "\xC5\x9Awi\xC4\x85tkowa Ma\xC5\x82a"
+    created_at: 2012-12-01 12:14:55.727041 Z
+    updated_at: 2012-12-01 12:14:55.727041 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 407
+    lat: 49.52562
+    lon: 21.42937
+    elevation: 
+    name: "\xC5\x9Awi\xC4\x85tkowa Wielka"
+    created_at: 2012-12-01 12:15:26.877389 Z
+    updated_at: 2012-12-01 12:15:26.877389 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 411
+    lat: 49.46909
+    lon: 21.48242
+    elevation: 
+    name: "\xC5\xBBydowskie"
+    created_at: 2012-12-01 12:17:46.654085 Z
+    updated_at: 2012-12-01 12:17:46.654085 Z
+    imported_at: 
+    sym: Residence
+    area_id: 1
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 2
+    name: "Pozna\xC5\x84"
+    created_at: 2012-05-07 07:09:55.299638 Z
+    updated_at: 2012-11-17 13:04:04.541592 Z
+    avg_lat: 52.441641785714296
+    avg_lon: 16.913174714285713
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 2
+  :waypoints: 
+  - id: 208
+    lat: 52.322946
+    lon: 16.935272
+    elevation: 62
+    name: Bench in Forest
+    created_at: 2012-09-30 13:42:01 Z
+    updated_at: 2012-10-08 17:05:55.263905 Z
+    imported_at: 2012-10-08 17:04:49.699571 Z
+    sym: Picnic Area
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 22
+    lat: 52.413851
+    lon: 16.910396
+    elevation: 80
+    name: "Gruby Benek (Pozna\xC5\x84)"
+    created_at: 2012-04-20 16:19:01 Z
+    updated_at: 2012-08-09 11:54:15.772423 Z
+    imported_at: 2012-05-06 10:45:31.201438 Z
+    sym: Restaurant
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 10
+    lat: 52.484444
+    lon: 16.893056
+    elevation: 113
+    name: "G\xC3\xB3ra Morasko (Pozna\xC5\x84)"
+    created_at: 2012-03-18 16:42:47 Z
+    updated_at: 2012-07-16 13:30:22.022600 Z
+    imported_at: 2012-05-06 10:45:29.422128 Z
+    sym: Summit
+    area_id: 2
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 144
+    lat: 52.471936
+    lon: 16.902268
+    elevation: 110
+    name: MPK 88 Deszczowa
+    created_at: 2012-07-23 15:36:19 Z
+    updated_at: 2012-08-09 11:17:41.885387 Z
+    imported_at: 2012-08-09 11:00:16.611403 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 147
+    lat: 52.4894
+    lon: 16.905355
+    elevation: 125
+    name: MPK 88 Morasko
+    created_at: 2012-07-23 15:41:20 Z
+    updated_at: 2012-08-09 11:17:35.187944 Z
+    imported_at: 2012-08-09 11:00:17.039549 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 145
+    lat: 52.484818
+    lon: 16.910082
+    elevation: 129
+    name: MPK 88 Morasko Cmentarz
+    created_at: 2012-07-23 15:39:22 Z
+    updated_at: 2012-08-09 11:17:46.694116 Z
+    imported_at: 2012-08-09 11:00:16.743333 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 146
+    lat: 52.488661
+    lon: 16.908886
+    elevation: 122
+    name: "MPK 88 Morasko Ko\xC5\x9Bci\xC3\xB3\xC5\x82"
+    created_at: 2012-07-23 15:40:22 Z
+    updated_at: 2012-08-09 11:17:37.957169 Z
+    imported_at: 2012-08-09 11:00:16.892120 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 132
+    lat: 52.477102
+    lon: 16.906253
+    elevation: 117
+    name: MPK 88 Szklarniowa
+    created_at: 2012-06-07 11:36:26 Z
+    updated_at: 2012-08-09 11:03:14.197799 Z
+    imported_at: 2012-08-09 11:00:14.471765 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 143
+    lat: 52.468983
+    lon: 16.900852
+    elevation: 101
+    name: MPK 88 Wietrzna
+    created_at: 2012-07-23 15:35:26 Z
+    updated_at: 2012-08-09 11:17:31.142309 Z
+    imported_at: 2012-08-09 11:00:16.480013 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 13
+    lat: 52.281117
+    lon: 17.023424
+    elevation: 64
+    name: "Ma\xC5\x82y wiatrak (pod Poznaniem)"
+    created_at: 2012-03-25 14:33:12 Z
+    updated_at: 2012-07-16 13:30:22.304407 Z
+    imported_at: 2012-05-06 10:45:29.956641 Z
+    sym: Flag, Green
+    area_id: 2
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 204
+    lat: 52.371965
+    lon: 17.001155
+    elevation: 81
+    name: "Miha\xC5\x82owo street (Shop)"
+    created_at: 2012-08-23 17:22:48 Z
+    updated_at: 2012-10-08 17:13:13.718560 Z
+    imported_at: 2012-10-08 17:04:49.090849 Z
+    sym: Shopping
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 207
+    lat: 52.313544
+    lon: 16.94443
+    elevation: 64
+    name: No fishing here
+    created_at: 2012-09-30 12:54:47 Z
+    updated_at: 2012-10-08 17:15:34.067271 Z
+    imported_at: 2012-10-08 17:04:49.543123 Z
+    sym: Scenic Area
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 140
+    lat: 52.511064
+    lon: 16.9775
+    elevation: 78
+    name: "Owi\xC5\x84ska - Sklep 1"
+    created_at: 2012-07-09 16:36:33 Z
+    updated_at: 2012-08-09 11:11:45.008952 Z
+    imported_at: 2012-08-09 11:00:15.976455 Z
+    sym: Shopping
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 141
+    lat: 52.511354
+    lon: 16.987205
+    elevation: 81
+    name: "Owi\xC5\x84ska - Sklep 2"
+    created_at: 2012-07-09 16:53:59 Z
+    updated_at: 2012-08-09 11:12:29.482226 Z
+    imported_at: 2012-08-09 11:00:16.199766 Z
+    sym: Shopping
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 5
+    lat: 52.416274
+    lon: 16.938301
+    elevation: 35
+    name: "PKP Pozna\xC5\x84 Garbary"
+    created_at: 2012-02-19 17:40:10 Z
+    updated_at: 2012-11-16 12:41:23.362493 Z
+    imported_at: 2012-05-06 10:45:28.779596 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 138
+    lat: 52.656592
+    lon: 16.815871
+    elevation: 62
+    name: Park Linowy Adrenalina
+    created_at: 2012-07-07 09:09:29 Z
+    updated_at: 2012-08-09 11:09:28.474030 Z
+    imported_at: 2012-08-09 11:00:15.688222 Z
+    sym: Scenic Area
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 60
+    lat: 52.401694
+    lon: 16.911583
+    elevation: 110
+    name: "Pozna\xC5\x84 G\xC5\x82\xC3\xB3wny PKP"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:56:28.449524 Z
+    imported_at: 2012-05-06 10:45:36.910440 Z
+    sym: Ground Transportation
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 150
+    lat: 52.690587
+    lon: 17.137466
+    elevation: 76
+    name: "Ro\xC5\x9Bcinno Sklep"
+    created_at: 2012-07-28 09:09:22 Z
+    updated_at: 2012-08-09 11:21:36.008420 Z
+    imported_at: 2012-08-09 11:00:17.599057 Z
+    sym: Shopping
+    area_id: 2
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 12
+    lat: 52.477472
+    lon: 16.901302
+    elevation: 109
+    name: "Wzg\xC3\xB3rze na Morasku (Pozna\xC5\x84)"
+    created_at: 2012-03-24 16:47:07 Z
+    updated_at: 2012-07-16 13:30:22.156168 Z
+    imported_at: 2012-05-06 10:45:29.800338 Z
+    sym: Picnic Area
+    area_id: 2
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 3
+    name: "Powiat Mogile\xC5\x84ski"
+    created_at: 2012-05-07 07:11:04.955889 Z
+    updated_at: 2012-11-19 11:47:33.956369 Z
+    avg_lat: 52.6399335
+    avg_lon: 18.052978
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 2
+  :waypoints: 
+  - id: 205
+    lat: 52.659086
+    lon: 17.946414
+    elevation: 94
+    name: PKP Mogilno
+    created_at: 2012-08-31 19:34:30 Z
+    updated_at: 2012-10-08 17:14:00.019969 Z
+    imported_at: 2012-10-08 17:04:49.230671 Z
+    sym: Ground Transportation
+    area_id: 3
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 4
+    name: "Beskid \xC5\x9Al\xC4\x85ski"
+    created_at: 2012-05-07 09:30:49.137490 Z
+    updated_at: 2012-11-18 19:12:10.466189 Z
+    avg_lat: 49.675158440613025
+    avg_lon: 18.894405268199236
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 72
+    lat: 49.6245
+    lon: 18.817139
+    elevation: 920
+    name: "Cie\xC5\x9Blar"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 12:03:04.827101 Z
+    imported_at: 2012-05-06 10:45:38.706492 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 66
+    lat: 49.647028
+    lon: 18.916472
+    elevation: 882
+    name: Czupel (882)
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:23.781776 Z
+    imported_at: 2012-05-06 10:45:37.793013 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 18
+    lat: 49.808885
+    lon: 18.804534
+    elevation: 298
+    name: "Domki na zboczu (Ustro\xC5\x84)"
+    created_at: 2012-04-14 08:16:01 Z
+    updated_at: 2012-07-16 13:30:22.732343 Z
+    imported_at: 2012-05-06 10:45:30.600547 Z
+    sym: Trail Head
+    area_id: 4
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 74
+    lat: 49.595361
+    lon: 18.839417
+    elevation: 989
+    name: Kiczory
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 12:03:14.927707 Z
+    imported_at: 2012-05-06 10:45:39.002820 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 64
+    lat: 49.696944
+    lon: 18.878333
+    elevation: 813
+    name: "Or\xC5\x82owa"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:16.344199 Z
+    imported_at: 2012-05-06 10:45:37.519784 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 20
+    lat: 49.718154
+    lon: 18.847624
+    elevation: 748
+    name: "Pod Czarcim Kopytem (Ustro\xC5\x84)"
+    created_at: 2012-04-15 13:30:25 Z
+    updated_at: 2012-07-16 13:30:22.877344 Z
+    imported_at: 2012-05-06 10:45:30.888793 Z
+    sym: Restaurant
+    area_id: 4
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 70
+    lat: 49.656944
+    lon: 18.806944
+    elevation: 648
+    name: "Prze\xC5\x82\xC4\x99cz Beskidek"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:39.943530 Z
+    imported_at: 2012-05-06 10:45:38.385369 Z
+    sym: Trail Head
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 63
+    lat: 49.724681
+    lon: 18.856508
+    elevation: 885
+    name: "R\xC3\xB3wnica"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:13.093023 Z
+    imported_at: 2012-05-06 10:45:37.363335 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 315
+    lat: 49.66427777777778
+    lon: 18.90727777777778
+    elevation: 810
+    name: "Schronisko \"Telesfor\xC3\xB3wka\""
+    created_at: 2012-11-18 19:12:10.448200 Z
+    updated_at: 2012-11-18 19:12:10.448200 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_%22Telesfor%C3%B3wka%22
+    user_id: 1
+    phone: 601 282 026, 508 646 475
+    email: "telesforowka@gmail.com "
+    official_url: http://www.telesforowka.pl/
+    photo_url: 
+  - id: 310
+    lat: 49.74722222222222
+    lon: 18.94263888888889
+    elevation: 891
+    name: "Schronisko PTTK na B\xC5\x82atniej"
+    created_at: 2012-11-18 19:04:51.489982 Z
+    updated_at: 2012-11-18 19:04:51.489982 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_B%C5%82atniej
+    user_id: 1
+    phone: 33 853 64 84,  508 086 635
+    email: chatawujatoma@onet.pl
+    official_url: http://www.grupathf.pl/
+    photo_url: 
+  - id: 304
+    lat: 49.738527777777776
+    lon: 19.00513888888889
+    elevation: 1034
+    name: Schronisko PTTK na Klimczok
+    created_at: 2012-11-18 18:53:41.308570 Z
+    updated_at: 2012-11-18 18:53:41.308570 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Klimczoku
+    user_id: 1
+    phone: " 033 814 52 88"
+    email: biuro@schroniskoklimczok.com.pl
+    official_url: http://www.schroniskoklimczok.com.pl/
+    photo_url: 
+  - id: 305
+    lat: 49.596111111111114
+    lon: 18.983333333333334
+    elevation: 900
+    name: "Schronisko PTTK na Przys\xC5\x82opie pod Barani\xC4\x85 G\xC3\xB3r\xC4\x85"
+    created_at: 2012-11-18 18:56:38.708766 Z
+    updated_at: 2012-11-18 18:56:38.708766 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Przys%C5%82opie_pod_Barani%C4%85_G%C3%B3r%C4%85
+    user_id: 1
+    phone: +48 697 55 50 78 +48 33 855 37 15
+    email: ""
+    official_url: http://www.wisla.info.pl/
+    photo_url: 
+  - id: 306
+    lat: 49.719722222222224
+    lon: 18.851972222222223
+    elevation: 785
+    name: "Schronisko PTTK na R\xC3\xB3wnicy"
+    created_at: 2012-11-18 18:58:22.288094 Z
+    updated_at: 2012-11-18 18:58:22.288094 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_R%C3%B3wnicy
+    user_id: 1
+    phone: + 48 033 854 24 48
+    email: biuro@schronisko-rownica.pl
+    official_url: http://www.schronisko-rownica.pl/
+    photo_url: 
+  - id: 307
+    lat: 49.697047222222224
+    lon: 19.007369444444443
+    elevation: 1250
+    name: Schronisko PTTK na Skrzycznem
+    created_at: 2012-11-18 18:59:54.524229 Z
+    updated_at: 2012-11-18 18:59:54.524229 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Skrzycznem
+    user_id: 1
+    phone: 33 817-85-88
+    email: schronisko@skrzyczne.szczyrk.pl
+    official_url: http://www.skrzyczne.szczyrk.pl/
+    photo_url: 
+  - id: 308
+    lat: 49.60444444444445
+    lon: 18.823611111111113
+    elevation: 950
+    name: "Schronisko PTTK na Sto\xC5\xBCku"
+    created_at: 2012-11-18 19:01:43.864508 Z
+    updated_at: 2012-11-18 19:01:43.864508 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Sto%C5%BCku
+    user_id: 1
+    phone: +48 606 11 82 02
+    email: ""
+    official_url: http://www.stozek.com.pl/stozek/indexsto.htm
+    photo_url: 
+  - id: 309
+    lat: 49.75527777777778
+    lon: 19.00263888888889
+    elevation: 1001
+    name: Schronisko PTTK na Szyndzielni
+    created_at: 2012-11-18 19:02:59.301887 Z
+    updated_at: 2012-11-18 19:02:59.301887 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Szyndzielni
+    user_id: 1
+    phone: (033) 470 - 64 - 68, (033) 814 - 40 - 47
+    email: schronisko@szyndzielnia.com.pl
+    official_url: http://szyndzielnia.com.pl/
+    photo_url: 
+  - id: 311
+    lat: 49.72472222222222
+    lon: 18.991944444444446
+    elevation: 736
+    name: Schronisko THF "Chata Wuja Toma"
+    created_at: 2012-11-18 19:06:31.705806 Z
+    updated_at: 2012-11-18 19:06:31.705806 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_THF_%22Chata_Wuja_Toma%22_na_prze%C5%82%C4%99czy_Karkoszczonka
+    user_id: 1
+    phone: 33 827 41 45, 502-529-429
+    email: chatawujatoma@onet.pl
+    official_url: http://www.grupathf.pl/chata_wuja_toma.php
+    photo_url: 
+  - id: 312
+    lat: 49.768055555555556
+    lon: 19.038888888888888
+    elevation: 683
+    name: "Schronisko na Koziej G\xC3\xB3rze"
+    created_at: 2012-11-18 19:07:40.425373 Z
+    updated_at: 2012-11-18 19:07:40.425373 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_na_Koziej_G%C3%B3rze
+    user_id: 1
+    phone: +48 (33)816 23 70
+    email: stefanka-kozia@os.pl
+    official_url: http://www.kozia.pl/
+    photo_url: 
+  - id: 314
+    lat: 49.63930555555555
+    lon: 18.81372222222222
+    elevation: 792
+    name: Schronisko na Soszowie Wielkim
+    created_at: 2012-11-18 19:11:01.574071 Z
+    updated_at: 2012-11-18 19:11:01.574071 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_na_Soszowie_Wielkim
+    user_id: 1
+    phone: 33 855 30 46, 33 855 85 16, 503079447, 502518404
+    email: soszow@onet.pl
+    official_url: http://www.soszow.wisla.pl/
+    photo_url: 
+  - id: 80
+    lat: 49.634389
+    lon: 18.812972
+    elevation: 886
+    name: "Sosz\xC3\xB3w Wielki"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 12:03:19.207480 Z
+    imported_at: 2012-05-06 10:45:39.819899 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 313
+    lat: 49.585
+    lon: 18.941388888888888
+    elevation: 760
+    name: "Stec\xC3\xB3wka (i schronisko)"
+    created_at: 2012-11-18 19:09:31.101666 Z
+    updated_at: 2012-11-18 19:09:31.101666 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Stec%C3%B3wka
+    user_id: 1
+    phone: (..33) 855 52 58
+    email: schronisko@stecowka.pl
+    official_url: http://www.stecowka.pl
+    photo_url: 
+  - id: 73
+    lat: 49.605556
+    lon: 18.823056
+    elevation: 978
+    name: "Sto\xC5\xBCek Wielki"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 12:03:08.791316 Z
+    imported_at: 2012-05-06 10:45:38.854564 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 65
+    lat: 49.664278
+    lon: 18.907278
+    elevation: 810
+    name: "Trzy Kopce Wi\xC5\x9Bla\xC5\x84skie"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:20.511576 Z
+    imported_at: 2012-05-06 10:45:37.669385 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 62
+    lat: 49.696895
+    lon: 18.82978
+    elevation: 400
+    name: "Ustro\xC5\x84 Polana PKP"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:56:37.764313 Z
+    imported_at: 2012-05-06 10:45:37.239760 Z
+    sym: Ground Transportation
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 69
+    lat: 49.678611
+    lon: 18.804444
+    elevation: 995
+    name: Wielka Czantoria
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:36.166697 Z
+    imported_at: 2012-05-06 10:45:38.229309 Z
+    sym: Summit
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 67
+    lat: 49.621667
+    lon: 18.875833
+    elevation: 400
+    name: "Wis\xC5\x82a G\xC5\x82\xC4\x99bce PKP"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:27.166314 Z
+    imported_at: 2012-05-06 10:45:37.933428 Z
+    sym: Ground Transportation
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 68
+    lat: 49.658611
+    lon: 18.855278
+    elevation: 400
+    name: "Wis\xC5\x82a Uzdrowisko PKP"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:57:31.987605 Z
+    imported_at: 2012-05-06 10:45:38.080921 Z
+    sym: Ground Transportation
+    area_id: 4
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 15
+    lat: 49.700988
+    lon: 18.836938
+    elevation: 997
+    name: Wyspa Ski-Spa
+    created_at: 2012-04-13 18:21:06 Z
+    updated_at: 2012-07-16 13:30:22.444319 Z
+    imported_at: 2012-05-06 10:45:30.213654 Z
+    sym: Lodging
+    area_id: 4
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 302
+    lat: 49.60638888888889
+    lon: 19.115277777777777
+    elevation: 413
+    name: "W\xC4\x99gierska G\xC3\xB3rka"
+    created_at: 2012-11-18 18:50:04.108650 Z
+    updated_at: 2012-11-18 18:50:04.108650 Z
+    imported_at: 
+    sym: Residence
+    area_id: 4
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/W%C4%99gierska_G%C3%B3rka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 5
+    name: Rudawy Janowickie
+    created_at: 2012-05-31 12:40:05.888290 Z
+    updated_at: 2012-11-17 13:04:04.590960 Z
+    avg_lat: 50.82490506296296
+    avg_lon: 15.903950296296296
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 200
+    lat: 50.823336
+    lon: 15.971918
+    elevation: 630
+    name: Blue lakelet
+    created_at: 2012-08-12 16:11:56 Z
+    updated_at: 2012-11-18 17:15:34.581695 Z
+    imported_at: 2012-10-08 17:04:48.398145 Z
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kolorowe_jeziorka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 243
+    lat: 50.824444444444445
+    lon: 15.816944444444445
+    elevation: 420
+    name: Bukowiec
+    created_at: 2012-11-16 14:47:59.042267 Z
+    updated_at: 2012-11-16 14:47:59.042267 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bukowiec_%28powiat_jeleniog%C3%B3rski%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 108
+    lat: 50.797222222222224
+    lon: 15.908888888888889
+    elevation: 650
+    name: "Czarn\xC3\xB3w"
+    created_at: 2012-06-10 11:49:34.965586 Z
+    updated_at: 2012-11-18 17:16:22.741034 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Czarn%C3%B3w_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 127
+    lat: 50.87388888888889
+    lon: 15.92
+    elevation: 300
+    name: Janowice Wielkie PKP
+    created_at: 2012-08-08 10:52:24.156225 Z
+    updated_at: 2012-11-18 17:17:11.814452 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Janowice_Wielkie
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 128
+    lat: 50.85688888888889
+    lon: 15.892027777777775
+    elevation: 565
+    name: "Ja\xC5\x84ska G\xC3\xB3ra"
+    created_at: 2012-08-08 11:46:08.422039 Z
+    updated_at: 2012-11-18 17:17:30.723922 Z
+    imported_at: 
+    sym: Summit
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Ja%C5%84ska_G%C3%B3ra
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 104
+    lat: 50.852777777777774
+    lon: 15.864166666666666
+    elevation: 400
+    name: Karpniki
+    created_at: 2012-06-10 11:37:26.292221 Z
+    updated_at: 2012-11-18 17:17:49.169170 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Karpniki
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 97
+    lat: 50.81666666666667
+    lon: 15.966666666666669
+    elevation: 560
+    name: Kolorowe jeziorka
+    created_at: 2012-05-31 13:54:08.032892 Z
+    updated_at: 2012-08-08 12:17:02.671639 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kolorowe_jeziorka
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 95
+    lat: 50.791669444444445
+    lon: 15.833333333333334
+    elevation: 420
+    name: Kowary
+    created_at: 2012-05-31 12:41:14.596549 Z
+    updated_at: 2012-11-18 17:19:07.544368 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kowary
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 99
+    lat: 50.86527777777778
+    lon: 15.868055555555555
+    elevation: 642
+    name: "Krzy\xC5\xBCna G\xC3\xB3ra"
+    created_at: 2012-05-31 14:10:40.395176 Z
+    updated_at: 2012-11-18 17:19:51.110630 Z
+    imported_at: 
+    sym: Flag, Blue
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Krzy%C5%BCna_G%C3%B3ra
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 188
+    lat: 50.77638888888889
+    lon: 15.906944444444445
+    elevation: 700
+    name: Leszczyniec
+    created_at: 2012-10-06 14:29:46.845019 Z
+    updated_at: 2012-10-06 14:29:46.845019 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Leszczyniec_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 244
+    lat: 50.70333333333333
+    lon: 16.001944444444444
+    elevation: 500
+    name: Lubawka
+    created_at: 2012-11-16 14:56:06.538103 Z
+    updated_at: 2012-11-16 14:56:06.538103 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Lubawka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 112
+    lat: 50.85111111111111
+    lon: 16.008330555555556
+    elevation: 400
+    name: "Marcisz\xC3\xB3w PKP"
+    created_at: 2012-06-10 11:55:05.549849 Z
+    updated_at: 2012-11-18 17:20:08.403744 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Marcisz%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 131
+    lat: 50.767354
+    lon: 15.894971
+    elevation: 700
+    name: Ogorzelec
+    created_at: 2012-08-08 12:37:29.113562 Z
+    updated_at: 2012-10-06 15:20:48.520008 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Ogorzelec_%28powiat_kamiennog%C3%B3rski%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 107
+    lat: 50.807183333333334
+    lon: 15.894727777777778
+    elevation: 935
+    name: "Ostra Ma\xC5\x82a"
+    created_at: 2012-06-10 11:47:03.264227 Z
+    updated_at: 2012-11-18 17:20:30.051972 Z
+    imported_at: 
+    sym: Summit
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Ostra_Ma%C5%82a_%28Rudawy_Janowickie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 129
+    lat: 50.86077777777778
+    lon: 15.878566666666666
+    elevation: 475
+    name: "Prze\xC5\x82\xC4\x99cz Karpnicka"
+    created_at: 2012-08-08 11:48:17.060972 Z
+    updated_at: 2012-11-18 17:20:55.604889 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Karpnicka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 191
+    lat: 50.76361111111111
+    lon: 15.867222222222223
+    elevation: 727
+    name: "Prze\xC5\x82\xC4\x99cz Kowarska"
+    created_at: 2012-10-06 15:14:17.250466 Z
+    updated_at: 2012-10-06 15:14:17.250466 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Kowarska
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 201
+    lat: 50.828308
+    lon: 15.973099
+    elevation: 562
+    name: Red lakelet
+    created_at: 2012-08-12 16:30:32 Z
+    updated_at: 2012-11-18 17:15:57.391599 Z
+    imported_at: 2012-10-08 17:04:48.553314 Z
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kolorowe_jeziorka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 98
+    lat: 50.86333333333333
+    lon: 15.8725
+    elevation: 520
+    name: Schronisko PTTK "Szwajcarka"
+    created_at: 2012-05-31 14:09:52.961225 Z
+    updated_at: 2012-11-18 17:21:52.579005 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Szwajcarka%22
+    user_id: 1
+    phone: 781 482 993
+    email: pawelwojtczak8@wp.pl
+    official_url: http://www.szwajcarka.jga.pl/
+    photo_url: 
+  - id: 96
+    lat: 50.809222222222225
+    lon: 15.901588888888888
+    elevation: 945
+    name: Skalnik
+    created_at: 2012-05-31 13:50:24.535175 Z
+    updated_at: 2012-11-18 17:43:23.788042 Z
+    imported_at: 
+    sym: Summit
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Skalnik_%28Rudawy_Janowickie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 198
+    lat: 50.865656
+    lon: 15.870775
+    elevation: 545
+    name: "Ska\xC5\x82y Husyckie"
+    created_at: 2012-08-12 03:42:44 Z
+    updated_at: 2012-11-18 17:44:01.814053 Z
+    imported_at: 2012-10-08 17:04:48.105482 Z
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://www.karkonosze.ws/husyckie_skaly_artykul_513.html
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 56
+    lat: 50.869717
+    lon: 15.867928
+    elevation: 642
+    name: Sokolik
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-11-18 17:52:00.440635 Z
+    imported_at: 2012-05-06 10:45:36.367061 Z
+    sym: Summit
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Sokolik
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 189
+    lat: 50.77111111111111
+    lon: 15.922222222222222
+    elevation: 700
+    name: Szarocin
+    created_at: 2012-10-06 14:52:52.277353 Z
+    updated_at: 2012-11-18 17:52:50.848119 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Szarocin
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 102
+    lat: 50.88333333333333
+    lon: 15.87138888888889
+    elevation: 400
+    name: "Trzci\xC5\x84sko PKP"
+    created_at: 2012-05-31 14:14:57.143084 Z
+    updated_at: 2012-11-18 17:53:12.692448 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Trzci%C5%84sko
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 110
+    lat: 50.81388888888889
+    lon: 15.957777777777778
+    elevation: 871
+    name: Wielka Kopa
+    created_at: 2012-06-10 11:52:17.265676 Z
+    updated_at: 2012-11-18 17:53:38.035052 Z
+    imported_at: 
+    sym: Summit
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wielka_Kopa_%28Sudety%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 111
+    lat: 50.836666666666666
+    lon: 15.964166666666667
+    elevation: 500
+    name: "Wie\xC5\x9Bciszowice"
+    created_at: 2012-06-10 11:54:19.056604 Z
+    updated_at: 2012-11-18 17:54:04.840139 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wie%C5%9Bciszowice
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 130
+    lat: 50.870555555555555
+    lon: 15.820555555555556
+    elevation: 350
+    name: "Wojan\xC3\xB3w"
+    created_at: 2012-08-08 11:49:42.176553 Z
+    updated_at: 2012-11-18 17:54:52.322458 Z
+    imported_at: 
+    sym: Residence
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wojan%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 101
+    lat: 50.861111111111114
+    lon: 15.911944444444444
+    elevation: 400
+    name: "Zamek Bolcz\xC3\xB3w"
+    created_at: 2012-05-31 14:12:58.445872 Z
+    updated_at: 2012-11-18 17:55:14.001239 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Zamek_Bolcz%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 105
+    lat: 50.821608
+    lon: 15.871367
+    elevation: 450
+    name: "near Gruszk\xC3\xB3w"
+    created_at: 2012-06-10 11:42:45.047615 Z
+    updated_at: 2012-11-18 17:55:32.238233 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Gruszk%C3%B3w_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 109
+    lat: 50.803819
+    lon: 15.943465
+    elevation: 600
+    name: "near R\xC4\x99dziny"
+    created_at: 2012-06-10 11:51:26.172998 Z
+    updated_at: 2012-11-18 17:55:48.711881 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/R%C4%99dziny_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 106
+    lat: 50.81689
+    lon: 15.875022
+    elevation: 500
+    name: near Wilczysko
+    created_at: 2012-06-10 11:45:56.938832 Z
+    updated_at: 2012-11-18 17:58:02.996884 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 5
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wilczysko_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 6
+    name: Gorce
+    created_at: 2012-07-17 08:30:51.212362 Z
+    updated_at: 2012-11-19 10:16:49.812689 Z
+    avg_lat: 49.57875737566138
+    avg_lon: 20.14536896825397
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 338
+    lat: 49.78236944444444
+    lon: 20.407788888888888
+    elevation: 600
+    name: "Bac\xC3\xB3wka \"Nad Wilczym Rynkiem\""
+    created_at: 2012-11-18 20:21:48.200486 Z
+    updated_at: 2012-11-18 20:21:48.200486 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_%22Nad_Wilczym_Rynkiem%22
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 115
+    lat: 49.57472222222222
+    lon: 20.0
+    elevation: 852
+    name: "Bac\xC3\xB3wka PTTK na Maciejowej"
+    created_at: 2012-07-17 08:48:08.452233 Z
+    updated_at: 2012-07-17 08:48:41.743117 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 340
+    lat: 49.583061111111114
+    lon: 20.297055555555556
+    elevation: 720
+    name: Chata na Rzekach
+    created_at: 2012-11-19 10:16:49.796514 Z
+    updated_at: 2012-11-19 10:16:49.796514 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chata_na_Rzekach
+    user_id: 1
+    phone: 607-221-077
+    email: msch@o2.pl
+    official_url: http://chata-na-rzekach.pl/
+    photo_url: 
+  - id: 335
+    lat: 49.535355555555554
+    lon: 20.224227777777777
+    elevation: 835
+    name: "Gorcza\xC5\x84ska Chata"
+    created_at: 2012-11-18 20:17:38.134577 Z
+    updated_at: 2012-11-18 20:17:38.134577 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Gorcza%C5%84ska_Chata
+    user_id: 1
+    phone: +48 696 544 608, +48 696 637 991
+    email: ""
+    official_url: http://www.gorczanska.pl/
+    photo_url: 
+  - id: 120
+    lat: 49.54527777777778
+    lon: 20.129722222222224
+    elevation: 1200
+    name: "Hala D\xC5\x82uga"
+    created_at: 2012-07-17 08:52:06.674380 Z
+    updated_at: 2012-07-17 08:52:06.674380 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 122
+    lat: 49.53944444444444
+    lon: 20.148888888888887
+    elevation: 1282
+    name: Kiczora
+    created_at: 2012-07-17 08:53:49.797977 Z
+    updated_at: 2012-07-17 08:53:49.797977 Z
+    imported_at: 
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 126
+    lat: 49.437583333333336
+    lon: 20.42977777777778
+    elevation: 420
+    name: "Kro\xC5\x9Bcienko nad Dunajcem"
+    created_at: 2012-07-17 08:58:50.498063 Z
+    updated_at: 2012-07-17 08:58:50.498063 Z
+    imported_at: 
+    sym: Residence
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 125
+    lat: 49.488055555555555
+    lon: 20.34027777777778
+    elevation: 1225
+    name: "Luba\xC5\x84"
+    created_at: 2012-07-17 08:57:41.101168 Z
+    updated_at: 2012-07-17 08:57:41.101168 Z
+    imported_at: 
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 114
+    lat: 49.5865
+    lon: 19.997416666666663
+    elevation: 815
+    name: Maciejowa
+    created_at: 2012-07-17 08:46:40.710912 Z
+    updated_at: 2012-07-17 08:46:40.710912 Z
+    imported_at: 
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 117
+    lat: 49.56027777777778
+    lon: 20.068055555555556
+    elevation: 1106
+    name: Obidowiec
+    created_at: 2012-07-17 08:49:49.475867 Z
+    updated_at: 2012-07-17 08:49:49.475867 Z
+    imported_at: 
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 121
+    lat: 49.5425
+    lon: 20.14388888888889
+    elevation: 1240
+    name: "Polana Gabrowska Du\xC5\xBCa"
+    created_at: 2012-07-17 08:53:14.210241 Z
+    updated_at: 2012-07-17 08:53:14.210241 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 123
+    lat: 49.50417777777778
+    lon: 20.188080555555555
+    elevation: 846
+    name: "Prze\xC5\x82\xC4\x99cz Knurowska"
+    created_at: 2012-07-17 08:55:26.234235 Z
+    updated_at: 2012-07-17 08:55:26.234235 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 113
+    lat: 49.607991
+    lon: 19.945867
+    elevation: 500
+    name: "Rabka Zdr\xC3\xB3j"
+    created_at: 2012-07-17 08:31:41.284497 Z
+    updated_at: 2012-07-17 08:45:33.130534 Z
+    imported_at: 
+    sym: Residence
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 336
+    lat: 49.782333333333334
+    lon: 20.022472222222223
+    elevation: 730
+    name: "Schronisko PTTK na Kud\xC5\x82aczach"
+    created_at: 2012-11-18 20:18:52.610833 Z
+    updated_at: 2012-11-18 20:18:52.610833 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Kud%C5%82aczach
+    user_id: 1
+    phone: (12) 2748995, 604 876 110
+    email: schronisko-kudlacze@tlen.pl
+    official_url: http://kudlacze.pttk.pl/
+    photo_url: 
+  - id: 337
+    lat: 49.658611111111114
+    lon: 19.983333333333334
+    elevation: 1022
+    name: Schronisko PTTK na Luboniu Wielkim
+    created_at: 2012-11-18 20:20:28.616003 Z
+    updated_at: 2012-11-18 20:20:28.616003 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Luboniu_Wielkim
+    user_id: 1
+    phone: 608791020, 182676435 (gospodarz), 604 876110 (kierownik)
+    email: lubon.wielki@gmail.com
+    official_url: http://lubon.pttk.pl/home.htm
+    photo_url: 
+  - id: 116
+    lat: 49.56016666666667
+    lon: 20.039722222222224
+    elevation: 968
+    name: Schronisko PTTK na Starych Wierchach
+    created_at: 2012-07-17 08:49:08.832760 Z
+    updated_at: 2012-07-17 08:49:08.832760 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 119
+    lat: 49.54372222222222
+    lon: 20.118222222222222
+    elevation: 1238
+    name: Schronisko PTTK na Turbaczu
+    created_at: 2012-07-17 08:50:59.581805 Z
+    updated_at: 2012-07-17 08:51:12.212538 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 339
+    lat: 49.70916666666667
+    lon: 20.174166666666668
+    elevation: 840
+    name: "Schronisko na \xC5\x9Anie\xC5\xBCnicy"
+    created_at: 2012-11-19 10:14:59.122852 Z
+    updated_at: 2012-11-19 10:14:59.122852 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 6
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_na_%C5%9Anie%C5%BCnicy
+    user_id: 1
+    phone: 18 33 14 320 kom. 502319801
+    email: snieznica@ksm.org.pl
+    official_url: ""
+    photo_url: 
+  - id: 124
+    lat: 49.49433888888889
+    lon: 20.215061111111112
+    elevation: 915
+    name: Studzionki
+    created_at: 2012-07-17 08:56:33.699869 Z
+    updated_at: 2012-07-17 08:59:41.574898 Z
+    imported_at: 
+    sym: Residence
+    area_id: 6
+    is_private: false
+    url: 
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 53
+    lat: 49.575306
+    lon: 20.067167
+    elevation: 994
+    name: "Tobo\xC5\x82\xC3\xB3w"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:50:04.563553 Z
+    imported_at: 2012-05-06 10:45:35.945771 Z
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 52
+    lat: 49.542944
+    lon: 20.111556
+    elevation: 1310
+    name: Turbacz
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:50:00.300388 Z
+    imported_at: 2012-05-06 10:45:35.797658 Z
+    sym: Summit
+    area_id: 6
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 7
+    name: Pieniny
+    created_at: 2012-08-08 12:50:37.989929 Z
+    updated_at: 2012-11-19 10:35:30.203254 Z
+    avg_lat: 49.40674305555556
+    avg_lon: 20.454944444444443
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 349
+    lat: 49.41686111111111
+    lon: 20.458
+    elevation: 520
+    name: Schronisko PTTK "Orlica"
+    created_at: 2012-11-19 10:31:28.699373 Z
+    updated_at: 2012-11-19 10:31:28.699373 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 7
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Orlica%22
+    user_id: 1
+    phone: 18-262-22-45, 501 438 013
+    email: orlica@orlica.com
+    official_url: http://www.orlica.com/index.html
+    photo_url: 
+  - id: 351
+    lat: 49.40519444444445
+    lon: 20.41122222222222
+    elevation: 470
+    name: Schronisko PTTK "Trzy Korony"
+    created_at: 2012-11-19 10:35:30.187857 Z
+    updated_at: 2012-11-19 10:35:30.187857 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 7
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Trzy_Korony%22
+    user_id: 1
+    phone: (+48) 18 26 29 823, (+48) 609 668 528
+    email: "trzykorony@trzykorony.pl "
+    official_url: http://www.trzykorony.pl/
+    photo_url: 
+  - id: 350
+    lat: 49.39111111111111
+    lon: 20.53638888888889
+    elevation: 834
+    name: "Schronisko pod Durbaszk\xC4\x85"
+    created_at: 2012-11-19 10:34:21.045300 Z
+    updated_at: 2012-11-19 10:34:21.045300 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 7
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_pod_Durbaszk%C4%85
+    user_id: 1
+    phone: 18 262-25-47
+    email: gosw@durbaszka.pl
+    official_url: http://www.durbaszka.pl/
+    photo_url: 
+  - id: 277
+    lat: 49.413805555555555
+    lon: 20.414166666666667
+    elevation: 982
+    name: Trzy Korony
+    created_at: 2012-11-18 17:09:01.593147 Z
+    updated_at: 2012-11-18 17:09:01.593147 Z
+    imported_at: 
+    sym: Summit
+    area_id: 7
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Trzy_Korony_%28szczyt%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 8
+    name: "Beskid S\xC4\x85decki"
+    created_at: 2012-08-08 12:50:53.428954 Z
+    updated_at: 2012-11-19 10:28:39.776496 Z
+    avg_lat: 49.447724074074074
+    avg_lon: 20.691130864197532
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 341
+    lat: 49.43602777777778
+    lon: 20.848277777777778
+    elevation: 895
+    name: "Bac\xC3\xB3wka PTTK nad Wierchoml\xC4\x85"
+    created_at: 2012-11-19 10:19:44.150437 Z
+    updated_at: 2012-11-19 10:19:44.150437 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_nad_Wierchoml%C4%85
+    user_id: 1
+    phone: 502 458 518
+    email: wierchomla.pttk@gmail.com
+    official_url: http://www.wierchomla.pttk.pl//
+    photo_url: 
+  - id: 342
+    lat: 49.43805
+    lon: 20.483408333333333
+    elevation: 843
+    name: "Bac\xC3\xB3wka PTTK pod Bere\xC5\x9Bnikiem"
+    created_at: 2012-11-19 10:21:15.943038 Z
+    updated_at: 2012-11-19 10:21:15.943038 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_pod_Bere%C5%9Bnikiem
+    user_id: 1
+    phone: +48 18 262 13 56
+    email: beresnik@wp.pl
+    official_url: http://www.beresnik.pl/
+    photo_url: 
+  - id: 343
+    lat: 49.407222222222224
+    lon: 20.662222222222223
+    elevation: 831
+    name: "Chata na Mag\xC3\xB3rach"
+    created_at: 2012-11-19 10:22:27.726251 Z
+    updated_at: 2012-11-19 10:22:27.726251 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chata_na_Mag%C3%B3rach
+    user_id: 1
+    phone: (18)  446-56-06 tel. 697-345-953 tel. 784-803-271
+    email: magory11@gmail.com
+    official_url: http://www.chatkamagory.pl/page/index.php
+    photo_url: 
+  - id: 344
+    lat: 49.44605555555555
+    lon: 20.64677777777778
+    elevation: 960
+    name: "Chatka pod Niemcow\xC4\x85"
+    created_at: 2012-11-19 10:23:19.109840 Z
+    updated_at: 2012-11-19 10:23:19.109840 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chatka_pod_Niemcow%C4%85
+    user_id: 1
+    phone: 0-18 446 51 28
+    email: ""
+    official_url: http://www.chatki.yoyo.pl/niemcowa.html
+    photo_url: 
+  - id: 278
+    lat: 49.449444444444445
+    lon: 20.604444444444443
+    elevation: 1266
+    name: Radziejowa
+    created_at: 2012-11-18 17:14:35.720567 Z
+    updated_at: 2012-11-18 17:14:35.720567 Z
+    imported_at: 
+    sym: Summit
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Radziejowa
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 345
+    lat: 49.49305555555556
+    lon: 20.72138888888889
+    elevation: 844
+    name: Schronisko Cyrla
+    created_at: 2012-11-19 10:24:30.935823 Z
+    updated_at: 2012-11-19 10:24:30.935823 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_Cyrla
+    user_id: 1
+    phone: 018 446 96 89 kom. +48 604 087 609
+    email: schron@cyrla.pl
+    official_url: http://www.cyrla.pl/
+    photo_url: 
+  - id: 346
+    lat: 49.472722222222224
+    lon: 20.809666666666665
+    elevation: 1061
+    name: "Schronisko PTTK na Hali \xC5\x81abowskiej"
+    created_at: 2012-11-19 10:26:10.001294 Z
+    updated_at: 2012-11-19 10:26:10.001294 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_%C5%81abowskiej
+    user_id: 1
+    phone: +48 18 447 64 53 tel. +48 600 890 864
+    email: ""
+    official_url: http://www.halalabowska.pttk.pl
+    photo_url: 
+  - id: 347
+    lat: 49.420522222222225
+    lon: 20.88818611111111
+    elevation: 1050
+    name: Schronisko PTTK na Jaworzynie Krynickiej
+    created_at: 2012-11-19 10:27:37.844271 Z
+    updated_at: 2012-11-19 10:27:37.844271 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Jaworzynie_Krynickiej
+    user_id: 1
+    phone: "0 18 471 21 71 tel. 0 18 471 54 09 "
+    email: ""
+    official_url: http://www.krynica.com.pl/schronisko/schronisko.html
+    photo_url: 
+  - id: 348
+    lat: 49.46641666666667
+    lon: 20.555805555555555
+    elevation: 1150
+    name: Schronisko PTTK na Przehybie
+    created_at: 2012-11-19 10:28:39.761178 Z
+    updated_at: 2012-11-19 10:28:39.761178 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 8
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Przehybie
+    user_id: 1
+    phone: "+48 (18) 442 13 90 Olga Bielak: +48 502 628 805"
+    email: info@przehyba.pl
+    official_url: http://www.przehyba.pl/
+    photo_url: 
+- :area: 
+    id: 9
+    name: "Wroc\xC5\x82aw"
+    created_at: 2012-08-09 11:45:00.338714 Z
+    updated_at: 2012-11-17 13:04:04.620257 Z
+    avg_lat: 51.142338
+    avg_lon: 17.08232
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 2
+  :waypoints: 
+  - id: 17
+    lat: 51.142338
+    lon: 17.08232
+    elevation: 115
+    name: "PKP Wroc\xC5\x82aw"
+    created_at: 2012-04-14 02:38:38 Z
+    updated_at: 2012-08-09 11:45:12.898307 Z
+    imported_at: 2012-05-06 10:45:30.468975 Z
+    sym: Ground Transportation
+    area_id: 9
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 10
+    name: Tatry
+    created_at: 2012-08-09 11:54:41.601237 Z
+    updated_at: 2012-11-18 20:15:37.223209 Z
+    avg_lat: 49.22868061111111
+    avg_lon: 19.93959996666667
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 327
+    lat: 49.25972222222222
+    lon: 19.967222222222222
+    elevation: 1198
+    name: "Hotel g\xC3\xB3rski PTTK Kalat\xC3\xB3wki"
+    created_at: 2012-11-18 20:05:53.120413 Z
+    updated_at: 2012-11-18 20:05:53.120413 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Hotel_g%C3%B3rski_PTTK_Kalat%C3%B3wki
+    user_id: 1
+    phone: (+48) 18 206-36-44 (+48) 18 201-28-27 tel / fax (+48) 608 326 030
+    email: "recepcja@kalatowki.pl "
+    official_url: http://www.kalatowki.com.pl/
+    photo_url: 
+  - id: 55
+    lat: 49.206139
+    lon: 19.808472
+    elevation: 2002
+    name: "Ko\xC5\x84czysty Wierch"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:55:14.799693 Z
+    imported_at: 2012-05-06 10:45:36.227306 Z
+    sym: Summit
+    area_id: 10
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 328
+    lat: 49.244166666666665
+    lon: 20.00722222222222
+    elevation: 1500
+    name: Schronisko PTTK "Murowaniec"
+    created_at: 2012-11-18 20:06:54.985696 Z
+    updated_at: 2012-11-18 20:06:54.985696 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Murowaniec%22
+    user_id: 1
+    phone: (18) 20 126 33
+    email: murowaniec@e-tatry.pl
+    official_url: http://www.murowaniec.e-tatry.pl/
+    photo_url: 
+  - id: 329
+    lat: 49.24861111111111
+    lon: 19.951944444444443
+    elevation: 1333
+    name: Schronisko PTTK na Hali Kondratowej
+    created_at: 2012-11-18 20:08:06.411724 Z
+    updated_at: 2012-11-18 20:08:06.411724 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Kondratowej
+    user_id: 1
+    phone: 18 20 191 14
+    email: ""
+    official_url: http://www.kondratowa.com/
+    photo_url: 
+  - id: 330
+    lat: 49.225
+    lon: 19.85
+    elevation: 1100
+    name: Schronisko PTTK na Hali Ornak
+    created_at: 2012-11-18 20:09:38.098170 Z
+    updated_at: 2012-11-18 20:09:38.098170 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Ornak
+    user_id: 1
+    phone: +48 (18) 20-705-20, +48 695-530-813
+    email: kontakt@schronisko-ornak.pl
+    official_url: http://schronisko-ornak.pl/
+    photo_url: 
+  - id: 331
+    lat: 49.235
+    lon: 19.789722222222224
+    elevation: 1146
+    name: "Schronisko PTTK na Polanie Chocho\xC5\x82owskiej"
+    created_at: 2012-11-18 20:11:10.881723 Z
+    updated_at: 2012-11-18 20:11:10.881723 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Polanie_Chocho%C5%82owskiej
+    user_id: 1
+    phone: 48 669 509 380, (018) 20 705 10
+    email: chocholowska.schronisko@gmail.com
+    official_url: http://www.chocholowska.com.pl/
+    photo_url: 
+  - id: 332
+    lat: 49.201388888888886
+    lon: 20.071944444444444
+    elevation: 1410
+    name: Schronisko PTTK nad Morskim Okiem
+    created_at: 2012-11-18 20:12:45.740943 Z
+    updated_at: 2012-11-18 20:12:45.740943 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_nad_Morskim_Okiem
+    user_id: 1
+    phone: "    +48 18 20 77 609, +48 602 260 757"
+    email: ""
+    official_url: http://www.schroniskomorskieoko.pl/
+    photo_url: 
+  - id: 333
+    lat: 49.21361111111111
+    lon: 20.05
+    elevation: 1671
+    name: "Schronisko PTTK w Dolinie Pi\xC4\x99ciu Staw\xC3\xB3w Polskich"
+    created_at: 2012-11-18 20:14:15.803198 Z
+    updated_at: 2012-11-18 20:14:15.803198 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_w_Dolinie_Pi%C4%99ciu_Staw%C3%B3w_Polskich
+    user_id: 1
+    phone: +48 781055555
+    email: schronisko@piecstawow.pl
+    official_url: http://www.piecstawow.pl/
+    photo_url: 
+  - id: 334
+    lat: 49.23361111111111
+    lon: 20.09611111111111
+    elevation: 1031
+    name: Schronisko PTTK w Dolinie Roztoki
+    created_at: 2012-11-18 20:15:37.203893 Z
+    updated_at: 2012-11-18 20:15:37.203893 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 10
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_Roztoka
+    user_id: 1
+    phone: +48 18 207 74 42, +48 600 443 733, +48 609 001 760
+    email: ""
+    official_url: http://schroniskoroztoka.com.pl/
+    photo_url: 
+  - id: 54
+    lat: 49.219556
+    lon: 19.803361
+    elevation: 1758
+    name: "Trzydniowia\xC5\x84ski Wierch"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:55:09.648610 Z
+    imported_at: 2012-05-06 10:45:36.069260 Z
+    sym: Summit
+    area_id: 10
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 11
+    name: "G\xC3\xB3ry Kamienne"
+    created_at: 2012-08-09 11:55:59.760686 Z
+    updated_at: 2012-12-06 14:25:05.217107 Z
+    avg_lat: 50.70982282039359
+    avg_lon: 16.229094669207573
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 284
+    lat: 50.75592
+    lon: 16.20596
+    elevation: 600
+    name: "Bogusz\xC3\xB3w-Gorce"
+    created_at: 2012-11-18 18:11:40.725810 Z
+    updated_at: 2012-12-01 21:40:53.891007 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bogusz%C3%B3w-Gorce
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 442
+    lat: 50.69584
+    lon: 16.25306
+    elevation: 898
+    name: Bukowiec
+    created_at: 2012-12-04 17:34:27.653932 Z
+    updated_at: 2012-12-04 17:34:27.653932 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bukowiec_%28G%C3%B3ry_Suche%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 444
+    lat: 50.68973
+    lon: 16.20822
+    elevation: 500
+    name: "Go\xC5\x9Bciniec Eden"
+    created_at: 2012-12-06 14:25:05.108262 Z
+    updated_at: 2012-12-06 14:25:05.108262 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 11
+    is_private: false
+    url: http://www.goscinieceden.pl/
+    user_id: 1
+    phone: "748421834"
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 246
+    lat: 50.745555555555555
+    lon: 16.139166666666668
+    elevation: 510
+    name: "Grz\xC4\x99dy"
+    created_at: 2012-11-16 15:10:36.415005 Z
+    updated_at: 2012-11-16 15:10:36.415005 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Grz%C4%99dy_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 443
+    lat: 50.721944444444446
+    lon: 16.155555555555555
+    elevation: 500
+    name: "Grz\xC4\x99dy G\xC3\xB3rne"
+    created_at: 2012-12-04 17:37:52.929904 Z
+    updated_at: 2012-12-04 17:37:52.929904 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Grz%C4%99dy_G%C3%B3rne
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 249
+    lat: 50.721111111111114
+    lon: 16.33888888888889
+    elevation: 500
+    name: "Jedlina-Zdr\xC3\xB3j"
+    created_at: 2012-11-16 15:18:47.724384 Z
+    updated_at: 2012-11-16 15:18:47.724384 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Jedlina-Zdr%C3%B3j
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 280
+    lat: 50.679722222222225
+    lon: 16.260277777777777
+    elevation: 906
+    name: Kostrzyna
+    created_at: 2012-11-18 18:01:10.283939 Z
+    updated_at: 2012-11-18 18:01:10.283939 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kostrzyna_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 245
+    lat: 50.73416666666667
+    lon: 16.064166666666665
+    elevation: 475
+    name: "Krzesz\xC3\xB3w"
+    created_at: 2012-11-16 14:59:26.447080 Z
+    updated_at: 2012-11-16 15:03:34.342621 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Krzesz%C3%B3w_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 281
+    lat: 50.7023
+    lon: 16.1912
+    elevation: 851
+    name: Lesista Wielka
+    created_at: 2012-11-18 18:01:50.396630 Z
+    updated_at: 2012-12-01 21:37:42.462108 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Lesista_Wielka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 437
+    lat: 50.7506
+    lon: 16.20201
+    elevation: 550
+    name: "PKP Bogusz\xC3\xB3w-Gorce"
+    created_at: 2012-12-01 21:15:07.699653 Z
+    updated_at: 2012-12-01 21:46:11.642508 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 438
+    lat: 50.74755
+    lon: 16.22175
+    elevation: 550
+    name: "PKP Bogusz\xC3\xB3w-Gorce Wsch\xC3\xB3d"
+    created_at: 2012-12-01 21:16:09.069374 Z
+    updated_at: 2012-12-01 21:46:14.209469 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 436
+    lat: 50.76281
+    lon: 16.16682
+    elevation: 550
+    name: "PKP Bogusz\xC3\xB3w-Gorce Zach\xC3\xB3d"
+    created_at: 2012-12-01 21:14:22.464909 Z
+    updated_at: 2012-12-01 21:46:16.748198 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 439
+    lat: 50.71312
+    lon: 16.34078
+    elevation: 500
+    name: "PKP Jedlina Zdr\xC3\xB3j"
+    created_at: 2012-12-04 17:19:40.807295 Z
+    updated_at: 2012-12-04 17:19:40.807295 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 441
+    lat: 50.69023333333333
+    lon: 16.29096388888889
+    elevation: 835
+    name: "Prze\xC5\x82\xC4\x99cz pod Turzyn\xC4\x85"
+    created_at: 2012-12-04 17:23:32.021162 Z
+    updated_at: 2012-12-04 17:23:32.021162 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_pod_Turzyn%C4%85
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 282
+    lat: 50.693888888888885
+    lon: 16.322222222222223
+    elevation: 870
+    name: Rogowiec
+    created_at: 2012-11-18 18:04:25.680855 Z
+    updated_at: 2012-11-18 18:04:25.680855 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Rogowiec_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 248
+    lat: 50.68499180055736
+    lon: 16.27773106098175
+    elevation: 780
+    name: "Schronisko PTTK \"Andrzej\xC3\xB3wka\""
+    created_at: 2012-11-16 15:15:45.310691 Z
+    updated_at: 2012-12-01 21:21:52.960605 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Andrzej%C3%B3wka%22
+    user_id: 1
+    phone: +48 74 8424883
+    email: ""
+    official_url: http://andrzejowka.com.pl/
+    photo_url: 
+  - id: 440
+    lat: 50.69605
+    lon: 16.31486
+    elevation: 800
+    name: Skalne Bramy
+    created_at: 2012-12-04 17:21:58.406131 Z
+    updated_at: 2012-12-04 17:21:58.406131 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 247
+    lat: 50.685
+    lon: 16.229166666666668
+    elevation: 583
+    name: "Soko\xC5\x82owsko"
+    created_at: 2012-11-16 15:12:54.075540 Z
+    updated_at: 2012-11-16 15:12:54.075540 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Soko%C5%82owsko
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 279
+    lat: 50.68055555555556
+    lon: 16.265555555555554
+    elevation: 928
+    name: Suchawa
+    created_at: 2012-11-18 18:00:22.211312 Z
+    updated_at: 2012-11-18 18:00:22.211312 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Suchawa_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 283
+    lat: 50.673611111111114
+    lon: 15.993611111111111
+    elevation: 842
+    name: Szeroka
+    created_at: 2012-11-18 18:09:54.021914 Z
+    updated_at: 2012-11-18 18:09:54.021914 Z
+    imported_at: 
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Szeroka_%28G%C3%B3ry_Krucze%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 435
+    lat: 50.71338
+    lon: 16.24883
+    elevation: 
+    name: "Unis\xC5\x82aw \xC5\x9Al\xC4\x85ski"
+    created_at: 2012-12-01 21:08:12.571391 Z
+    updated_at: 2012-12-01 21:08:12.571391 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 58
+    lat: 50.683333
+    lon: 16.283333
+    elevation: 936
+    name: "Walig\xC3\xB3ra"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-11-18 18:08:19.045337 Z
+    imported_at: 2012-05-06 10:45:36.638991 Z
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Walig%C3%B3ra
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 434
+    lat: 50.74239
+    lon: 16.28831
+    elevation: 350
+    name: "Wa\xC5\x82brzych"
+    created_at: 2012-12-01 20:54:27.034512 Z
+    updated_at: 2012-12-01 20:55:49.568590 Z
+    imported_at: 
+    sym: Residence
+    area_id: 11
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Wa%C5%82brzych
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 79
+    lat: 50.671944
+    lon: 16.235833
+    elevation: 782
+    name: "\xC5\x9Aredniak (G\xC3\xB3ry Kamienne)"
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-11-18 18:08:55.792558 Z
+    imported_at: 2012-05-06 10:45:39.695837 Z
+    sym: Summit
+    area_id: 11
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Aredniak_%28G%C3%B3ry_Kamienne%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 12
+    name: Katowice
+    created_at: 2012-08-09 11:58:43.917165 Z
+    updated_at: 2012-11-17 13:04:04.646494 Z
+    avg_lat: 50.231605333333334
+    avg_lon: 19.192854666666666
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 2
+  :waypoints: 
+  - id: 61
+    lat: 50.258292
+    lon: 19.016744
+    elevation: 200
+    name: Katowice PKP
+    created_at: 2012-04-28 15:32:42 Z
+    updated_at: 2012-08-09 11:58:54.748845 Z
+    imported_at: 2012-05-06 10:45:37.099643 Z
+    sym: Ground Transportation
+    area_id: 12
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 81
+    lat: 50.24584
+    lon: 19.299735
+    elevation: 267
+    name: PKP Jaworzno Szczakowa
+    created_at: 2012-04-29 04:01:42 Z
+    updated_at: 2012-08-09 12:02:14.986998 Z
+    imported_at: 2012-05-06 10:45:39.959473 Z
+    sym: Ground Transportation
+    area_id: 12
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 13
+    name: Karkonosze
+    created_at: 2012-10-06 14:51:31.996657 Z
+    updated_at: 2012-11-18 18:47:45.517677 Z
+    avg_lat: 50.77888185185185
+    avg_lon: 15.658847528619532
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 195
+    lat: 50.75611111111111
+    lon: 15.774166666666666
+    elevation: 877
+    name: "Bu\xC5\x82awa"
+    created_at: 2012-10-06 15:31:44.241767 Z
+    updated_at: 2012-10-06 15:31:44.241767 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bu%C5%82awa_%28Karkonosze%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 230
+    lat: 50.78823055555556
+    lon: 15.62818888888889
+    elevation: 1050
+    name: Chatka AKT Hutniczy Grzbiet
+    created_at: 2012-11-15 22:01:41.022093 Z
+    updated_at: 2012-11-15 22:01:41.022093 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chatka_AKT_Hutniczy_Grzbiet
+    user_id: 1
+    phone: 608 017 570
+    email: akt@chatkaakt.prv.pl
+    official_url: http://www.lasek.102.pl/forum/viewtopic.php?t=43
+    photo_url: 
+  - id: 297
+    lat: 50.77861111111111
+    lon: 15.584166666666667
+    elevation: 1348
+    name: "Czarna Prze\xC5\x82\xC4\x99cz"
+    created_at: 2012-11-18 18:38:07.847991 Z
+    updated_at: 2012-11-18 18:38:07.847991 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Czarna_Prze%C5%82%C4%99cz_%28Karkonosze%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 192
+    lat: 50.75416666666667
+    lon: 15.81638888888889
+    elevation: 1268
+    name: "Czo\xC5\x82o"
+    created_at: 2012-10-06 15:29:30.130612 Z
+    updated_at: 2012-10-06 15:29:30.130612 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Czo%C5%82o_%28Karkonosze%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 300
+    lat: 50.80155555555555
+    lon: 15.736672222222222
+    elevation: 784
+    name: Grabowiec
+    created_at: 2012-11-18 18:43:30.570163 Z
+    updated_at: 2012-11-18 18:43:30.570163 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Grabowiec_%28Karkonosze%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 301
+    lat: 50.824861
+    lon: 15.746226
+    elevation: 390
+    name: "G\xC5\x82\xC4\x99bock"
+    created_at: 2012-11-18 18:47:45.501698 Z
+    updated_at: 2012-11-18 18:47:45.501698 Z
+    imported_at: 
+    sym: Residence
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/G%C5%82%C4%99bock_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 197
+    lat: 50.778333333333336
+    lon: 15.757222222222222
+    elevation: 700
+    name: Karpacz
+    created_at: 2012-10-06 15:35:18.776431 Z
+    updated_at: 2012-10-06 15:35:18.776431 Z
+    imported_at: 
+    sym: Residence
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Karpacz
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 196
+    lat: 50.769471
+    lon: 15.767426
+    elevation: 700
+    name: "Krucze Ska\xC5\x82y"
+    created_at: 2012-10-06 15:34:16.135502 Z
+    updated_at: 2012-10-06 15:34:16.135502 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Krucze_Ska%C5%82y_%28Karkonosze%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 295
+    lat: 50.8688
+    lon: 15.380608333333333
+    elevation: 940
+    name: "Mokra Prze\xC5\x82\xC4\x99cz"
+    created_at: 2012-11-18 18:35:30.920420 Z
+    updated_at: 2012-11-18 18:35:30.920420 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Mokra_Prze%C5%82%C4%99cz
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 224
+    lat: 50.7975
+    lon: 15.470277777777778
+    elevation: 1217
+    name: Mumlawski Wierch
+    created_at: 2012-11-15 21:48:33.682607 Z
+    updated_at: 2012-11-15 21:48:33.682607 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Mumlawski_Wierch
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 242
+    lat: 50.84111111111111
+    lon: 15.784722222222221
+    elevation: 385
+    name: "Mys\xC5\x82akowice"
+    created_at: 2012-11-16 14:45:50.161261 Z
+    updated_at: 2012-11-16 14:45:50.161261 Z
+    imported_at: 
+    sym: Residence
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Mys%C5%82akowice
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 223
+    lat: 50.77333333333333
+    lon: 15.694444444444445
+    elevation: 1204
+    name: Pielgrzymy
+    created_at: 2012-11-15 21:47:42.027461 Z
+    updated_at: 2012-11-15 21:54:13.999510 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Pielgrzymy
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 298
+    lat: 50.78
+    lon: 15.608333333333333
+    elevation: 1198
+    name: "Prze\xC5\x82\xC4\x99cz Karkonoska"
+    created_at: 2012-11-18 18:40:33.216235 Z
+    updated_at: 2012-11-18 18:40:33.216235 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Karkonoska
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 190
+    lat: 50.74610277777778
+    lon: 15.824358333333333
+    elevation: 1046
+    name: "Prze\xC5\x82\xC4\x99cz Okraj"
+    created_at: 2012-10-06 15:08:53.779701 Z
+    updated_at: 2012-10-06 15:43:47.301872 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Okraj
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 194
+    lat: 50.74583333333333
+    lon: 15.786944444444444
+    elevation: 1164
+    name: "Prze\xC5\x82\xC4\x99cz Sowia"
+    created_at: 2012-10-06 15:31:07.083872 Z
+    updated_at: 2012-10-06 15:31:07.083872 Z
+    imported_at: 
+    sym: Trail Head
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Sowia
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 237
+    lat: 50.739583333333336
+    lon: 15.728972222222222
+    elevation: 1400
+    name: "Schronisko \"Dom \xC5\x9Al\xC4\x85ski\""
+    created_at: 2012-11-15 22:15:02.545772 Z
+    updated_at: 2012-11-15 22:15:02.545772 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_G%C3%B3rskie_%22Dom_%C5%9Al%C4%85ski%22
+    user_id: 1
+    phone: 75 612 67 00, 75 753 52 90
+    email: info@domslaski.pl
+    official_url: http://www.domslaski.pl/
+    photo_url: 
+  - id: 231
+    lat: 50.814166666666665
+    lon: 15.496666666666666
+    elevation: 830
+    name: "Schronisko \"Kamie\xC5\x84czyk\""
+    created_at: 2012-11-15 22:05:39.734013 Z
+    updated_at: 2012-11-15 22:15:24.710751 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_%22Kamie%C5%84czyk%22
+    user_id: 1
+    phone: 075 75 260 85
+    email: ""
+    official_url: http://www.schroniskokamienczyk.pl/kontakt.php
+    photo_url: 
+  - id: 232
+    lat: 50.830194444444444
+    lon: 15.55561111111111
+    elevation: 510
+    name: "Schronisko PTTK \"Kochan\xC3\xB3wka\""
+    created_at: 2012-11-15 22:07:24.362624 Z
+    updated_at: 2012-11-15 22:07:24.362624 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Kochan%C3%B3wka%22
+    user_id: 1
+    phone: 781 024 159
+    email: ""
+    official_url: http://www.kochanowka.wszklarskiej.net
+    photo_url: 
+  - id: 236
+    lat: 50.74805555555555
+    lon: 15.743611111111111
+    elevation: 1002
+    name: "Schronisko PTTK \"Nad \xC5\x81omniczk\xC4\x85\""
+    created_at: 2012-11-15 22:13:49.525689 Z
+    updated_at: 2012-11-15 22:13:49.525689 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Nad_%C5%81omniczk%C4%85%22
+    user_id: 1
+    phone: 691 112 204
+    email: ""
+    official_url: http://www.pttk.jgora.pl/index.php?ident=Obiekty&id=89
+    photo_url: 
+  - id: 238
+    lat: 50.76345833333333
+    lon: 15.639666666666667
+    elevation: 1236
+    name: Schronisko PTTK "Odrodzenie"
+    created_at: 2012-11-15 22:16:40.211811 Z
+    updated_at: 2012-11-15 22:16:40.211811 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Odrodzenie%22_na_Prze%C5%82%C4%99czy_Karkonoskiej
+    user_id: 1
+    phone: (0) 75 75 22546
+    email: piotrkaczmarek2@op.pl
+    official_url: http://www.schroniskoodrodzenie.com/
+    photo_url: 
+  - id: 235
+    lat: 50.78794722222222
+    lon: 15.536733333333334
+    elevation: 1168
+    name: "Schronisko PTTK \"Pod \xC5\x81abskim Szczytem\""
+    created_at: 2012-11-15 22:11:43.475220 Z
+    updated_at: 2012-11-15 22:11:43.475220 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Pod_%C5%81abskim_Szczytem%22
+    user_id: 1
+    phone: "75 75 260 88 "
+    email: ""
+    official_url: http://www.labskiszczyt.pl/
+    photo_url: 
+  - id: 233
+    lat: 50.74905555555556
+    lon: 15.702583333333333
+    elevation: 1195
+    name: Schronisko PTTK "Samotnia"
+    created_at: 2012-11-15 22:09:14.542496 Z
+    updated_at: 2012-11-15 22:09:14.542496 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Samotnia%22
+    user_id: 1
+    phone: +48(75)7619376
+    email: "schronisko@samotnia.com.pl "
+    official_url: http://www.samotnia.com.pl/
+    photo_url: 
+  - id: 234
+    lat: 50.750880555555554
+    lon: 15.708369444444445
+    elevation: 1258
+    name: Schronisko PTTK "Strzecha Akademicka"
+    created_at: 2012-11-15 22:10:36.380289 Z
+    updated_at: 2012-11-15 22:10:36.380289 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Strzecha_Akademicka%22
+    user_id: 1
+    phone: (+48) 075 753 52 75, (+48) 601 57 22 20
+    email: ""
+    official_url: http://www.strzecha-akademicka.pl/
+    photo_url: 
+  - id: 229
+    lat: 50.79398055555556
+    lon: 15.501005555555556
+    elevation: 1195
+    name: Schronisko PTTK na Hali Szrenickiej
+    created_at: 2012-11-15 21:58:52.612846 Z
+    updated_at: 2012-11-15 21:58:52.612846 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Szrenickiej
+    user_id: 1
+    phone: (075) 717 24 21, (075) 801 23 26
+    email: recepcja@hala-szrenicka.com, schronisko@hala-szrenicka.com
+    official_url: http://www.hala-szrenicka.com/
+    photo_url: 
+  - id: 228
+    lat: 50.74720833333333
+    lon: 15.82333888888889
+    elevation: 1046
+    name: "Schronisko PTTK na Prze\xC5\x82\xC4\x99czy Okraj"
+    created_at: 2012-11-15 21:56:13.899529 Z
+    updated_at: 2012-11-15 21:56:13.899529 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Prze%C5%82%C4%99czy_Okraj
+    user_id: 1
+    phone: 075 76 15 110
+    email: biuro@przeleczokraj.pl
+    official_url: http://www.przeleczokraj.pl/
+    photo_url: 
+  - id: 227
+    lat: 50.79211111111111
+    lon: 15.514305555555556
+    elevation: 1362
+    name: Schronisko na Szrenicy
+    created_at: 2012-11-15 21:52:41.788614 Z
+    updated_at: 2012-11-15 21:52:41.788614 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_na_Szrenicy
+    user_id: 1
+    phone: 75 75 260 11, 600 078 640
+    email: szrenica@szrenica.pl
+    official_url: http://www.szrenica.pl/
+    photo_url: 
+  - id: 193
+    lat: 50.75277777777778
+    lon: 15.792222222222222
+    elevation: 1281
+    name: "Skalny St\xC3\xB3\xC5\x82"
+    created_at: 2012-10-06 15:30:11.803045 Z
+    updated_at: 2012-10-06 15:30:11.803045 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Skalny_St%C3%B3%C5%82
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 226
+    lat: 50.792925
+    lon: 15.512866666666667
+    elevation: 1362
+    name: Szrenica
+    created_at: 2012-11-15 21:51:14.262394 Z
+    updated_at: 2012-11-15 21:51:14.262394 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Szrenica
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 299
+    lat: 50.76416666666667
+    lon: 15.68361111111111
+    elevation: 1423
+    name: "S\xC5\x82onecznik"
+    created_at: 2012-11-18 18:41:34.167272 Z
+    updated_at: 2012-11-18 18:41:34.167272 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/S%C5%82onecznik_%28Karkonosze%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 239
+    lat: 50.77672222222222
+    lon: 15.601638888888889
+    elevation: 1509
+    name: Wielki Szyszak
+    created_at: 2012-11-15 22:18:39.303621 Z
+    updated_at: 2012-11-15 22:18:39.303621 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wielki_Szyszak
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 296
+    lat: 50.78055555555556
+    lon: 15.545555555555556
+    elevation: 1471
+    name: "\xC5\x81abski Szczyt"
+    created_at: 2012-11-18 18:36:46.027900 Z
+    updated_at: 2012-11-18 18:36:46.027900 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%81abski_Szczyt
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 225
+    lat: 50.73583333333333
+    lon: 15.739166666666666
+    elevation: 1602
+    name: "\xC5\x9Anie\xC5\xBCka"
+    created_at: 2012-11-15 21:49:43.545244 Z
+    updated_at: 2012-11-15 21:49:43.545244 Z
+    imported_at: 
+    sym: Summit
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Anie%C5%BCka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 241
+    lat: 50.779458
+    lon: 15.555897
+    elevation: 1480
+    name: "\xC5\x9Anie\xC5\xBCne Kot\xC5\x82y"
+    created_at: 2012-11-16 12:31:59.437130 Z
+    updated_at: 2012-11-16 12:31:59.437130 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 13
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Anie%C5%BCne_Kot%C5%82y
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 14
+    name: Warszawa
+    created_at: 2012-10-15 17:28:51.573542 Z
+    updated_at: 2012-11-17 13:04:04.663828 Z
+    avg_lat: 52.234579422222225
+    avg_lon: 21.038666711111112
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 2
+  :waypoints: 
+  - id: 212
+    lat: 52.241598
+    lon: 21.028515
+    elevation: 100
+    name: Centrum Naukowe Kopernik
+    created_at: 2012-10-15 17:39:31.762131 Z
+    updated_at: 2012-10-15 17:39:31.762131 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 14
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 209
+    lat: 52.22878611111111
+    lon: 21.003305555555556
+    elevation: 100
+    name: PKP Warszawa Centralna
+    created_at: 2012-10-15 17:29:46.664779 Z
+    updated_at: 2012-10-15 17:29:56.692422 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 14
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 213
+    lat: 52.251667
+    lon: 21.052222
+    elevation: 100
+    name: "PKP Warszawa Wsch\xC3\xB3d"
+    created_at: 2012-10-15 18:58:02.434277 Z
+    updated_at: 2012-10-15 18:59:15.722942 Z
+    imported_at: 
+    sym: Ground Transportation
+    area_id: 14
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 210
+    lat: 52.211597
+    lon: 21.01022
+    elevation: 100
+    name: "Stodo\xC5\x82a (Warszawa)"
+    created_at: 2012-10-15 17:33:00.789251 Z
+    updated_at: 2012-10-15 17:33:00.789251 Z
+    imported_at: 
+    sym: Restaurant
+    area_id: 14
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 15
+    name: "G\xC3\xB3ry Izerskie"
+    created_at: 2012-11-15 20:53:31.074924 Z
+    updated_at: 2012-11-18 18:33:25.952497 Z
+    avg_lat: 50.85958571296296
+    avg_lon: 15.4027794537037
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 216
+    lat: 50.82944444444445
+    lon: 15.426944444444445
+    elevation: 
+    name: Jakuszyce
+    created_at: 2012-11-15 21:12:50.808136 Z
+    updated_at: 2012-11-15 21:12:50.808136 Z
+    imported_at: 
+    sym: Residence
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Jakuszyce
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 217
+    lat: 50.88361111111111
+    lon: 15.442222222222222
+    elevation: 973
+    name: Kamienica
+    created_at: 2012-11-15 21:14:20.039342 Z
+    updated_at: 2012-11-15 21:14:20.039342 Z
+    imported_at: 
+    sym: Summit
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kamienica_%28g%C3%B3ra%29
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 293
+    lat: 50.877719444444445
+    lon: 15.343255555555556
+    elevation: 950
+    name: Polana Izerska
+    created_at: 2012-11-18 18:28:38.295366 Z
+    updated_at: 2012-11-18 18:28:38.295366 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Polana_Izerska
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 220
+    lat: 50.85444444444445
+    lon: 15.360833333333334
+    elevation: 840
+    name: "Schronisko \"Chatka G\xC3\xB3rzyst\xC3\xB3w\""
+    created_at: 2012-11-15 21:21:08.406380 Z
+    updated_at: 2012-11-15 21:40:49.359764 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Chatka_G%C3%B3rzyst%C3%B3w
+    user_id: 1
+    phone: 75 75 325 33
+    email: chatkagorzystow@epf.pl
+    official_url: http://chatkagorzystow.prv.pl/
+    photo_url: 
+  - id: 222
+    lat: 50.833698
+    lon: 15.491209
+    elevation: 800
+    name: Schronisko "Chatka Robaczka"
+    created_at: 2012-11-15 21:24:30.839738 Z
+    updated_at: 2012-11-15 21:42:20.273273 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_Turystyczne_%22Chatka_Robaczka%22
+    user_id: 1
+    phone: 075 717 37 09, +48 502 668 325
+    email: ""
+    official_url: http://www.chatkarobaczka.pl/
+    photo_url: 
+  - id: 221
+    lat: 50.81527777777778
+    lon: 15.383055555555556
+    elevation: 840
+    name: Schronisko "Orle"
+    created_at: 2012-11-15 21:21:45.666068 Z
+    updated_at: 2012-11-15 21:43:20.324612 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_Turystyczne_%22Orle%22
+    user_id: 1
+    phone: +420 607 920 541
+    email: orle@orleizerskie.biz
+    official_url: http://orleizerskie.biz/
+    photo_url: 
+  - id: 219
+    lat: 50.891666666666666
+    lon: 15.303888888888888
+    elevation: 1060
+    name: Schronisko PTTK na Stogu Izerskim
+    created_at: 2012-11-15 21:20:13.360395 Z
+    updated_at: 2012-11-15 21:20:13.360395 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Izerski_St%C3%B3g
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 240
+    lat: 50.891666666666666
+    lon: 15.303888888888888
+    elevation: 1105
+    name: "St\xC3\xB3g Izerski"
+    created_at: 2012-11-15 22:22:32.828237 Z
+    updated_at: 2012-11-15 22:22:32.828237 Z
+    imported_at: 
+    sym: Summit
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/St%C3%B3g_Izerski
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 214
+    lat: 50.833333333333336
+    lon: 15.533333333333333
+    elevation: 600
+    name: "Szklarska Por\xC4\x99ba"
+    created_at: 2012-11-15 20:58:28.402941 Z
+    updated_at: 2012-11-15 20:58:28.402941 Z
+    imported_at: 
+    sym: Residence
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Szklarska_Por%C4%99ba
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 218
+    lat: 50.85027777777778
+    lon: 15.42
+    elevation: 1126
+    name: Wysoka Kopa
+    created_at: 2012-11-15 21:17:43.381580 Z
+    updated_at: 2012-11-15 21:17:43.381580 Z
+    imported_at: 
+    sym: Summit
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wysoka_Kopa
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+  - id: 294
+    lat: 50.845555555555556
+    lon: 15.491388888888888
+    elevation: 1058
+    name: "Wysoki Kamie\xC5\x84"
+    created_at: 2012-11-18 18:33:25.934112 Z
+    updated_at: 2012-11-18 18:33:25.934112 Z
+    imported_at: 
+    sym: Summit
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wysoki_Kamie%C5%84
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 215
+    lat: 50.90833333333333
+    lon: 15.333333333333334
+    elevation: 580
+    name: "\xC5\x9Awierad\xC3\xB3w-Zdr\xC3\xB3j"
+    created_at: 2012-11-15 21:11:54.631866 Z
+    updated_at: 2012-11-15 21:11:54.631866 Z
+    imported_at: 
+    sym: Residence
+    area_id: 15
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Awierad%C3%B3w-Zdr%C3%B3j
+    user_id: 1
+    phone: 
+    email: 
+    official_url: 
+    photo_url: 
+- :area: 
+    id: 17
+    name: "G\xC3\xB3ry Sowie"
+    created_at: 2012-11-16 15:21:02.261387 Z
+    updated_at: 2012-11-18 18:21:43.993780 Z
+    avg_lat: 50.66454567901234
+    avg_lon: 16.51584259259259
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 287
+    lat: 50.70916666666667
+    lon: 16.490869444444446
+    elevation: 775
+    name: Kokot
+    created_at: 2012-11-18 18:19:08.960830 Z
+    updated_at: 2012-11-18 18:19:08.960830 Z
+    imported_at: 
+    sym: Summit
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kokot_%28G%C3%B3ry_Sowie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 289
+    lat: 50.59722222222222
+    lon: 16.602222222222224
+    elevation: 839
+    name: Malinowa
+    created_at: 2012-11-18 18:21:43.976607 Z
+    updated_at: 2012-11-18 18:21:43.976607 Z
+    imported_at: 
+    sym: Summit
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Malinowa_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 288
+    lat: 50.71666666666667
+    lon: 16.583333333333332
+    elevation: 300
+    name: Pieszyce
+    created_at: 2012-11-18 18:20:28.510513 Z
+    updated_at: 2012-11-18 18:20:28.510513 Z
+    imported_at: 
+    sym: Residence
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Pieszyce
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 250
+    lat: 50.66200555555555
+    lon: 16.465655555555557
+    elevation: 751
+    name: "Prze\xC5\x82\xC4\x99cz Sokola"
+    created_at: 2012-11-17 11:21:51.097922 Z
+    updated_at: 2012-11-17 11:21:51.097922 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Sokola
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 253
+    lat: 50.57084444444445
+    lon: 16.635188888888887
+    elevation: 568
+    name: "Prze\xC5\x82\xC4\x99cz Srebrna"
+    created_at: 2012-11-17 11:27:18.069485 Z
+    updated_at: 2012-11-17 11:27:18.069485 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Srebrna
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 252
+    lat: 50.652227777777775
+    lon: 16.52359166666667
+    elevation: 740
+    name: "Schronisko PTTK \"Zygmunt\xC3\xB3wka\""
+    created_at: 2012-11-17 11:24:31.635216 Z
+    updated_at: 2012-11-17 11:24:31.635216 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Zygmunt%C3%B3wka%22_na_Prze%C5%82%C4%99czy_Jugowskiej
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 285
+    lat: 50.698055555555555
+    lon: 16.445
+    elevation: 400
+    name: Walim
+    created_at: 2012-11-18 18:16:26.806592 Z
+    updated_at: 2012-11-18 18:16:26.806592 Z
+    imported_at: 
+    sym: Residence
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Walim_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 251
+    lat: 50.67916666666667
+    lon: 16.486944444444443
+    elevation: 1015
+    name: Wielka Sowa
+    created_at: 2012-11-17 11:23:10.760543 Z
+    updated_at: 2012-11-17 11:23:10.760543 Z
+    imported_at: 
+    sym: Summit
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wielka_Sowa
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 286
+    lat: 50.69555555555556
+    lon: 16.409777777777776
+    elevation: 811
+    name: "W\xC5\x82odarz"
+    created_at: 2012-11-18 18:17:46.248174 Z
+    updated_at: 2012-11-18 18:17:46.248174 Z
+    imported_at: 
+    sym: Summit
+    area_id: 17
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/W%C5%82odarz_%28g%C3%B3ra%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 18
+    name: "G\xC3\xB3ry Bardzkie"
+    created_at: 2012-11-16 15:21:27.070837 Z
+    updated_at: 2012-11-18 18:26:28.512951 Z
+    avg_lat: 50.51335561111112
+    avg_lon: 16.60941383333333
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 290
+    lat: 50.454277777777776
+    lon: 16.758288888888888
+    elevation: 765
+    name: "K\xC5\x82odzka G\xC3\xB3ra"
+    created_at: 2012-11-18 18:24:38.134297 Z
+    updated_at: 2012-11-18 18:24:38.134297 Z
+    imported_at: 
+    sym: Summit
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/K%C5%82odzka_G%C3%B3ra
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 291
+    lat: 50.499722222222225
+    lon: 16.76388888888889
+    elevation: 751
+    name: "Ostra G\xC3\xB3ra"
+    created_at: 2012-11-18 18:25:40.136713 Z
+    updated_at: 2012-11-18 18:25:40.136713 Z
+    imported_at: 
+    sym: Summit
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Ostra_G%C3%B3ra_%28G%C3%B3ry_Bardzkie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 254
+    lat: 50.545617
+    lon: 16.551833
+    elevation: 410
+    name: "S\xC5\x82upiec"
+    created_at: 2012-11-17 11:34:13.608382 Z
+    updated_at: 2012-11-17 11:34:13.608382 Z
+    imported_at: 
+    sym: Residence
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/S%C5%82upiec_%28Nowa_Ruda%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 256
+    lat: 50.49
+    lon: 16.45611111111111
+    elevation: 365
+    name: Wambierzyce
+    created_at: 2012-11-17 11:37:15.460984 Z
+    updated_at: 2012-11-17 11:37:15.460984 Z
+    imported_at: 
+    sym: Residence
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wambierzyce
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 292
+    lat: 50.56635
+    lon: 16.643333333333334
+    elevation: 663
+    name: "Wilcza G\xC3\xB3ra"
+    created_at: 2012-11-18 18:26:28.425583 Z
+    updated_at: 2012-11-18 18:26:28.425583 Z
+    imported_at: 
+    sym: Summit
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wilcza_G%C3%B3ra_%28G%C3%B3ry_Bardzkie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 255
+    lat: 50.524166666666666
+    lon: 16.483027777777778
+    elevation: 315
+    name: "\xC5\x9Acinawka \xC5\x9Arednia"
+    created_at: 2012-11-17 11:36:02.971990 Z
+    updated_at: 2012-11-17 11:36:02.971990 Z
+    imported_at: 
+    sym: Residence
+    area_id: 18
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/%C5%9Acinawka_%C5%9Arednia
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 19
+    name: "G\xC3\xB3ry Sto\xC5\x82owe"
+    created_at: 2012-11-17 11:37:57.862120 Z
+    updated_at: 2012-11-17 13:04:04.698739 Z
+    avg_lat: 50.46198503703704
+    avg_lon: 16.287106444444444
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 258
+    lat: 50.47872777777778
+    lon: 16.29
+    elevation: 852
+    name: "B\xC5\x82\xC4\x99dne Ska\xC5\x82y"
+    created_at: 2012-11-17 11:42:49.037677 Z
+    updated_at: 2012-11-17 11:42:49.037677 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 19
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/B%C5%82%C4%99dne_Ska%C5%82y
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 257
+    lat: 50.473894
+    lon: 16.337986
+    elevation: 760
+    name: "Kar\xC5\x82\xC3\xB3w"
+    created_at: 2012-11-17 11:41:23.675254 Z
+    updated_at: 2012-11-17 11:41:23.675254 Z
+    imported_at: 
+    sym: Residence
+    area_id: 19
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kar%C5%82%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 259
+    lat: 50.43333333333333
+    lon: 16.233333333333334
+    elevation: 385
+    name: "Kudowa Zdr\xC3\xB3j"
+    created_at: 2012-11-17 11:43:44.489895 Z
+    updated_at: 2012-11-17 11:43:44.489895 Z
+    imported_at: 
+    sym: Residence
+    area_id: 19
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Kudowa-Zdr%C3%B3j
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 20
+    name: "G\xC3\xB3ry Orlickie"
+    created_at: 2012-11-17 11:44:40.648157 Z
+    updated_at: 2012-11-17 13:04:04.707431 Z
+    avg_lat: 50.34022877777778
+    avg_lon: 16.40657577777778
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 260
+    lat: 50.38333333333333
+    lon: 16.383333333333333
+    elevation: 550
+    name: "Duszniki Zdr\xC3\xB3j"
+    created_at: 2012-11-17 11:45:39.217909 Z
+    updated_at: 2012-11-17 11:45:39.217909 Z
+    imported_at: 
+    sym: Residence
+    area_id: 20
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Duszniki-Zdr%C3%B3j
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 262
+    lat: 50.3
+    lon: 16.45
+    elevation: 700
+    name: "Las\xC3\xB3wka"
+    created_at: 2012-11-17 11:49:58.383133 Z
+    updated_at: 2012-11-17 11:49:58.383133 Z
+    imported_at: 
+    sym: Residence
+    area_id: 20
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Las%C3%B3wka
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 261
+    lat: 50.337353
+    lon: 16.386394
+    elevation: 885
+    name: "Zieleniec (Duszniki Zdr\xC3\xB3j)"
+    created_at: 2012-11-17 11:48:00.360586 Z
+    updated_at: 2012-11-17 11:48:00.360586 Z
+    imported_at: 
+    sym: Residence
+    area_id: 20
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Zieleniec_%28dzielnica_Dusznik-Zdroju%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 21
+    name: "G\xC3\xB3ry Bystrzyckie"
+    created_at: 2012-11-17 11:50:33.862350 Z
+    updated_at: 2012-11-17 13:04:04.716036 Z
+    avg_lat: 50.2587037037037
+    avg_lon: 16.620277777777776
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 264
+    lat: 50.24777777777778
+    lon: 16.63111111111111
+    elevation: 400
+    name: "D\xC5\x82ugopole-Zdr\xC3\xB3j"
+    created_at: 2012-11-17 11:52:14.921394 Z
+    updated_at: 2012-11-17 11:52:14.921394 Z
+    imported_at: 
+    sym: Residence
+    area_id: 21
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/D%C5%82ugopole-Zdr%C3%B3j
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 263
+    lat: 50.280833333333334
+    lon: 16.540555555555557
+    elevation: 788
+    name: "Prze\xC5\x82\xC4\x99cz Spalona"
+    created_at: 2012-11-17 11:51:16.014234 Z
+    updated_at: 2012-11-17 11:51:16.014234 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 21
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prze%C5%82%C4%99cz_Spalona
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 265
+    lat: 50.2475
+    lon: 16.689166666666665
+    elevation: 390
+    name: "Wilkan\xC3\xB3w"
+    created_at: 2012-11-17 11:53:26.994912 Z
+    updated_at: 2012-11-17 11:53:26.994912 Z
+    imported_at: 
+    sym: Residence
+    area_id: 21
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Wilkan%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 22
+    name: "Masyw \xC5\x9Anie\xC5\xBCnika"
+    created_at: 2012-11-17 11:53:46.604090 Z
+    updated_at: 2012-11-17 13:04:04.724732 Z
+    avg_lat: 50.25569444444445
+    avg_lon: 16.806597222222223
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 269
+    lat: 50.34305555555556
+    lon: 16.879444444444445
+    elevation: 420
+    name: "L\xC4\x85dek-Zdr\xC3\xB3j"
+    created_at: 2012-11-17 11:59:27.915808 Z
+    updated_at: 2012-11-17 11:59:27.915808 Z
+    imported_at: 
+    sym: Residence
+    area_id: 22
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/L%C4%85dek-Zdr%C3%B3j
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 266
+    lat: 50.240833333333335
+    lon: 16.748055555555556
+    elevation: 780
+    name: "Maria \xC5\x9Anie\xC5\xBCna"
+    created_at: 2012-11-17 11:55:04.841895 Z
+    updated_at: 2012-11-17 11:55:04.841895 Z
+    imported_at: 
+    sym: Church
+    area_id: 22
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Maria_%C5%9Anie%C5%BCna
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 267
+    lat: 50.23083333333334
+    lon: 16.766666666666666
+    elevation: 565
+    name: "Mi\xC4\x99dzyg\xC3\xB3rze"
+    created_at: 2012-11-17 11:56:13.546297 Z
+    updated_at: 2012-11-17 11:56:13.546297 Z
+    imported_at: 
+    sym: Residence
+    area_id: 22
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Mi%C4%99dzyg%C3%B3rze_%28wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 268
+    lat: 50.20805555555555
+    lon: 16.83222222222222
+    elevation: 1218
+    name: "Schronisko PTTK \"Na \xC5\x9Anie\xC5\xBCniku\""
+    created_at: 2012-11-17 11:58:13.319751 Z
+    updated_at: 2012-11-17 11:58:13.319751 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 22
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Na_%C5%9Anie%C5%BCniku%22
+    user_id: 1
+    phone: (+48) 74 813 51 30, (+48) 501 63 11 34
+    email: schronisko@sudety.info.pl
+    official_url: "50\xC2\xB012\xE2\x80\xB229\xE2\x80\xB3N 16\xC2\xB049\xE2\x80\xB256\xE2\x80\xB3E"
+    photo_url: 
+- :area: 
+    id: 23
+    name: "G\xC3\xB3ry Z\xC5\x82ote"
+    created_at: 2012-11-17 12:00:11.340350 Z
+    updated_at: 2012-11-17 13:04:04.733428 Z
+    avg_lat: 50.409666666666666
+    avg_lon: 17.106833333333334
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 274
+    lat: 50.31305555555556
+    lon: 17.374166666666667
+    elevation: 200
+    name: "G\xC5\x82ucho\xC5\x82azy"
+    created_at: 2012-11-17 12:06:34.209448 Z
+    updated_at: 2012-11-17 12:06:34.209448 Z
+    imported_at: 
+    sym: Residence
+    area_id: 23
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/G%C5%82ucho%C5%82azy
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 273
+    lat: 50.405833333333334
+    lon: 17.1875
+    elevation: 230
+    name: "Ka\xC5\x82k\xC3\xB3w"
+    created_at: 2012-11-17 12:05:21.370160 Z
+    updated_at: 2012-11-17 12:05:21.370160 Z
+    imported_at: 
+    sym: Residence
+    area_id: 23
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Ka%C5%82k%C3%B3w_%28wojew%C3%B3dztwo_opolskie%29
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 271
+    lat: 50.45
+    lon: 17.0
+    elevation: 220
+    name: "Paczk\xC3\xB3w"
+    created_at: 2012-11-17 12:02:38.167593 Z
+    updated_at: 2012-11-17 12:02:38.167593 Z
+    imported_at: 
+    sym: Residence
+    area_id: 23
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Paczk%C3%B3w
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 272
+    lat: 50.433055555555555
+    lon: 17.089444444444446
+    elevation: 200
+    name: Trzeboszowice
+    created_at: 2012-11-17 12:03:43.789814 Z
+    updated_at: 2012-11-17 12:03:43.789814 Z
+    imported_at: 
+    sym: Residence
+    area_id: 23
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Trzeboszowice
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 270
+    lat: 50.44638888888889
+    lon: 16.883055555555554
+    elevation: 355
+    name: "Z\xC5\x82oty Stok"
+    created_at: 2012-11-17 12:01:27.078055 Z
+    updated_at: 2012-11-17 12:01:27.078055 Z
+    imported_at: 
+    sym: Residence
+    area_id: 23
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Z%C5%82oty_Stok
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 24
+    name: "G\xC3\xB3ry Opawskie"
+    created_at: 2012-11-17 12:09:32.037823 Z
+    updated_at: 2012-11-17 13:04:04.742328 Z
+    avg_lat: 50.2878625
+    avg_lon: 17.500979166666667
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 275
+    lat: 50.25600277777778
+    lon: 17.422791666666665
+    elevation: 889
+    name: Biskupia Kopa
+    created_at: 2012-11-17 12:10:29.290837 Z
+    updated_at: 2012-11-17 12:10:29.290837 Z
+    imported_at: 
+    sym: Summit
+    area_id: 24
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Biskupia_Kopa
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 276
+    lat: 50.319722222222225
+    lon: 17.579166666666666
+    elevation: 265
+    name: Prudnik
+    created_at: 2012-11-17 12:11:25.638477 Z
+    updated_at: 2012-11-17 12:11:25.638477 Z
+    imported_at: 
+    sym: Residence
+    area_id: 24
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Prudnik
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 27
+    name: "Beskid \xC5\xBBywiecki i Makowski"
+    created_at: 2012-11-18 18:50:47.614897 Z
+    updated_at: 2012-11-18 20:03:30.968576 Z
+    avg_lat: 49.514751851851855
+    avg_lon: 19.252667824074074
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 316
+    lat: 49.47611111111111
+    lon: 19.218527777777776
+    elevation: 1038
+    name: "Bac\xC3\xB3wka PTTK na Krawcowym Wierchu"
+    created_at: 2012-11-18 19:46:37.582276 Z
+    updated_at: 2012-11-18 19:46:37.582276 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_na_Krawcowym_Wierchu
+    user_id: 1
+    phone: 504-684-027
+    email: krawcula@gmail.com
+    official_url: http://krawcow.pttk.pl/
+    photo_url: 
+  - id: 317
+    lat: 49.416780555555555
+    lon: 19.10038888888889
+    elevation: 1120
+    name: "Bac\xC3\xB3wka PTTK na Rycerzowej"
+    created_at: 2012-11-18 19:49:08.568180 Z
+    updated_at: 2012-11-18 19:49:08.568180 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_na_Rycerzowej
+    user_id: 1
+    phone: 606 436 036
+    email: ""
+    official_url: http://rycerzowa.pttk.pl/
+    photo_url: 
+  - id: 326
+    lat: 49.66655
+    lon: 19.495858333333334
+    elevation: 879
+    name: Schronisko Opaczne
+    created_at: 2012-11-18 20:03:30.950205 Z
+    updated_at: 2012-11-18 20:03:30.950205 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_Opaczne
+    user_id: 1
+    phone: 606 573 671
+    email: opaczne-zawoja@o2.pl
+    official_url: http://opaczne.wordpress.com/
+    photo_url: 
+  - id: 319
+    lat: 49.54388888888889
+    lon: 19.168333333333333
+    elevation: 854
+    name: Schronisko PTTK na Hali Boraczej
+    created_at: 2012-11-18 19:53:59.377112 Z
+    updated_at: 2012-11-18 19:53:59.377112 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Boraczej
+    user_id: 1
+    phone: 33 862-67-32
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 322
+    lat: 49.626416666666664
+    lon: 19.64477777777778
+    elevation: 1152
+    name: Schronisko PTTK na Hali Krupowej
+    created_at: 2012-11-18 19:58:02.732341 Z
+    updated_at: 2012-11-18 19:58:02.732341 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Krupowej
+    user_id: 1
+    phone: 18-4475005, 607 033997
+    email: krupowa@o2.pl
+    official_url: http://www.krupowa.pttk.pl/
+    photo_url: 
+  - id: 320
+    lat: 49.53194444444444
+    lon: 19.218055555555555
+    elevation: 1324
+    name: Schronisko PTTK na Hali Lipowskiej
+    created_at: 2012-11-18 19:54:56.239932 Z
+    updated_at: 2012-11-18 19:54:56.239932 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Lipowskiej
+    user_id: 1
+    phone: +48 602 605 969
+    email: lipowska@onet.eu
+    official_url: http://www.lipowska.com.pl/
+    photo_url: 
+  - id: 321
+    lat: 49.540752777777776
+    lon: 19.31819722222222
+    elevation: 1330
+    name: Schronisko PTTK na Hali Miziowej
+    created_at: 2012-11-18 19:56:48.707709 Z
+    updated_at: 2012-11-18 19:56:48.707709 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Miziowej
+    user_id: 1
+    phone: +48 33 488 72 54
+    email: schronisko@halamiziowa.pl
+    official_url: http://halamiziowa.pl/
+    photo_url: 
+  - id: 303
+    lat: 49.53611111111111
+    lon: 19.234444444444446
+    elevation: 1290
+    name: Schronisko PTTK na Hali Rysiance
+    created_at: 2012-11-18 18:51:37.841694 Z
+    updated_at: 2012-11-18 18:51:37.841694 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Hali_Rysiance
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 323
+    lat: 49.587830555555556
+    lon: 19.516533333333335
+    elevation: 1180
+    name: Schronisko PTTK na Markowych Szczawinach
+    created_at: 2012-11-18 19:59:26.133004 Z
+    updated_at: 2012-11-18 19:59:26.133004 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Markowych_Szczawinach
+    user_id: 1
+    phone: +48 33 877 51 05
+    email: markowe.szczawiny@op.pl
+    official_url: http://www.markoweszczawiny.pttk.pl/
+    photo_url: 
+  - id: 324
+    lat: 49.4208
+    lon: 19.048175
+    elevation: 1000
+    name: "Schronisko PTTK na Prze\xC5\x82\xC4\x99czy Przegibek"
+    created_at: 2012-11-18 20:00:34.067212 Z
+    updated_at: 2012-11-18 20:00:34.067212 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Prze%C5%82%C4%99czy_Przegibek
+    user_id: 1
+    phone: (0-33) 864-41-39; (+48) 504-148-357; (+48) 504-148-358;
+    email: ""
+    official_url: http://przegibek.pttk.pl/
+    photo_url: 
+  - id: 325
+    lat: 49.41305555555556
+    lon: 18.968333333333334
+    elevation: 1236
+    name: Schronisko PTTK na Wielkiej Raczy
+    created_at: 2012-11-18 20:01:44.649285 Z
+    updated_at: 2012-11-18 20:01:44.649285 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Wielkiej_Raczy
+    user_id: 1
+    phone: 516 187 556
+    email: wielka.racza@op.pl
+    official_url: http://www.wielka-racza.pttk.pl/
+    photo_url: 
+  - id: 318
+    lat: 49.416780555555555
+    lon: 19.10038888888889
+    elevation: 710
+    name: Schronisko PTTK w Zwardoniu
+    created_at: 2012-11-18 19:51:38.464752 Z
+    updated_at: 2012-11-18 19:51:38.464752 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 27
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Dworzec_Beskidzki%22_w_Zwardoniu
+    user_id: 1
+    phone: 033 865-63-05
+    email: ""
+    official_url: http://www.yooz.com.pl/zwardon/dwbeskidzki/
+    photo_url: 
+- :area: 
+    id: 28
+    name: Bieszczady
+    created_at: 2012-11-19 10:46:04.148154 Z
+    updated_at: 2012-11-19 10:55:57.257947 Z
+    avg_lat: 49.20448928571428
+    avg_lon: 22.392009126984128
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 360
+    lat: 49.22199722222222
+    lon: 22.44197777777778
+    elevation: 605
+    name: "Bac\xC3\xB3wka PTTK \"Jaworzec\""
+    created_at: 2012-11-19 10:51:25.840454 Z
+    updated_at: 2012-11-19 10:51:25.840454 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_%22Jaworzec%22
+    user_id: 1
+    phone: "601 637 868 "
+    email: ""
+    official_url: http://www.schronisko-jaworzec.pl/
+    photo_url: 
+  - id: 359
+    lat: 49.21131388888889
+    lon: 22.330838888888888
+    elevation: 663
+    name: "Bac\xC3\xB3wka PTTK \"Pod Honem\""
+    created_at: 2012-11-19 10:49:37.368408 Z
+    updated_at: 2012-11-19 10:49:37.368408 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_%22Pod_Honem%22
+    user_id: 1
+    phone: 660 116 025
+    email: bacowka@podhonem.pl
+    official_url: http://www.podhonem.pl/?go=onas
+    photo_url: 
+  - id: 361
+    lat: 49.11694444444444
+    lon: 22.58138888888889
+    elevation: 930
+    name: "Bac\xC3\xB3wka PTTK Pod Ma\xC5\x82\xC4\x85 Rawk\xC4\x85"
+    created_at: 2012-11-19 10:53:06.565567 Z
+    updated_at: 2012-11-19 10:53:06.565567 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Bac%C3%B3wka_PTTK_Pod_Ma%C5%82%C4%85_Rawk%C4%85
+    user_id: 1
+    phone: 504 170 127
+    email: schronisko@rawki.pl
+    official_url: http://www.rawki.pl/
+    photo_url: 
+  - id: 363
+    lat: 49.280277777777776
+    lon: 22.121111111111112
+    elevation: 620
+    name: Schronisko "Nad Smolnikiem"
+    created_at: 2012-11-19 10:55:57.242528 Z
+    updated_at: 2012-11-19 10:55:57.242528 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_%22Nad_Smolnikiem%22
+    user_id: 1
+    phone: 509 463 990
+    email: ""
+    official_url: http://www.smolnik.info.pl/
+    photo_url: 
+  - id: 357
+    lat: 49.15819444444445
+    lon: 22.551388888888887
+    elevation: 1228
+    name: Schronisko PTTK "Chatka Puchatka"
+    created_at: 2012-11-19 10:46:45.226917 Z
+    updated_at: 2012-11-19 10:46:45.226917 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Chatka_Puchatka%22_na_Po%C5%82oninie_Wetli%C5%84skiej
+    user_id: 1
+    phone: 0502 472 893
+    email: ""
+    official_url: http://www.bieszczady.net.pl/chatkapuchatka/
+    photo_url: 
+  - id: 358
+    lat: 49.10533888888889
+    lon: 22.644880555555556
+    elevation: 650
+    name: Schronisko PTTK "Kremenaros"
+    created_at: 2012-11-19 10:48:23.572504 Z
+    updated_at: 2012-11-19 10:48:23.572504 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_%22Kremenaros%22
+    user_id: 1
+    phone: "723109175"
+    email: ""
+    official_url: http://www.bieszczadypttk.pl/schroniska/item/schronisko-kremenaros.html
+    photo_url: 
+  - id: 362
+    lat: 49.337358333333334
+    lon: 22.072477777777777
+    elevation: 490
+    name: "Schronisko PTTK w Koma\xC5\x84czy"
+    created_at: 2012-11-19 10:54:19.064359 Z
+    updated_at: 2012-11-19 10:54:19.064359 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 28
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_w_Koma%C5%84czy
+    user_id: 1
+    phone: "13 46 770 13 , 664 789 833 Micha\xC5\x82"
+    email: schronisko_komancza@wp.pl
+    official_url: http://www.pttkkomancza.pl/
+    photo_url: 
+- :area: 
+    id: 29
+    name: "Beskid Ma\xC5\x82y"
+    created_at: 2012-11-24 20:26:39.833022 Z
+    updated_at: 2012-11-24 20:31:03.822068 Z
+    avg_lat: 49.79798611111111
+    avg_lon: 19.247969444444447
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 365
+    lat: 49.79534722222222
+    lon: 19.44768611111111
+    elevation: 890
+    name: Schronisko PTTK Leskowiec
+    created_at: 2012-11-24 20:30:06.941871 Z
+    updated_at: 2012-11-24 20:30:06.941871 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 29
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_Leskowiec
+    user_id: 1
+    phone: 0-33 872 16 94, 0-606 743 880
+    email: ""
+    official_url: http://leskowiec.pttk.pl/index.html
+    photo_url: 
+  - id: 366
+    lat: 49.776666666666664
+    lon: 19.130277777777778
+    elevation: 909
+    name: Schronisko PTTK na Magurce Wilkowickiej
+    created_at: 2012-11-24 20:31:03.805678 Z
+    updated_at: 2012-11-24 20:31:03.805678 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 29
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_PTTK_na_Magurce_Wilkowickiej
+    user_id: 1
+    phone: (033) 817-04-21
+    email: info@magurka.beskidy.pl
+    official_url: http://www.magurka.beskidy.pl/
+    photo_url: 
+  - id: 364
+    lat: 49.82194444444445
+    lon: 19.165944444444445
+    elevation: 700
+    name: "Schronisko na Hrobaczej \xC5\x81\xC4\x85ce"
+    created_at: 2012-11-24 20:29:07.468368 Z
+    updated_at: 2012-11-24 20:29:07.468368 Z
+    imported_at: 
+    sym: Lodging
+    area_id: 29
+    is_private: false
+    url: http://pl.wikipedia.org/wiki/Schronisko_na_Hrobaczej_%C5%81%C4%85ce
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+- :area: 
+    id: 30
+    name: Scandinavia
+    created_at: 2013-01-12 12:47:15.694464 Z
+    updated_at: 2013-01-12 13:20:54.094760 Z
+    avg_lat: 64.50359649122807
+    avg_lon: 13.28233918128655
+    desc: 
+    url: 
+    photo_url: 
+    area_type_id: 1
+  :waypoints: 
+  - id: 455
+    lat: 68.2388888888889
+    lon: 13.745833333333334
+    elevation: 40
+    name: "Borg, Vestv\xC3\xA5g\xC3\xB8y"
+    created_at: 2013-01-12 13:10:42.432595 Z
+    updated_at: 2013-01-12 13:10:42.432595 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Borg,_Vestv%C3%A5g%C3%B8y
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 448
+    lat: 61.63638888888889
+    lon: 8.3125
+    elevation: 2469
+    name: "Galdh\xC3\xB8piggen"
+    created_at: 2013-01-12 12:58:38.792592 Z
+    updated_at: 2013-01-12 12:58:38.792592 Z
+    imported_at: 
+    sym: Summit
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Galdh%C3%B8piggen
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 450
+    lat: 62.099444444444444
+    lon: 7.206388888888889
+    elevation: 40
+    name: Geiranger
+    created_at: 2013-01-12 13:02:29.846016 Z
+    updated_at: 2013-01-12 13:02:29.846016 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Geiranger
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 451
+    lat: 62.12111111111111
+    lon: 7.128888888888889
+    elevation: 400
+    name: Geirangerfjord
+    created_at: 2013-01-12 13:04:22.424323 Z
+    updated_at: 2013-01-12 13:04:22.424323 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Geirangerfjord
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 456
+    lat: 68.15277777777777
+    lon: 14.200555555555555
+    elevation: 6
+    name: "Henningsv\xC3\xA6r"
+    created_at: 2013-01-12 13:11:38.431293 Z
+    updated_at: 2013-01-12 13:11:38.431293 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Henningsvaer
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 462
+    lat: 66.61666666666666
+    lon: 19.833333333333332
+    elevation: 200
+    name: Jokkmokk
+    created_at: 2013-01-12 13:19:52.163692 Z
+    updated_at: 2013-01-12 13:19:52.163692 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Jokkmokk
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 449
+    lat: 61.71055555555556
+    lon: 6.924166666666666
+    elevation: 500
+    name: Jostedalsbreen (glacier)
+    created_at: 2013-01-12 13:00:53.944893 Z
+    updated_at: 2013-01-12 13:00:53.944893 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Jostedalsbreen
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 446
+    lat: 56.18333333333333
+    lon: 15.65
+    elevation: 200
+    name: Karlskrona
+    created_at: 2013-01-12 12:51:00.341485 Z
+    updated_at: 2013-01-12 12:51:00.341485 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Karlskrona
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 460
+    lat: 67.88333333333334
+    lon: 18.55
+    elevation: 2106
+    name: Kebnekaise
+    created_at: 2013-01-12 13:17:27.492161 Z
+    updated_at: 2013-01-12 13:17:27.492161 Z
+    imported_at: 
+    sym: Summit
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Kebnekaise
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 459
+    lat: 67.85
+    lon: 20.216666666666665
+    elevation: 150
+    name: Kiruna
+    created_at: 2013-01-12 13:16:05.413427 Z
+    updated_at: 2013-01-12 13:16:05.413427 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Kiruna
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 458
+    lat: 67.9925
+    lon: 13.012777777777778
+    elevation: 10
+    name: Kjerkfjorden
+    created_at: 2013-01-12 13:14:55.950272 Z
+    updated_at: 2013-01-12 13:14:55.950272 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: ""
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 454
+    lat: 68.14722222222223
+    lon: 13.61138888888889
+    elevation: 10
+    name: Leknes
+    created_at: 2013-01-12 13:09:24.511068 Z
+    updated_at: 2013-01-12 13:09:24.511068 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Leknes
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 447
+    lat: 61.810833333333335
+    lon: 8.639166666666666
+    elevation: 200
+    name: Lom
+    created_at: 2013-01-12 12:52:55.445487 Z
+    updated_at: 2013-01-12 12:52:55.445487 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Lom,_Norway
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 461
+    lat: 67.85111111111111
+    lon: 19.025
+    elevation: 200
+    name: Nikkaluokta
+    created_at: 2013-01-12 13:18:55.043957 Z
+    updated_at: 2013-01-12 13:18:55.043957 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Nikkaluokta
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 445
+    lat: 59.949444444444445
+    lon: 10.756388888888889
+    elevation: 200
+    name: Oslo
+    created_at: 2013-01-12 12:48:29.682461 Z
+    updated_at: 2013-01-12 12:49:18.429057 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Oslo
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 457
+    lat: 67.93222222222222
+    lon: 13.089444444444444
+    elevation: 11
+    name: Reine
+    created_at: 2013-01-12 13:13:35.839574 Z
+    updated_at: 2013-01-12 13:13:35.839574 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Reine
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 463
+    lat: 59.32944444444445
+    lon: 18.06861111111111
+    elevation: 100
+    name: Stockholm
+    created_at: 2013-01-12 13:20:54.077098 Z
+    updated_at: 2013-01-12 13:20:54.077098 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Stockholm
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 453
+    lat: 66.63333333333334
+    lon: 14.0
+    elevation: 300
+    name: Svartisen
+    created_at: 2013-01-12 13:07:54.348229 Z
+    updated_at: 2013-01-12 13:07:54.348229 Z
+    imported_at: 
+    sym: Scenic Area
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Svartisen
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
+  - id: 452
+    lat: 63.429722222222225
+    lon: 10.393333333333333
+    elevation: 100
+    name: Trondheim
+    created_at: 2013-01-12 13:05:39.628497 Z
+    updated_at: 2013-01-12 13:05:39.628497 Z
+    imported_at: 
+    sym: Residence
+    area_id: 30
+    is_private: false
+    url: http://en.wikipedia.org/wiki/Trondheim
+    user_id: 1
+    phone: ""
+    email: ""
+    official_url: ""
+    photo_url: 
