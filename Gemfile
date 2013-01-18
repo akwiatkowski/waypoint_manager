@@ -58,6 +58,7 @@ group :development do
   gem 'sqlite3'
   gem 'nifty-generators'
   gem 'heroku'
+  gem 'taps'
   gem 'pry-rails'
 
   # webconsole
