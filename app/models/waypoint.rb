@@ -141,9 +141,14 @@ class Waypoint < ActiveRecord::Base
 
   def heading_to(_waypoint)
     return nil if _waypoint.nil? or _waypoint == self
-    self_geo = Geokit::LatLng.new(self.lat, self.lon)
-    other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
-    self_geo.heading_to(other_geo)
+    begin
+      self_geo = Geokit::LatLng.new(self.lat, self.lon)
+      other_geo = Geokit::LatLng.new(_waypoint.lat, _waypoint.lon)
+      self_geo.heading_to(other_geo)
+    rescue => e
+      Rails.logger.error("heading_to from #{self.inspect} to #{_waypoint.inspect}, error #{e.inspect}")
+      return nil
+    end
   end
 
   def heading_to_human(_waypoint)
@@ -234,7 +239,7 @@ class Waypoint < ActiveRecord::Base
     (0...10).each do |i|
       res << sunrise_sunset(d + i)
     end
-    
+
     return res
   end
 
