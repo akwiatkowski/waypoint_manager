@@ -63,17 +63,16 @@
             - else
               = route_element.waypoint.name
 
-    #map_containter
-      = hidden_field_tag :route_id, resource.id
-      = hidden_field_tag :route_name, resource.name
-      #map_canvas{style: "width: 100%; height: 500px; display:none;"}
-      %p.map_link
-        Show map
-
   .span4
     = render partial: '/waypoints/panoramio'
 
-= render partial: 'chart'
+- if false
+  = render partial: 'chart'
+
+#map_containter
+  = hidden_field_tag :route_id, resource.id
+  = hidden_field_tag :route_name, resource.name
+  #map_canvas{style: "width: 100%; height: 500px; display:none;"}
 
 .btn-group
   = link_to route_route_elements_path(resource), class: 'btn' do
@@ -85,6 +84,11 @@
       URL
 
 Map:
+.btn-group
+  = link_to "#", class: 'btn map_link' do
+    %i.icon-globe
+    = "Online"
+
 .btn-group
   - sizes = {small: [400, 400], medium: [800, 600], big: [1200, 800], huge: [2000, 1500] }
   - sizes.keys.each do |size|

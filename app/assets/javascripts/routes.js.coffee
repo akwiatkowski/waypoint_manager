@@ -5,15 +5,16 @@ jQuery ->
     $.getScript("/routes/" + route_id + '/height_chart.js')
 
   # show JS map
-  $('#map_containter p.map_link').click (e) ->
+  $('.map_link').click (e) ->
     e.stopImmediatePropagation();
     $(this).hide()
     $('#map_canvas').show()
-    alert(1)
+    $('html, body').animate({
+      scrollTop: $('#map_canvas').offset().top
+    }, 800)
     routeInitMap($('#route_id').val(), $('#route_name').val());
     return false;
 
-#map = undefined
 
 @routeInitMap = (id, title) ->
   # Define a new map.  We want it to be loaded into the 'map_canvas' div in the view
@@ -30,7 +31,7 @@ jQuery ->
     "http://2.tiles.ump.waw.pl/ump_tiles/${z}/${x}/${y}.png",
     "http://3.tiles.ump.waw.pl/ump_tiles/${z}/${x}/${y}.png",
   ]
-  ump = new OpenLayers.Layer.OSM("UMP", ump_servers, {numZoomLevels: 20, alpha: true, isBaseLayer: false});
+  ump = new OpenLayers.Layer.OSM("UMP", ump_servers, {numZoomLevels: 20, alpha: true, isBaseLayer: true});
 
 #  # Google Maps (ROAD)
 #  gmap = new OpenLayers.Layer.Google("Google Maps",
