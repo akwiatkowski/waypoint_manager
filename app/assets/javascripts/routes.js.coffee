@@ -12,11 +12,11 @@ jQuery ->
     $('html, body').animate({
       scrollTop: $('#map_canvas').offset().top
     }, 800)
-    routeInitMap($('#route_id').val(), $('#route_name').val());
+    routeInitMap($('#map_url').val(), $('#map_name').val());
     return false;
 
 
-@routeInitMap = (id, title) ->
+@routeInitMap = (url, title) ->
   # Define a new map.  We want it to be loaded into the 'map_canvas' div in the view
   map = new OpenLayers.Map("map_canvas")
 
@@ -60,7 +60,6 @@ jQuery ->
   )
 
   # Get the polylines from Rails
-  url = "/routes/" + id + ".geojson"
   OpenLayers.Request.GET({
     url: url,
     #headers: {'Accept':'application/json'},

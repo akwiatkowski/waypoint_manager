@@ -70,8 +70,8 @@
   = render partial: 'chart'
 
 #map_containter
-  = hidden_field_tag :route_id, resource.id
-  = hidden_field_tag :route_name, resource.name
+  = hidden_field_tag :map_url, resource_path( format: :geojson)
+  = hidden_field_tag :map_name, resource.name
   #map_canvas{style: "width: 100%; height: 500px; display:none;"}
 
 .btn-group
