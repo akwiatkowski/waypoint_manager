@@ -2,5 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$('.btn.url-link').click ->
-  window.open($('input#waypoint_url')[0].value,'_blank')
+jQuery ->
+  $('.btn.url-link').click ->
+    window.open($('input#waypoint_url')[0].value,'_blank')

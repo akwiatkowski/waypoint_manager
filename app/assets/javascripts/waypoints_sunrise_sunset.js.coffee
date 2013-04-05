@@ -1,2 +1,3 @@
-#$(document).ready ->
-#$('.sunset').hide()
+jQuery ->
+  #$(document).ready ->
+  #$('.sunset').hide()
