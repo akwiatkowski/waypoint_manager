@@ -10,6 +10,16 @@
   .span4
     = render partial: '/waypoints/panoramio'
 
+#map_containter
+  = hidden_field_tag :map_url, resource_path(format: :geojson)
+  = hidden_field_tag :map_name, resource.name
+  #map_canvas{style: "width: 100%; height: 500px; display:none;"}
+
+.btn-group
+  = link_to "#", class: 'btn map_link' do
+    %i.icon-globe
+    = t(:online_map)
+
 .btn-group
   - if can?(:edit, resource)
     = link_to edit_resource_path(resource), class: 'btn' do

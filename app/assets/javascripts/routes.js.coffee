@@ -51,7 +51,8 @@ jQuery ->
   myStyleMap = new OpenLayers.StyleMap(
     strokeColor: "red"
     strokeOpacity: 1.0
-    strokeWidth: 2
+    strokeWidth: 2,
+    pointRadius: 5,
   )
 
   # Create a new vector layer including the above StyleMap

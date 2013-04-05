@@ -52,4 +52,23 @@ class Area < ActiveRecord::Base
     self.waypoints.order("lon DESC").first.lon + Waypoint::PANORAMIO_NEAR
   end
 
+  def geojson
+    # http://www.interoperate.co.uk/blog/2012/02/07/using-openlayers-with-rails/
+    features = self.waypoints.collect { |e|
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [e.lon, e.lat],
+          name: e.name
+        }
+      }
+    }
+
+    # return a GeoJSON 'FeatureCollection'
+    return {
+      type: "FeatureCollection",
+      features: features
+    }
+  end
 end
