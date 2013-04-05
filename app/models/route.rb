@@ -168,7 +168,7 @@ class Route < ActiveRecord::Base
 
   def geojson
     # http://www.interoperate.co.uk/blog/2012/02/07/using-openlayers-with-rails/
-    coordinates = self.route_elements.collect { |e| [e.waypoint.lat, e.waypoint.lon] }
+    coordinates = self.route_elements.collect { |e| [e.waypoint.lon, e.waypoint.lat] }
 
     # return a GeoJSON 'FeatureCollection'
     { type: "FeatureCollection",

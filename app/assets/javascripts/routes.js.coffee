@@ -4,7 +4,7 @@ jQuery ->
     route_id = $('#route_id').val()
     $.getScript("/routes/" + route_id + '/height_chart.js')
 
-map = undefined
+#map = undefined
 
 @routeInitMap = (id, title) ->
   # Define a new map.  We want it to be loaded into the 'map_canvas' div in the view
@@ -41,15 +41,18 @@ map = undefined
   vectorLayer = new OpenLayers.Layer.Vector(title,
     styleMap: myStyleMap
   )
-  map.addLayer vectorLayer
 
   # Get the polylines from Rails
   url = "/routes/" + id + ".geojson"
   OpenLayers.Request.GET({
     url: url,
-    headers: {'Accept':'application/json'},
+    #headers: {'Accept':'application/json'},
     success: (req) ->
-      g = new OpenLayers.Format.GeoJSON()
+      g = new OpenLayers.Format.GeoJSON({
+        'internalProjection': new OpenLayers.Projection("EPSG:900913"),
+        'externalProjection': new OpenLayers.Projection("EPSG:4326")
+      })
+      console.log(g.isValidType(req.responseText))
       features = g.read(req.responseText)
       console.log(features)
 
@@ -57,17 +60,22 @@ map = undefined
       i = 0
       bounds = undefined
       while i < features.length
+        console.log(features[i].geometry.getBounds())
         unless bounds
           bounds = features[i].geometry.getBounds()
         else
           bounds.extend features[i].geometry.getBounds()
         ++i
 
-      vectorLayer.destroyFeatures()
+#      vectorLayer.destroyFeatures()
       vectorLayer.addFeatures features
 
       # Set the extent of the map to the 'bounds'
+      map.addLayer(vectorLayer);
       map.zoomToExtent bounds
+
+      console.log('------------')
+      console.log(vectorLayer.first.geometry.components)
   })
 
 #  OpenLayers.Request.GET url, {}, null, (response) ->
