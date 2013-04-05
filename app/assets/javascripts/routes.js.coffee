@@ -16,18 +16,19 @@ map = undefined
   # OpenStreetMaps
   osm = new OpenLayers.Layer.OSM()
 
-  # Google Maps (ROAD)
-  gmap = new OpenLayers.Layer.Google("Google Maps",
-    type: google.maps.MapTypeId.ROAD
-  )
-
-  # Google Maps (SATELLITE)
-  gsat = new OpenLayers.Layer.Google("Google Satellite",
-    type: google.maps.MapTypeId.SATELLITE
-  )
+#  # Google Maps (ROAD)
+#  gmap = new OpenLayers.Layer.Google("Google Maps",
+#    type: google.maps.MapTypeId.ROAD
+#  )
+#
+#  # Google Maps (SATELLITE)
+#  gsat = new OpenLayers.Layer.Google("Google Satellite",
+#    type: google.maps.MapTypeId.SATELLITE
+#  )
 
   # Add the layers defined above to the map
-  map.addLayers [osm, gmap, gsat]
+  #map.addLayers [osm, gmap, gsat]
+  map.addLayers [osm]
 
   # Set some styles
   myStyleMap = new OpenLayers.StyleMap(
@@ -49,9 +50,24 @@ map = undefined
     headers: {'Accept':'application/json'},
     success: (req) ->
       g = new OpenLayers.Format.GeoJSON()
-      feature_collection = g.read(req.responseText)
+      features = g.read(req.responseText)
+      console.log(features)
+
+      # Iterate over the features and extend the bounds to the bounds of the geometries
+      i = 0
+      bounds = undefined
+      while i < features.length
+        unless bounds
+          bounds = features[i].geometry.getBounds()
+        else
+          bounds.extend features[i].geometry.getBounds()
+        ++i
+
       vectorLayer.destroyFeatures()
-      vectorLayer.addFeatures(feature_collection)
+      vectorLayer.addFeatures features
+
+      # Set the extent of the map to the 'bounds'
+      map.zoomToExtent bounds
   })
 
 #  OpenLayers.Request.GET url, {}, null, (response) ->
