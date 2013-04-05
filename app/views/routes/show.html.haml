@@ -63,7 +63,12 @@
             - else
               = route_element.waypoint.name
 
-    #map_canvas{style: "width: 600px; height: 300px;"}
+    #map_containter
+      = hidden_field_tag :route_id, resource.id
+      = hidden_field_tag :route_name, resource.name
+      #map_canvas{style: "width: 100%; height: 500px; display:none;"}
+      %p.map_link
+        Show map
 
   .span4
     = render partial: '/waypoints/panoramio'
@@ -86,11 +91,6 @@ Map:
     = link_to route_path(resource, format: :png, width: sizes[size][0], height: sizes[size][1]), target: '_blank', class: 'btn' do
       %i.icon-globe
       = I18n.t(size)
-
-:javascript
-  $(function() {
-    routeInitMap(#{resource.id}, '#{resource.name}');
-  });
 
 .btn-group
   - if can?(:edit, resource)

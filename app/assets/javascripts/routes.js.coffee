@@ -4,6 +4,15 @@ jQuery ->
     route_id = $('#route_id').val()
     $.getScript("/routes/" + route_id + '/height_chart.js')
 
+  # show JS map
+  $('#map_containter p.map_link').click (e) ->
+    e.stopImmediatePropagation();
+    $(this).hide()
+    $('#map_canvas').show()
+    alert(1)
+    routeInitMap($('#route_id').val(), $('#route_name').val());
+    return false;
+
 #map = undefined
 
 @routeInitMap = (id, title) ->
@@ -15,6 +24,13 @@ jQuery ->
 
   # OpenStreetMaps
   osm = new OpenLayers.Layer.OSM()
+  # UMP
+  ump_servers = [
+    "http://1.tiles.ump.waw.pl/ump_tiles/${z}/${x}/${y}.png",
+    "http://2.tiles.ump.waw.pl/ump_tiles/${z}/${x}/${y}.png",
+    "http://3.tiles.ump.waw.pl/ump_tiles/${z}/${x}/${y}.png",
+  ]
+  ump = new OpenLayers.Layer.OSM("UMP", ump_servers, {numZoomLevels: 20, alpha: true, isBaseLayer: false});
 
 #  # Google Maps (ROAD)
 #  gmap = new OpenLayers.Layer.Google("Google Maps",
@@ -28,7 +44,7 @@ jQuery ->
 
   # Add the layers defined above to the map
   #map.addLayers [osm, gmap, gsat]
-  map.addLayers [osm]
+  map.addLayers [ump, osm]
 
   # Set some styles
   myStyleMap = new OpenLayers.StyleMap(
