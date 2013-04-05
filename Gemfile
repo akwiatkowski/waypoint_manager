@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+#ruby "2.0.0"
 
 gem 'rails'
 gem 'thin'
@@ -29,14 +30,12 @@ gem "twitter-bootstrap-rails"
 # geo utils
 gem 'geokit'
 gem 'geokit-rails3'
+gem 'openlayers-rails'
 gem 'gpx2exif' #, git: 'git://github.com/akwiatkowski/gpx2exif.git'
 gem 'RubySunrise', require: 'solareventcalculator'
 
 # png manipulation
 gem 'rmagick'
-
-# js graphs
-gem "nvd3-rails", git: "git@github.com:adeven/nvd3-rails.git", submodules: true
 
 # need some fixes
 #gem 'panoramio', git: 'git://github.com/akwiatkowski/ruby-panoramio.git'

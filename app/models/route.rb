@@ -166,4 +166,22 @@ class Route < ActiveRecord::Base
     self.waypoints.order("lon DESC").first.lon + Waypoint::PANORAMIO_NEAR
   end
 
+  def geojson
+    # http://www.interoperate.co.uk/blog/2012/02/07/using-openlayers-with-rails/
+    coordinates = self.route_elements.collect { |e| [e.waypoint.lat, e.waypoint.lon] }
+
+    # return a GeoJSON 'FeatureCollection'
+    { type: "FeatureCollection",
+      features: [
+        type: "Feature",
+        geometry: {
+          type: "GeometryCollection",
+          geometries: [
+            { type: "LineString", coordinates: coordinates }
+          ]
+        }
+      ]
+    }
+  end
+
 end
