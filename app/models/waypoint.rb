@@ -9,7 +9,7 @@ class Waypoint < ActiveRecord::Base
   validates_presence_of :name, :lat, :lon
 
   def update_area_avg_lat_lon
-    self.area.update_avg_lat_lon!
+    self.area.update_avg_lat_lon! if self.area
   end
 
   GEO_NEAR = 0.3

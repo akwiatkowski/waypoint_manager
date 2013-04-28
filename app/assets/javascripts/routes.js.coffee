@@ -45,7 +45,7 @@ jQuery ->
 
   # Add the layers defined above to the map
   #map.addLayers [osm, gmap, gsat]
-  map.addLayers [ump, osm]
+  map.addLayers [osm, ump]
 
   # Set some styles
   myStyleMap = new OpenLayers.StyleMap(
