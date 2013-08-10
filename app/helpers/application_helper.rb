@@ -21,8 +21,9 @@ module ApplicationHelper
         ],
       "Personal" =>
         [
-          "http://a-kwiatkowski.deviantart.com/gallery/",
+          "http://500px.com/bobik314",
           "http://www.panoramio.com/user/4973339",
+          "http://a-kwiatkowski.deviantart.com/gallery/",
           "https://github.com/akwiatkowski"
         ]
     }

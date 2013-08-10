@@ -62,9 +62,15 @@
           .btn-group.waypoint-maps
             = waypoint_map_link_to(waypoint)
 
-          = link_to sunrise_sunset_area_waypoint_path(waypoint.area, waypoint), class: 'btn btn-mini btn-info' do
-            %i.icon-globe
-              = t('waypoint.sunrise')
+          .btn-group.waypoint-weather
+            - waypoint.weather_urls.each do |wu|
+              = link_to wu[:url], target: '_blank', class: 'btn btn-mini btn-info' do
+                %i.icon-globe
+                  = wu[:name]
+
+            = link_to sunrise_sunset_area_waypoint_path(waypoint.area, waypoint), class: 'btn btn-mini btn-info' do
+              %i.icon-globe
+                = t('waypoint.sunrise')
 
 
       %td

@@ -218,16 +218,32 @@ class Waypoint < ActiveRecord::Base
 
     d = {
       sunrise: {
-        civil: begin calc.compute_utc_civil_sunrise.to_time.localtime rescue nil end,
-        official: begin calc.compute_utc_official_sunrise.to_time.localtime rescue nil end,
-        nautical: begin calc.compute_utc_nautical_sunrise.to_time.localtime rescue nil end,
-        astronomical: begin calc.compute_utc_astronomical_sunrise.to_time.localtime rescue nil end,
+        civil: begin
+          calc.compute_utc_civil_sunrise.to_time.localtime rescue nil
+        end,
+        official: begin
+          calc.compute_utc_official_sunrise.to_time.localtime rescue nil
+        end,
+        nautical: begin
+          calc.compute_utc_nautical_sunrise.to_time.localtime rescue nil
+        end,
+        astronomical: begin
+          calc.compute_utc_astronomical_sunrise.to_time.localtime rescue nil
+        end,
       },
       sunset: {
-        civil: begin calc.compute_utc_civil_sunset.to_time.localtime rescue nil end,
-        official: begin calc.compute_utc_official_sunset.to_time.localtime rescue nil end,
-        nautical: begin calc.compute_utc_nautical_sunset.to_time.localtime rescue nil end,
-        astronomical: begin calc.compute_utc_astronomical_sunset.to_time.localtime rescue nil end,
+        civil: begin
+          calc.compute_utc_civil_sunset.to_time.localtime rescue nil
+        end,
+        official: begin
+          calc.compute_utc_official_sunset.to_time.localtime rescue nil
+        end,
+        nautical: begin
+          calc.compute_utc_nautical_sunset.to_time.localtime rescue nil
+        end,
+        astronomical: begin
+          calc.compute_utc_astronomical_sunset.to_time.localtime rescue nil
+        end,
       },
       date: date
     }
@@ -317,6 +333,13 @@ class Waypoint < ActiveRecord::Base
     h[:sunset_to] = ss_data[:sunset][type] + 60.minutes
 
     return h
+  end
+
+  def weather_urls
+    return [
+      #{ name: "weather.gov", url: "http://forecast.weather.gov/MapClick.php?lat=#{self.lat}&lon=#{self.lon}" }
+      { name: "Weather", url: "http://api.openweathermap.org/data/2.5/weather?lat=#{self.lat}&lon=#{self.lon}&mode=html" }
+    ]
   end
 
 end
