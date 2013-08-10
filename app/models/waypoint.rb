@@ -247,7 +247,7 @@ class Waypoint < ActiveRecord::Base
     res = Array.new
     calc = SolarEventCalculator.new(Date.today, BigDecimal.new(self.lat.to_s), BigDecimal.new(self.lon.to_s))
 
-    (0..50).each do |d|
+    (0..55).each do |d|
       degree = d * 2
       ta = calc.convert_to_datetime(calc.compute_utc_solar_event(degree, true))
       tb = calc.convert_to_datetime(calc.compute_utc_solar_event(degree, false))
@@ -264,6 +264,45 @@ class Waypoint < ActiveRecord::Base
 
     #return calc
     return res
+  end
+
+  def get_degrees_by_time
+    data = get_sun_degrees
+
+    time_data = Array.new
+    i = 0
+    i_max = 24*3 # 24 hours, divide hour for 3 blocks
+
+    while i < i_max
+      time_offset = i * 20.minutes
+      time_data << {
+        time: Time.now.beginning_of_day + time_offset,
+        degree: nil
+      }
+
+      i += 1
+    end
+
+    time_data.each do |td|
+      selected = data.select { |d| d[:first] <= td[:time] and d[:last] >= td[:time] }
+      selected.each do |s|
+        s[:offset_first] = td[:time] - s[:first]
+        s[:offset_last] = s[:last] - td[:time]
+        s[:offset] = s[:offset_first] > s[:offset_last] ? s[:offset_last] : s[:offset_first]
+      end
+
+      # sort
+      selected = selected.sort { |a, b| a[:offset] <=> b[:offset] }
+
+      td[:count] = selected.size
+      if td[:count] > 0
+        td[:degree] = selected.first[:degree]
+      end
+
+    end
+
+    return time_data
+
   end
 
 end
