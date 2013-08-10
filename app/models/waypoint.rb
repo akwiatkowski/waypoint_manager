@@ -305,4 +305,18 @@ class Waypoint < ActiveRecord::Base
 
   end
 
+  def golden_hours(date = Date.today, type = :official)
+    # "The ‘golden hours’ for most types of landscape photography occur between  roughly 30 minutes before and about an hour-and-a-half after sunrise in  the morning and between about an hour-and-a-half before sunset and up  to an hour after the sun has gone down."
+    ss_data = sunrise_sunset(date)
+    h = Hash.new
+
+    h[:sunrise_from] = ss_data[:sunrise][type] - 30.minutes
+    h[:sunrise_to] = ss_data[:sunrise][type] + 90.minutes
+
+    h[:sunset_from] = ss_data[:sunset][type] - 90.minutes
+    h[:sunset_to] = ss_data[:sunset][type] + 60.minutes
+
+    return h
+  end
+
 end

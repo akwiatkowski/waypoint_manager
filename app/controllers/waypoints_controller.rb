@@ -16,5 +16,6 @@ class WaypointsController < InheritedResources::Base
     @sunrise = resource.get_sunrise_sunset_data
     @degrees = resource.get_sun_degrees
     @hourly = resource.get_degrees_by_time
+    @golden_hours = resource.golden_hours
   end
 end

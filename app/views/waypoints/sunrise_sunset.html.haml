@@ -8,8 +8,9 @@
 
 %ul
   %li= link_to t(:sunrise_sunset), "#sunrise-sunset"
-  %li= link_to "by degree", "#by-degree"
-  %li= link_to "by time", "#by-time"
+  %li= link_to "By degree", "#by-degree"
+  %li= link_to "By time", "#by-time"
+  %li= link_to "Golden hours", "#golden-hours"
 
 
 %hr.hr
@@ -97,3 +98,28 @@
           %td
             - if s[:degree]
               = s[:degree]
+
+%hr.hr
+
+%a{name: "golden-hours"}
+.row
+  .span12
+    %h2= "Golden hours"
+
+    %h3 Sunrise
+    %p
+      from
+      %strong
+        = l(@golden_hours[:sunrise_from], format: :short_time)
+      to
+      %strong
+        = l(@golden_hours[:sunrise_to], format: :short_time)
+
+    %h3 Sunset
+    %p
+      from
+      %strong
+        = l(@golden_hours[:sunset_from], format: :short_time)
+      to
+      %strong
+        = l(@golden_hours[:sunset_to], format: :short_time)
