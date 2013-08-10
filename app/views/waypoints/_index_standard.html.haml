@@ -6,17 +6,13 @@
     %th= link_to_sorted "Area", :area_id
     %th= link_to_sorted "Time", :created_at
 
-    %th= link_to_sorted "El", :elevation
+    %th= link_to_sorted "El [m]", :elevation
     - if default_full || params[:full]
       %th= link_to_sorted "Lat/Lon", [:lat, :lon]
-    %th Private
 
-    %th Show
-    %th= link_to_sorted "Url", :url
-    %th Map
-    %th Edit
-    %th Destroy
-
+    %th More
+    %th Prv
+    %th Actions
 
   - collection.each do |waypoint|
     %tr
@@ -24,7 +20,8 @@
       %td
         - if waypoint.is_private
           = image_tag 'padlock.png'
-        = waypoint.name
+        %span
+          = waypoint.name
       %td
         - unless waypoint.area.nil?
           - if can? :read, waypoint.area
@@ -34,11 +31,12 @@
         - else
           = ""
       %td
-        = waypoint.created_at.to_s(:db)
+        %span{title: waypoint.created_at.to_s(:db)}
+          = l(waypoint.created_at, format: :short)
         - if waypoint.imported?
           %br
           = image_tag "imported.gif", style: "height: 10px;"
-          %span.small= waypoint.imported_at.to_s(:db)
+          %span.small{title: waypoint.imported_at.to_s(:db)}= l(waypoint.imported_at, format: :short)
 
 
       %td= waypoint.elevation
@@ -48,29 +46,42 @@
           = waypoint.lon_short
 
       %td
-        = form_for waypoint do |f|
-          = f.hidden_field :is_private, value: (! waypoint.is_private)
-          = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
+        .btn-toolbar
+          - if waypoint.area
+            - _url = area_waypoint_path(waypoint.area, waypoint)
+          - else
+            - _url = waypoint
+          = link_to _url, class: 'btn btn-mini btn-info' do
+            %i.icon-search
+            = t('details')
+
+          - unless waypoint.url.blank?
+            = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
+              %i.icon-globe
+
+          .btn-group.waypoint-maps
+            = waypoint_map_link_to(waypoint)
+
+          = link_to sunrise_sunset_area_waypoint_path(waypoint.area, waypoint), class: 'btn btn-mini btn-info' do
+            %i.icon-globe
+              = t('waypoint.sunrise')
+
 
       %td
-        - if waypoint.area
-          - _url = area_waypoint_path(waypoint.area, waypoint)
-        - else
-          - _url = waypoint
-        = link_to _url, class: 'btn btn-mini btn-info' do
-          %i.icon-search
-          = t('details')
+        .btn-toolbar
+          = form_for waypoint, html: {class: "form-inline"} do |f|
+            = f.hidden_field :is_private, value: (! waypoint.is_private)
+            = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
+
+
       %td
-        - unless waypoint.url.blank?
-          = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
-            %i.icon-globe
-      %td
-        = waypoint_map_link_to(waypoint)
-      %td
-        - if can? :edit, waypoint
-          = link_to edit_waypoint_path(waypoint), class: 'btn btn-mini' do
-            %i.icon-edit
-      %td
-        - if can? :destroy, waypoint
-          = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
-            %i.icon-remove
+        .btn-toolbar
+          - if can? :edit, waypoint
+            = link_to edit_waypoint_path(waypoint), class: 'btn btn-mini' do
+              %i.icon-edit
+
+          - if can? :destroy, waypoint
+            = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+              %i.icon-remove
+
+

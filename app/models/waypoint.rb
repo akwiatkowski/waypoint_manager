@@ -243,4 +243,27 @@ class Waypoint < ActiveRecord::Base
     return res
   end
 
+  def get_sun_degrees
+    res = Array.new
+    calc = SolarEventCalculator.new(Date.today, BigDecimal.new(self.lat.to_s), BigDecimal.new(self.lon.to_s))
+
+    (0..50).each do |d|
+      degree = d * 2
+      ta = calc.convert_to_datetime(calc.compute_utc_solar_event(degree, true))
+      tb = calc.convert_to_datetime(calc.compute_utc_solar_event(degree, false))
+
+      ta = ta.to_time.localtime if ta
+      tb = tb.to_time.localtime if tb
+
+      res << {
+        degree: (90 - degree),
+        first: ta,
+        last: tb
+      } if ta or tb
+    end
+
+    #return calc
+    return res
+  end
+
 end

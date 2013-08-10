@@ -7,7 +7,7 @@
 %h1= title
 
 .row
-  .span8
+  .span12
     %table.table.sunrise_sunset
       %tr
         %th{rowspan: 2}= t(:day)
@@ -38,3 +38,25 @@
           %td.sunset.official= l(s[:sunset][:official], format: :short_time)
           %td.sunset.nautical= l(s[:sunset][:nautical], format: :short_time)
           %td.sunset.astronomical= l(s[:sunset][:astronomical], format: :short_time)
+
+%hr.hr
+
+.row
+  .span12
+    %table.table.sunrise_sunset
+      %tr
+        %th degree
+        %th first
+        %th last
+        %th time window
+
+      - @degrees.each do |s|
+        %tr
+          %td= s[:degree]
+
+          %td.solar-first= l(s[:first], format: :short_time)
+          %td.solar-last= l(s[:last], format: :short_time)
+
+          %td.time-window
+            = (s[:last] - s[:first]) / 1.hours
+            h

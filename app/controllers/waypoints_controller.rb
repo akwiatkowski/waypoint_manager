@@ -14,5 +14,6 @@ class WaypointsController < InheritedResources::Base
 
   def sunrise_sunset
     @sunrise = resource.get_sunrise_sunset_data
+    @degrees = resource.get_sun_degrees
   end
 end
