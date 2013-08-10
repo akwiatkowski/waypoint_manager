@@ -218,16 +218,16 @@ class Waypoint < ActiveRecord::Base
 
     d = {
       sunrise: {
-        civil: calc.compute_utc_civil_sunrise.to_time.localtime,
-        official: calc.compute_utc_official_sunrise.to_time.localtime,
-        nautical: calc.compute_utc_nautical_sunrise.to_time.localtime,
-        astronomical: calc.compute_utc_astronomical_sunrise.to_time.localtime,
+        civil: begin calc.compute_utc_civil_sunrise.to_time.localtime rescue nil end,
+        official: begin calc.compute_utc_official_sunrise.to_time.localtime rescue nil end,
+        nautical: begin calc.compute_utc_nautical_sunrise.to_time.localtime rescue nil end,
+        astronomical: begin calc.compute_utc_astronomical_sunrise.to_time.localtime rescue nil end,
       },
       sunset: {
-        civil: calc.compute_utc_civil_sunset.to_time.localtime,
-        official: calc.compute_utc_official_sunset.to_time.localtime,
-        nautical: calc.compute_utc_nautical_sunset.to_time.localtime,
-        astronomical: calc.compute_utc_astronomical_sunset.to_time.localtime,
+        civil: begin calc.compute_utc_civil_sunset.to_time.localtime rescue nil end,
+        official: begin calc.compute_utc_official_sunset.to_time.localtime rescue nil end,
+        nautical: begin calc.compute_utc_nautical_sunset.to_time.localtime rescue nil end,
+        astronomical: begin calc.compute_utc_astronomical_sunset.to_time.localtime rescue nil end,
       },
       date: date
     }
@@ -284,7 +284,7 @@ class Waypoint < ActiveRecord::Base
     end
 
     time_data.each do |td|
-      selected = data.select { |d| d[:first] <= td[:time] and d[:last] >= td[:time] }
+      selected = data.select { |d| d[:first] and td[:time] and d[:last] and d[:first] <= td[:time] and d[:last] >= td[:time] }
       selected.each do |s|
         s[:offset_first] = td[:time] - s[:first]
         s[:offset_last] = s[:last] - td[:time]

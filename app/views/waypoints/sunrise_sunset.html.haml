@@ -41,15 +41,15 @@
         %tr
           %td= s[:date]
 
-          %td.sunrise.civil= l(s[:sunrise][:civil], format: :short_time)
-          %td.sunrise.official= l(s[:sunrise][:official], format: :short_time)
-          %td.sunrise.nautical= l(s[:sunrise][:nautical], format: :short_time)
-          %td.sunrise.astronomical= l(s[:sunrise][:astronomical], format: :short_time)
+          %td.sunrise.civil= l(s[:sunrise][:civil], format: :short_time) rescue nil
+          %td.sunrise.official= l(s[:sunrise][:official], format: :short_time) rescue nil
+          %td.sunrise.nautical= l(s[:sunrise][:nautical], format: :short_time) rescue nil
+          %td.sunrise.astronomical= l(s[:sunrise][:astronomical], format: :short_time) rescue nil
 
-          %td.sunset.civil= l(s[:sunset][:civil], format: :short_time)
-          %td.sunset.official= l(s[:sunset][:official], format: :short_time)
-          %td.sunset.nautical= l(s[:sunset][:nautical], format: :short_time)
-          %td.sunset.astronomical= l(s[:sunset][:astronomical], format: :short_time)
+          %td.sunset.civil= l(s[:sunset][:civil], format: :short_time) rescue nil
+          %td.sunset.official= l(s[:sunset][:official], format: :short_time) rescue nil
+          %td.sunset.nautical= l(s[:sunset][:nautical], format: :short_time) rescue nil
+          %td.sunset.astronomical= l(s[:sunset][:astronomical], format: :short_time) rescue nil
 
 %hr.hr
 
@@ -70,8 +70,8 @@
         %tr
           %td= s[:degree]
 
-          %td.solar-first= l(s[:first], format: :short_time)
-          %td.solar-last= l(s[:last], format: :short_time)
+          %td.solar-first= l(s[:first], format: :short_time) rescue nil
+          %td.solar-last= l(s[:last], format: :short_time) rescue nil
 
           - if false
             %td.time-window
