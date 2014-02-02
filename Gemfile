@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 #ruby "2.0.0"
 
-gem 'rails'
+gem 'rails', '3.2.16'
 gem 'thin'
 gem 'execjs'
 gem 'jquery-rails'
@@ -31,7 +31,8 @@ gem "twitter-bootstrap-rails"
 gem 'geokit'
 gem 'geokit-rails3'
 gem 'openlayers-rails'
-gem 'gpx2exif' #, git: 'git://github.com/akwiatkowski/gpx2exif.git'
+gem 'gpx_utils'
+gem 'gpx2png' 
 gem 'RubySunrise', require: 'solareventcalculator'
 
 # png manipulation
