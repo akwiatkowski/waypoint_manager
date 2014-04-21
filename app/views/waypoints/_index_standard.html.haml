@@ -68,7 +68,11 @@
                 %i.icon-globe
                   = wu[:name]
 
-            = link_to sunrise_sunset_area_waypoint_path(waypoint.area, waypoint), class: 'btn btn-mini btn-info' do
+            - if waypoint.area
+              - sunrise_path = sunrise_sunset_area_waypoint_path(waypoint.area, waypoint)
+            - else
+              - sunrise_path = sunrise_sunset_waypoint_path(waypoint)
+            = link_to sunrise_path, class: 'btn btn-mini btn-info' do
               %i.icon-globe
                 = t('waypoint.sunrise')
 

@@ -19,7 +19,11 @@ WaypointManager::Application.routes.draw do
     resource :exporter, only: [:show]
   end
 
-  resources :waypoints
+  resources :waypoints do
+    member do
+      get 'sunrise_sunset'
+    end
+  end
   resource :importer, only: [:new, :create]
   resource :exporter, only: [:show]
 

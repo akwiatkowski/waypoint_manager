@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-#ruby "2.0.0"
+ruby "2.1.0"
 
-gem 'rails', '3.2.16'
+gem 'rails', '3.2.17'
 gem 'thin'
 gem 'execjs'
 gem 'jquery-rails'
@@ -18,7 +18,6 @@ gem 'cancan'
 gem 'high_voltage'
 gem 'navigasmic'
 gem 'simple_show_helper'
-gem 'jquery-rails'
 gem 'configatron'
 
 # bootstrap stuff
@@ -29,7 +28,7 @@ gem "twitter-bootstrap-rails"
 
 # geo utils
 gem 'geokit'
-gem 'geokit-rails3'
+gem 'geokit-rails'
 gem 'openlayers-rails'
 gem 'gpx_utils'
 gem 'gpx2png' 
@@ -71,30 +70,17 @@ end
 
 group :development, :test do
   #gem 'itslog', git: "https://github.com/elle/itslog"
-  gem 'rspec-rails', '>= 2.6.1.beta1'
+  gem 'rspec-rails'
   gem 'rails_best_practices'
 end
 
 group :test do
   gem "mocha", :require => false
   gem 'factory_girl' #, ">= 1.1.beta1"
-  gem 'capybara', "2.0.3"
-  gem 'database_cleaner', '>= 0.6.7'
+  gem 'capybara'#, "2.0.3"
+  gem 'database_cleaner'#, '>= 0.6.7'
   gem 'spork'
 end
 
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'

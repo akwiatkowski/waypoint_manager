@@ -1,1 +1,2 @@
-rvm use ruby-1.9.2@waypoint_manager --create
+rvm use ruby-2.1.0@waypoint_manager --create
+

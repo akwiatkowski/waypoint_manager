@@ -18,7 +18,11 @@
       %i.icon-globe
       URL
   = waypoint_map_link_to(resource, "")
-  = link_to sunrise_sunset_area_waypoint_path(resource.area, resource), class: 'btn btn-info' do
+  - if resource.area
+    - sunrise_path = sunrise_sunset_area_waypoint_path(resource.area, resource)
+  - else
+    - sunrise_path = sunrise_sunset_waypoint_path(resource)
+  = link_to sunrise_path, class: 'btn btn-info' do
     %i.icon-globe
     = t('waypoint.sunrise_sunset')
 
@@ -35,15 +39,15 @@
     = link_to waypoints_path, class: 'btn' do
       %i.icon-search
       = t(:back)
-  - if can?(:read, resource.area)
+  - if resource.area and can?(:read, resource.area)
     = link_to resource.area, class: 'btn' do
       %i.icon-search
       = t(:back_to_area)
-  - if can?(:read, resource.area)
+  - if resource.area and can?(:read, resource.area)
     = link_to area_waypoints_path(resource.area), class: 'btn' do
       %i.icon-search
       = t(:back_to_area_waypoints)
-  - if can?(:create, resource.class)
+  - if resource.area and can?(:create, resource.class)
     = link_to new_area_waypoint_path(resource.area), class: 'btn' do
       %i.icon-pencil
       = t(:new_waypoint_in)
