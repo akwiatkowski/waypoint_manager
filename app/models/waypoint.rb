@@ -95,6 +95,28 @@ class Waypoint < ActiveRecord::Base
     "http://mapa.ump.waw.pl/ump-www/?zoom=#{map_zoom}&lat=#{lat}&lon=#{lon}&mlat=#{lat}&mlon=#{lon}"
   end
 
+  def osm_path(map_zoom = 13, type = nil)
+    s = "http://www.openstreetmap.org/#map=#{map_zoom}/#{lat}/#{lon}"
+    s += "&layers=#{type}" if type
+    s
+  end
+
+  def cycle_map_path(map_zoom = 13)
+    osm_path(map_zoom, "C")
+  end
+
+  def transport_map_path(map_zoom = 13)
+    osm_path(map_zoom, "T")
+  end
+
+  def mapquest_path(map_zoom = 13)
+    osm_path(map_zoom, "Q")
+  end
+
+  def humanitarian_map_path(map_zoom = 13)
+    osm_path(map_zoom, "H")
+  end
+
   def alt
     elevation
   end

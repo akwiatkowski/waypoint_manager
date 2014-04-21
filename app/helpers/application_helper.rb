@@ -1,8 +1,22 @@
 module ApplicationHelper
-  def waypoint_map_link_to(waypoint, klass = "btn-mini")
+  def waypoint_map_link_to(waypoint, klass = "btn-mini", use_all = false)
     s = link_to "Google", waypoint.google_maps_path, class: "btn #{klass} btn-info", target: '_blank'
     s += " "
+    s += link_to "OSM", waypoint.osm_path, class: "btn #{klass} btn-info", target: '_blank'
+    s += " "
     s += link_to "UMP", waypoint.ump_path, class: "btn #{klass} btn-info", target: '_blank'
+
+
+    if use_all
+      s += " "
+      s += link_to "Cycle", waypoint.cycle_map_path, class: "btn #{klass} btn-info", target: '_blank'
+      s += " "
+      s += link_to "Transport", waypoint.transport_map_path, class: "btn #{klass} btn-info", target: '_blank'
+      s += " "
+      s += link_to "Mapquest", waypoint.mapquest_path, class: "btn #{klass} btn-info", target: '_blank'
+      s += " "
+      s += link_to "Humanitarian", waypoint.humanitarian_map_path, class: "btn #{klass} btn-info", target: '_blank'
+    end
 
     return s
   end

@@ -17,7 +17,7 @@
     = link_to resource.url, target: '_blank', class: 'btn btn-info' do
       %i.icon-globe
       URL
-  = waypoint_map_link_to(resource, "")
+  = waypoint_map_link_to(resource, "", true)
   - if resource.area
     - sunrise_path = sunrise_sunset_area_waypoint_path(resource.area, resource)
   - else

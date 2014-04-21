@@ -59,8 +59,12 @@
             = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
               %i.icon-globe
 
+          %br
+
           .btn-group.waypoint-maps
             = waypoint_map_link_to(waypoint)
+
+          %br
 
           .btn-group.waypoint-weather
             - waypoint.weather_urls.each do |wu|
