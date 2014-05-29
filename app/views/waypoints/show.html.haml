@@ -17,7 +17,10 @@
     = link_to resource.url, target: '_blank', class: 'btn btn-info' do
       %i.icon-globe
       URL
+.btn-group
   = waypoint_map_link_to(resource, "", true)
+
+.btn-group
   - if resource.area
     - sunrise_path = sunrise_sunset_area_waypoint_path(resource.area, resource)
   - else
@@ -25,6 +28,10 @@
   = link_to sunrise_path, class: 'btn btn-info' do
     %i.icon-globe
     = t('waypoint.sunrise_sunset')
+  - resource.weather_urls.each do |wu|
+    = link_to wu[:url], target: '_blank', class: 'btn btn-info' do
+      %i.icon-globe
+        = wu[:name]
 
 .btn-group
   - if can?(:edit, resource)

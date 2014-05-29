@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 ruby "2.1.0"
 
-gem 'rails', '3.2.17'
-gem 'thin'
-gem 'execjs'
+gem 'rails', '3.2.17' # MIT
+gem 'thin' # Ruby Licence, BSD, https://www.ruby-lang.org/en/about/license.txt
+gem 'execjs' # MIT
 gem 'jquery-rails'
-gem 'haml'
+gem 'haml' # MIT
 gem 'haml-rails'
 gem 'inherited_resources'
 gem 'has_scope'
