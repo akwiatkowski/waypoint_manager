@@ -6,7 +6,10 @@
     = @user.email
 %p
   %b Name:
-  = @user.name
+  = resource.name
+%p
+  %b Waypoint count:
+  = resource.waypoints.count
 %p
   %b= t('user.sign_in_count')
   = @user.sign_in_count

@@ -5,6 +5,7 @@
   - n.item "<i class=\"icon-road\"></i>" + t('route.plural'), routes_path
   - if can? :manage, Importer
     - n.item "<i class=\"icon-hdd\"></i>" + t('importer.title'), new_importer_path
+    - n.item "<i class=\"icon-hdd\"></i>" + t('user.import_waypoints'), import_user_path(current_user)
   - if controller_name == "waypoints"
     - n.item "<i class=\"icon-book\"></i>" + t('waypoint.to_gpx'), url_for(format: :gpx)
   - if current_user

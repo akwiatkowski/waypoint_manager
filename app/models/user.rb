@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :waypoints_json
   # attr_accessible :title, :body
 
   validates_presence_of :name
@@ -21,5 +21,16 @@ class User < ActiveRecord::Base
   end
 
   delegate :can?, :cannot?, :to => :ability
+
+  def waypoints_json
+
+  end
+
+  def waypoints_json=(payload)
+    if payload
+      json = payload.read
+      WaypointMigrator.import(self, json)
+    end
+  end
 
 end

@@ -1,0 +1,6 @@
+%h1= t('user.import_waypoints')
+
+= simple_form_for resource, action: root_path do |f|
+  = f.input :waypoints_json, as: :file
+
+  = f.button :submit

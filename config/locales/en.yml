@@ -7,6 +7,7 @@ en:
   edit: "Edit"
   delete: "Delete"
   details: "Details"
+  export: "Export"
   are_you_sure: "Are you sure?"
   _calculated_: "(calculated)"
 
@@ -46,9 +47,6 @@ en:
     destroy: "Sign out"
     new: "Sign in"
 
-  user:
-    register: "Sign up"
-
   route_element:
     real_distance: "Real distance [m]"
 
@@ -71,6 +69,12 @@ en:
     to_gpx: "Export to GPX"
     sunrise_sunset: "Sunrise and sunset"
 
+  user:
+    title: "User"
+    plural: "Users"
+    register: "Sign up"
+    import_waypoints: "Import waypoints"
+
   route:
     title: "Route"
     plural: "Routes"
@@ -87,7 +91,7 @@ en:
     real_time_distance: "Distance [min] (real)"
 
   importer:
-    title: "Importer"
+    title: "Garmin Importer"
 
   simple_form:
     labels:

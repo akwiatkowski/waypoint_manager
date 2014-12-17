@@ -35,11 +35,13 @@ class WaypointMigrator
           w = Waypoint.where(["area_id = ? and user_id = ? and waypoints.name = ? and lat = ? and lon = ?", a.id, user.id, waypoint_name, lat, lon]).first
           if w.nil?
             w = Waypoint.new
-            w.area = a
-            hw.keys.each do |k|
-              w.send("#{k}=", hw[k]) #if not ["waypoints"].include?(k)
-            end
           end
+
+          hw.keys.each do |k|
+            w.send("#{k}=", hw[k]) #if not ["waypoints"].include?(k)
+          end
+          # overwrite area_id
+          w.area = a
 
           w.save
         end

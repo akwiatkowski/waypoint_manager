@@ -4,6 +4,8 @@ WaypointManager::Application.routes.draw do
   resources :users do
     member do
       get :export
+      get :import
+      post :import_payload
     end
   end
 

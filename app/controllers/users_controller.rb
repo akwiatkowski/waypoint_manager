@@ -6,4 +6,12 @@ class UsersController < InheritedResources::Base
     authorize! :export, resource
     render json: WaypointMigrator.export(resource)
   end
+
+  def import
+
+  end
+
+  def import_payload
+
+  end
 end
