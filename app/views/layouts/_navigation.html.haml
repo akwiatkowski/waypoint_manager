@@ -3,7 +3,7 @@
   - AreaType.all.each do |at|
     - n.item "<i class=\"icon-globe\"></i>" + t('area.types.' + at.name), areas_path(area_type_id: at.id), highlights_on: [{area_type_id: at.id.to_s}] do |b|
       - Area.where(area_type_id: at.id).horizontal.all.each do |a|
-        - b.item a.name, area_waypoints_path(a), highlights_on: [{area_id: a.id.to_s}]
+        - b.item a.name, area_waypoints_path(a), highlights_on: [{area_id: a.id.to_s}], class: 'area-link-small'
   - n.item "<i class=\"icon-map-marker\"></i>" + t('waypoint.all'), waypoints_path
   - n.item "<i class=\"icon-road\"></i>" + t('route.plural'), routes_path
   - if can? :manage, Importer
