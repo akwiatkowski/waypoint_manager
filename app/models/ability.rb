@@ -13,6 +13,7 @@ class Ability
       can :manage, RouteElement, route: {user_id: user.id}
 
       can :draw_normal_big_map, Route
+      can :export, user
     end
 
     if user and user.admin
@@ -25,6 +26,7 @@ class Ability
       can :manage, Importer
 
       can :draw_super_big_map, Route
+      can :export, User
     end
 
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities

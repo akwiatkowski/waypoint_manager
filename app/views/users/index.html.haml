@@ -1,5 +1,5 @@
 %h1= t('user.plural')
-%table.collection
+%table.table
   %tr
     %th ID
     %th= t('user.name')
@@ -17,6 +17,9 @@
         %td= link_to t('edit'), edit_user_path(user)
       - if can? :destroy, user
         %td= link_to t('destroy'), user, confirm: 'Are you sure?', method: :delete
+      - if can? :export, user
+        %td= link_to t('export'), export_user_path(user, format: :json)
+
 %br/
 
 - if can? :manage, User
