@@ -14,9 +14,15 @@ class AreaType < ActiveRecord::Base
     Waypoint::SYMBOLS["Residence"]
   ]
 
+  TYPE_IMAGES_NAMES = [
+    "Mountains",
+    "Cities",
+    "Countryside",
+  ]
+
   default_scope order(:id)
 
   def img_symbol
-    TYPE_IMAGES[self.id] || ''
+    Waypoint::SYMBOLS[self.sym] || ''
   end
 end
