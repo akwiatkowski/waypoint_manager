@@ -161,6 +161,16 @@ class Waypoint < ActiveRecord::Base
     (self_geo.distance_to(other_geo, units: :kms) * 1000.0).ceil
   end
 
+  def waypoints_withing
+    ws = Waypoint.all
+    ws = ws - [self]
+    ws.each do |w|
+      w.tmp_distance = self.distance_to(w)
+    end
+    ws.sort! { |a, b| a.tmp_distance <=> b.tmp_distance }
+    ws
+  end
+
   def heading_to(_waypoint)
     return nil if _waypoint.nil? or _waypoint == self
     begin

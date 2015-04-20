@@ -12,6 +12,14 @@
   .span4
     = render partial: '/waypoints/panoramio'
 
+.row
+  .span12
+    %h2 Nearest waypoints
+    %ol
+      - resource.waypoints_withing[0..20].each do |w|
+        %li= link_to "#{w.name} - #{w.tmp_distance}", w
+
+
 .btn-group
   - unless resource.url.blank?
     = link_to resource.url, target: '_blank', class: 'btn btn-info' do
@@ -38,7 +46,7 @@
     = link_to edit_resource_path(resource), class: 'btn' do
       %i.icon-edit
       = t(:edit)
-  - if false and can?(:manage, resource)
+  - if can?(:manage, resource)
     = link_to resource, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-danger' do
       %i.icon-remove
       = t(:delete)
