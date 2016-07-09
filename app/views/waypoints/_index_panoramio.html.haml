@@ -42,22 +42,22 @@
           - _url = area_waypoint_path(waypoint.area, waypoint)
         - else
           - _url = waypoint
-        = link_to _url, class: 'btn btn-mini btn-info' do
+        = link_to _url, class: 'btn btn-sm btn-info' do
           %i.icon-search
           = t('details')
       %td
         - unless waypoint.url.blank?
-          = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
+          = link_to waypoint.url, class: 'btn btn-sm btn-info', target: '_blank' do
             %i.icon-globe
       %td
         = waypoint_map_link_to(waypoint)
       %td
         - if can? :edit, waypoint
-          = link_to edit_waypoint_path(waypoint), class: 'btn btn-mini' do
+          = link_to edit_waypoint_path(waypoint), class: 'btn btn-sm' do
             %i.icon-edit
       %td
         - if can? :destroy, waypoint
-          = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+          = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-sm btn-danger' do
             %i.icon-remove
     %tr
       %td{colspan: 10}

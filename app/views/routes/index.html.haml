@@ -31,7 +31,7 @@
       %td= route.name
       %td
         - unless route.url.blank?
-          = link_to route.url, class: 'btn btn-mini btn-info', target: '_blank' do
+          = link_to route.url, class: 'btn btn-sm btn-info', target: '_blank' do
             %i.icon-globe
       %td= route.distance
       %td
@@ -41,20 +41,20 @@
         min )
       %td
         - if can? :read, RouteElement
-          = link_to route_route_elements_path(route), class: 'btn btn-mini' do
+          = link_to route_route_elements_path(route), class: 'btn btn-sm' do
             %i.icon-list
             = "#{t('route_element.plural')} (#{route.route_elements.count})"
       %td
-        = link_to route, class: 'btn btn-mini btn-info' do
+        = link_to route, class: 'btn btn-sm btn-info' do
           %i.icon-search
           = t('details')
       %td
         - if can? :edit, route
-          = link_to edit_route_path(route), class: 'btn btn-mini' do
+          = link_to edit_route_path(route), class: 'btn btn-sm' do
             %i.icon-edit
       %td
         - if can? :destroy, route
-          = link_to route, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+          = link_to route, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-sm btn-danger' do
             %i.icon-remove
 
 

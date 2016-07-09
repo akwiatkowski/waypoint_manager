@@ -1,0 +1,18 @@
+%li= link_to t(:about), page_path("about")
+%li= link_to t('area.plural'), areas_path
+%li= link_to t('waypoint.plural'), waypoints_path
+%li= link_to t('route.plural'), routes_path
+
+- if can? :manage, Importer
+  %li= link_to t('importer.title'), new_importer_path
+  %li= link_to t('user.import_waypoints'), import_user_path(current_user)
+
+- if controller_name == "waypoints"
+  %li= link_to t('waypoint.to_gpx'), url_for(format: :gpx)
+
+- if current_user
+  %li= link_to current_user.email, user_path(current_user)
+  %li= link_to t('user_session.destroy'), destroy_user_session_path, method: :delete
+- else
+  %li= link_to t('user_session.new'), new_user_session_path
+  %li= link_to t('user.register'), new_user_registration_path

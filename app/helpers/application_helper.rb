@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def waypoint_map_link_to(waypoint, klass = "btn-mini", use_all = false)
+  def waypoint_map_link_to(waypoint, klass = "btn-sm", use_all = false)
     s = link_to "Google", waypoint.google_maps_path, class: "btn #{klass} btn-info", target: '_blank'
     s += " "
     s += link_to "OSM", waypoint.osm_path, class: "btn #{klass} btn-info", target: '_blank'

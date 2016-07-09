@@ -26,22 +26,22 @@
       %td= area.name
       %td
         - if can? :read, Waypoint
-          = link_to area_waypoints_path(area), class: 'btn btn-mini' do
+          = link_to area_waypoints_path(area), class: 'btn btn-sm' do
             %i.icon-list
             = "#{t('waypoint.plural')} (#{area.waypoints.count})"
       %td= number_to_human area.avg_lat, precision: 4
       %td= number_to_human area.avg_lon, precision: 4
       %td
-        = link_to area, class: 'btn btn-mini btn-info' do
+        = link_to area, class: 'btn btn-sm btn-info' do
           %i.icon-search
           = t('details')
       %td
         - if can? :edit, area
-          = link_to edit_area_path(area), class: 'btn btn-mini' do
+          = link_to edit_area_path(area), class: 'btn btn-sm' do
             %i.icon-edit
       %td
         - if can? :destroy, area
-          = link_to area, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+          = link_to area, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-sm btn-danger' do
             %i.icon-remove
 
   - unless params[:area_type_id]
@@ -51,7 +51,7 @@
       %td
       %td
         - if can? :read, Waypoint
-          = link_to waypoints_path(wo_area: 't'), class: 'btn btn-mini' do
+          = link_to waypoints_path(wo_area: 't'), class: 'btn btn-sm' do
             %i.icon-list
             = "#{t('waypoint.plural')} (#{Waypoint.wo_area.count})"
       %td

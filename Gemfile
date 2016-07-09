@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.1.0"
+ruby "2.1.5"
 
 gem 'rails', '3.2.17' # MIT
 gem 'thin' # Ruby Licence, BSD, https://www.ruby-lang.org/en/about/license.txt
@@ -11,7 +11,7 @@ gem 'inherited_resources'
 gem 'has_scope'
 gem 'responders'
 gem 'kaminari'
-gem 'sorted'
+gem 'sorted', '~> 0.4.3'
 gem 'simple_form'
 gem 'devise'
 gem 'cancan'

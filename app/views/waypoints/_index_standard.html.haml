@@ -51,12 +51,12 @@
             - _url = area_waypoint_path(waypoint.area, waypoint)
           - else
             - _url = waypoint
-          = link_to _url, class: 'btn btn-mini btn-info' do
+          = link_to _url, class: 'btn btn-sm btn-info' do
             %i.icon-search
             = t('details')
 
           - unless waypoint.url.blank?
-            = link_to waypoint.url, class: 'btn btn-mini btn-info', target: '_blank' do
+            = link_to waypoint.url, class: 'btn btn-sm btn-info', target: '_blank' do
               %i.icon-globe
 
           %br
@@ -68,7 +68,7 @@
 
           .btn-group.waypoint-weather
             - waypoint.weather_urls.each do |wu|
-              = link_to wu[:url], target: '_blank', class: 'btn btn-mini btn-info' do
+              = link_to wu[:url], target: '_blank', class: 'btn btn-sm btn-info' do
                 %i.icon-globe
                   = wu[:name]
 
@@ -76,7 +76,7 @@
               - sunrise_path = sunrise_sunset_area_waypoint_path(waypoint.area, waypoint)
             - else
               - sunrise_path = sunrise_sunset_waypoint_path(waypoint)
-            = link_to sunrise_path, class: 'btn btn-mini btn-info' do
+            = link_to sunrise_path, class: 'btn btn-sm btn-info' do
               %i.icon-globe
                 = t('waypoint.sunrise')
 
@@ -85,17 +85,15 @@
         .btn-toolbar
           = form_for waypoint, html: {class: "form-inline"} do |f|
             = f.hidden_field :is_private, value: (! waypoint.is_private)
-            = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-mini #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
+            = f.submit waypoint.is_private ? "Private" : "Public", class: "btn btn-sm #{waypoint.is_private ? "btn-warning" : "btn-success"}", disabled: cannot?(:edit, waypoint)
 
 
       %td
         .btn-toolbar
           - if can? :edit, waypoint
-            = link_to edit_waypoint_path(waypoint), class: 'btn btn-mini' do
-              %i.icon-edit
+            = link_to edit_waypoint_path(waypoint), class: 'btn btn-default btn-sm' do
+              Edit
 
           - if can? :destroy, waypoint
-            = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
-              %i.icon-remove
-
-
+            = link_to waypoint, confirm: t('are_you_sure'), method: :delete, class: 'btn btn-sm btn-danger' do
+              Destroy

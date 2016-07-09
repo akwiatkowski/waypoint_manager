@@ -51,26 +51,26 @@
           = route_element.time_distance
 
       %td
-        = link_to route_route_element_path(route_element.route, route_element), class: 'btn btn-mini btn-info' do
+        = link_to route_route_element_path(route_element.route, route_element), class: 'btn btn-sm btn-info' do
           %i.icon-search
           = t('details')
           
       %td
         - unless route_element.is_first_on_route?
-          = link_to 'Google', route_element.google_url, target: '_blank', class: 'btn btn-mini'
+          = link_to 'Google', route_element.google_url, target: '_blank', class: 'btn btn-sm'
 
       %td
         - unless route_element.url.blank?
-          = link_to 'URL', route_element.url, target: '_blank', class: 'btn btn-mini'
+          = link_to 'URL', route_element.url, target: '_blank', class: 'btn btn-sm'
 
       %td
         - if can? :edit, route_element
-          = link_to edit_route_route_element_path(route_element.route, route_element), class: 'btn btn-mini' do
+          = link_to edit_route_route_element_path(route_element.route, route_element), class: 'btn btn-sm' do
             %i.icon-edit
 
       %td
         - if can? :destroy, route_element
-          = link_to route_route_element_path(route_element.route, route_element), confirm: t('are_you_sure'), method: :delete, class: 'btn btn-mini btn-danger' do
+          = link_to route_route_element_path(route_element.route, route_element), confirm: t('are_you_sure'), method: :delete, class: 'btn btn-sm btn-danger' do
             %i.icon-remove
 
 %br
